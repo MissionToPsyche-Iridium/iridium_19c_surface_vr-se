@@ -59,3 +59,18 @@ The Surface Data VR project is a simulation software developed for NASA’s Psyc
 12. README Updates:
   * Update this README.md file regularly to reflect changes in the project, 
     especially regarding new guidelines or rules.
+
+
+
+## Guideline for handling large files that may be too large to be version-controlled on this repository
+- `[Link to PDF file on Google Drive explaining the Guideline](https://drive.google.com/file/d/1rfryCKC70w-OKXNyA74vVn06OMWHd_mx/view?usp=drive_link)'
+- `[Link to Jose's shared OneDrive](https://arizonastateu-my.sharepoint.com/my?id=%2Fpersonal%2Fjlgrijal%5Fsundevils%5Fasu%5Fedu%2FDocuments%2FASU%20SER%20Fall2024%2DSpring2025%20Capstone%20%2D%20Surface%20Data%20VR)'
+
+
+
+
+## Helpful resources to follow as a starting template for Unity VR development:
+
+- '[3-hour Unity VR tutorial YouTube video](https://www.youtube.com/watch?v=YBQ_ps6e71k)'
+- '[Google Docs documentation with key takeaways on the Unity VR tutorial video](https://docs.google.com/document/d/17ar3QAVtqOynBui0f8brmMJu6dnFJ6QNbgSPhKmED3M/edit?tab=t.0)'
+- '[Short video of Unity VR simulation of exploring planet Venus](https://www.youtube.com/watch?v=GOl91blT1n0)'
