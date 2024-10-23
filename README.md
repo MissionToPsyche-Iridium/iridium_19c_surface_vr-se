@@ -39,8 +39,8 @@ The Surface Data VR project is a simulation software developed for NASA’s Psyc
   * Avoid cluttering the root directory with unnecessary files.
   * Place assets, source code, and documentation in their respective folders 
     to maintain a clean and organized structure.
-8. C++ Practice Code:
- * For all tutorial-related C++ practice code, create new branches for C++ 
+8. C# Practice Code:
+ * For all tutorial-related C# practice code, create new branches for C# 
   practice/tutorial tasks.
  * NEVER merge these branches into the master branch. Use a separate branch
 9. Code Style:
