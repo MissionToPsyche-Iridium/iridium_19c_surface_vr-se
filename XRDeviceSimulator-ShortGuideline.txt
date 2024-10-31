@@ -1,0 +1,3 @@
+Tips on XR Device Simulator for the whole team:
+
+- If you already have a VR Headset and you want to test the Mars VR software, always make sure to uncheck the XR Device Simulator prefab(located on the root of the project Hierarchy window) before testing the software or else there will be a conflict between your VR headset and the XR Device Simulator when testing the software and you may suffer heavy seasickness from running into this issue.
