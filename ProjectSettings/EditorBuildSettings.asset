@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenuVR.unity
     guid: e7683ada4f4faaf4fa7b6fefc83bdb37
+  - enabled: 1
+    path: Assets/Scenes/AboutScreen.unity
+    guid: 17ddf6ee167db1c43a37e50a02ea52bd
+  - enabled: 1
+    path: Assets/Scenes/MarsMenu.unity
+    guid: 711fa58c81912f7469f68c29f74492e8
+  - enabled: 1
+    path: Assets/Scenes/SettingsScreen.unity
+    guid: ba46a3eed86423e40a109eb928a2ecd8
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ef478b4084e8157469357db2ba815b60, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 32c73466c19c831438990f08cedec3f6, type: 2}
