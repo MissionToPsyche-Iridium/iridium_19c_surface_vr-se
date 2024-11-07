@@ -1,1 +1,0 @@
-This folder will store all of our audio.
