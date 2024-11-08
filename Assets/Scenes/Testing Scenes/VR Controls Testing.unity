@@ -384,8 +384,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80e7ca449da56ec4d932cd69b6f0c513, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterController: {fileID: 0}
-  xrCamera: {fileID: 0}
+  characterController: {fileID: 12265801}
+  vrCam: {fileID: 901156576}
 --- !u!1001 &204669535
 PrefabInstance:
   m_ObjectHideFlags: 0
