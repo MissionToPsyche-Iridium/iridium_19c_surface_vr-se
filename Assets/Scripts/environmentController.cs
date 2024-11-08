@@ -13,16 +13,20 @@ public class environmentController : MonoBehaviour
     // Camera rotate speed
     public float cameraRotateSpeed = 1f;
 
-    // Skybox rotate speed
-    public float skyBoxRotateSpeed = 0.01f;
-    
+    // Sun rotate speed
+    public float sunRotateSpeed = 0f;
+
+    // Light gameObject
+    public Light sunLight;
   
     // Update is called once per frame
     void Update()
     {
         if(cameraRotationOn)
             focusCamera.transform.Rotate(new Vector3(0, -cameraRotateSpeed * Time.deltaTime, 0));
-        if(skyBoxRotateOn)
-            RenderSettings.skybox.SetFloat("_Rotation", Time.time * skyBoxRotateSpeed);
+        if (skyBoxRotateOn)
+        {
+            sunLight.transform.Rotate(new Vector3(-sunRotateSpeed * Time.deltaTime, 0, 0));
+        }
     }
 }
