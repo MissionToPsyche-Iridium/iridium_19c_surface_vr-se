@@ -31,6 +31,12 @@ public class ChangeScenes : MonoBehaviour
         SceneManager.LoadScene("MainMenuVR");
     }
 
+    // Load the "Credits" scene
+    public void goToCreditsScreen()
+    {
+        SceneManager.LoadScene("CreditsScreen");
+    }
+
     // Exit the application
     public void exitApp()
     {
