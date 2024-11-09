@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.21126525, g: 0.32591236, b: 0.61635214, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 2d056ac30ecc9e542b26e06133f23602, type: 2}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -549,6 +549,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &241072944
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1414121861898082792, guid: 2c320d759b8ccd04d97a24a4ef38a7fa, type: 3}
+      propertyPath: m_Name
+      value: StarySkyPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424969102736264229, guid: 2c320d759b8ccd04d97a24a4ef38a7fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 487.43475
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424969102736264229, guid: 2c320d759b8ccd04d97a24a4ef38a7fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 276.50598
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424969102736264229, guid: 2c320d759b8ccd04d97a24a4ef38a7fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 104.3875
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424969102736264229, guid: 2c320d759b8ccd04d97a24a4ef38a7fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424969102736264229, guid: 2c320d759b8ccd04d97a24a4ef38a7fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424969102736264229, guid: 2c320d759b8ccd04d97a24a4ef38a7fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424969102736264229, guid: 2c320d759b8ccd04d97a24a4ef38a7fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424969102736264229, guid: 2c320d759b8ccd04d97a24a4ef38a7fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424969102736264229, guid: 2c320d759b8ccd04d97a24a4ef38a7fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424969102736264229, guid: 2c320d759b8ccd04d97a24a4ef38a7fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c320d759b8ccd04d97a24a4ef38a7fa, type: 3}
 --- !u!1 &494085089
 GameObject:
   m_ObjectHideFlags: 0
@@ -3489,3 +3546,4 @@ SceneRoots:
   - {fileID: 226445107}
   - {fileID: 14265707}
   - {fileID: 30151716}
+  - {fileID: 241072944}

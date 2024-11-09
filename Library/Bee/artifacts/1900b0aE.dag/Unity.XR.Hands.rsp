@@ -123,6 +123,7 @@
 -define:UNITY_OPENXR_PACKAGE
 -define:UNITY_OPENXR_PACKAGE_1_2
 -define:UNITY_OPENXR_PACKAGE_1_6
+-define:BURST_PRESENT
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
@@ -333,6 +334,7 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.50f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Mathematics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.XR.CoreUtils.ref.dll"
