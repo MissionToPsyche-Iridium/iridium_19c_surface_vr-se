@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CreditsScreen.unity
     guid: ccedc9778b4bd0d49994032862964ea8
+  - enabled: 1
+    path: Assets/Scenes/Mars Site 2.unity
+    guid: 8c286a1c1c3020d40abdeec6753a7ba9
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ef478b4084e8157469357db2ba815b60, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 32c73466c19c831438990f08cedec3f6, type: 2}
