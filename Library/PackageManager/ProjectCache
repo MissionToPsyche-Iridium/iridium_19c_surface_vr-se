@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638663073334238508
-    m_Hash: 1838883522
+      ticks: 638666690642994052
+    m_Hash: 558254696
   m_LockFileStatus:
     m_FilePath: C:/iridium_19c_surface_vr-se/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638663073334386613
-    m_Hash: 484189537
+      ticks: 638666690642994052
+    m_Hash: 1078776009
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -856,9 +856,11 @@ m_ResolvedPackages:
     - 1.12.0
     - 1.12.1
     - 1.13.0
+    - 1.13.1
     compatible:
     - 1.12.1
     - 1.13.0
+    - 1.13.1
     recommended: 1.12.1
     deprecated: []
   dependencies:
