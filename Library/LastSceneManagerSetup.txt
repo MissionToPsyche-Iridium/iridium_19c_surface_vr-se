@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/MainMenuVR.unity
+- path: Assets/Scenes/Mars Site 2.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
