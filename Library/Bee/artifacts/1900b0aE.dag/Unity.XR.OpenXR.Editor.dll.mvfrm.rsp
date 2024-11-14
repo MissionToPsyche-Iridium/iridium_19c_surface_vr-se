@@ -90,5 +90,8 @@ Library\Bee\artifacts\mvdfrm\UnityEngine.VirtualTexturingModule.dll_5AB13C207275
 Library\Bee\artifacts\mvdfrm\UnityEngine.VRModule.dll_B309B05A591078A0.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.WindModule.dll_6B004E32AFDDFDBC.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.XRModule.dll_E5C8735EE24AC5FE.mvfrm
-Library\Bee\artifacts\mvdfrm\UnityEditor.UWP.Extensions.dll_A6B3F9E98E1EA8A3.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Android.Gradle.dll_A92E7E14C9F47210.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Android.GradleProject.dll_E4ED18B16A53EEA5.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Android.Types.dll_5BEF0FFD1FAB232C.mvfrm
+Library\Bee\artifacts\mvdfrm\UnityEditor.Android.Extensions.dll_342D1114755A0850.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEditor.WindowsStandalone.Extensions.dll_118ADD344C3187F8.mvfrm
