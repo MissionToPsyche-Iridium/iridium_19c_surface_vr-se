@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638668183992752245
-    m_Hash: 2775139852
+      ticks: 638672162589058201
+    m_Hash: 1552634048
   m_LockFileStatus:
     m_FilePath: C:/ASU_Capstone/iridium_19c_surface_vr-se/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638668183992929026
-    m_Hash: 3265115122
+      ticks: 638672162589128211
+    m_Hash: 3448119111
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
