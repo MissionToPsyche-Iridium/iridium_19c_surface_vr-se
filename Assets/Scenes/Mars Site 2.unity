@@ -132,8 +132,8 @@ GameObject:
   m_Component:
   - component: {fileID: 72473970}
   - component: {fileID: 72473969}
-  - component: {fileID: 72473968}
   - component: {fileID: 72473971}
+  - component: {fileID: 72473972}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -141,14 +141,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &72473968
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 72473966}
-  m_Enabled: 1
 --- !u!20 &72473969
 Camera:
   m_ObjectHideFlags: 0
@@ -344,6 +336,14 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!81 &72473972
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72473966}
+  m_Enabled: 1
 --- !u!1 &145925946
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,7 +400,6 @@ GameObject:
   m_Component:
   - component: {fileID: 513871763}
   - component: {fileID: 513871762}
-  - component: {fileID: 513871761}
   - component: {fileID: 513871765}
   m_Layer: 0
   m_Name: Main Camera
@@ -409,14 +408,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &513871761
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513871760}
-  m_Enabled: 0
 --- !u!20 &513871762
 Camera:
   m_ObjectHideFlags: 0
@@ -783,7 +774,6 @@ GameObject:
   m_Component:
   - component: {fileID: 584819965}
   - component: {fileID: 584819964}
-  - component: {fileID: 584819963}
   - component: {fileID: 584819962}
   m_Layer: 0
   m_Name: Camera 3
@@ -921,14 +911,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!81 &584819963
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584819961}
-  m_Enabled: 1
 --- !u!20 &584819964
 Camera:
   m_ObjectHideFlags: 0
@@ -1005,7 +987,6 @@ GameObject:
   m_Component:
   - component: {fileID: 647745780}
   - component: {fileID: 647745779}
-  - component: {fileID: 647745778}
   - component: {fileID: 647745777}
   m_Layer: 0
   m_Name: Camera 5
@@ -1143,14 +1124,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!81 &647745778
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 647745776}
-  m_Enabled: 1
 --- !u!20 &647745779
 Camera:
   m_ObjectHideFlags: 0
@@ -1482,7 +1455,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.6127299, b: 0.33490568, a: 1}
+  m_Color: {r: 1, g: 0.9106289, b: 0.8632076, a: 1}
   m_Intensity: 20000
   m_Range: 10
   m_SpotAngle: 30
@@ -1526,7 +1499,7 @@ Light:
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.5, y: 0.5}
   m_BounceIntensity: 1
-  m_ColorTemperature: 20000
+  m_ColorTemperature: 5800
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 9.1835e-41, y: 7.43868e-39, z: 9.78048e-39, w: 1.37753e-40}
   m_UseBoundingSphereOverride: 0
@@ -1541,13 +1514,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926262454}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.8073644, y: 0.009780329, z: -0.5898202, w: 0.013387621}
+  m_LocalRotation: {x: -0.40810534, y: 0.27325457, z: -0.8614073, w: -0.12945868}
   m_LocalPosition: {x: 1, y: 1, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -181.9, y: -287.7, z: 0}
+  m_LocalEulerAnglesHint: {x: 144.8, y: 230.7, z: 0}
 --- !u!114 &1926262458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1787,7 +1760,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1976514477}
   - component: {fileID: 1976514476}
-  - component: {fileID: 1976514475}
   - component: {fileID: 1976514474}
   m_Layer: 0
   m_Name: Camera 4
@@ -1925,14 +1897,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!81 &1976514475
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1976514473}
-  m_Enabled: 1
 --- !u!20 &1976514476
 Camera:
   m_ObjectHideFlags: 0
