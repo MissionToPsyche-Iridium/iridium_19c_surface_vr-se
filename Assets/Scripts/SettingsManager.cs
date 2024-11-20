@@ -2,52 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using TMPro;
 
 public class SettingsManager : MonoBehaviour
 {
-    // Singleton instance
-    public static SettingsManager Instance;
 
-    // Brightness value
-    [Range(0, 1)]
-    public float brightnessValue = 0.5f;
+    public TMP_Dropdown GraphicsDropdown;
 
-    private const string BrightnessPrefKey = "BrightnessValue";
+    private const string QualityPrefKey = "GraphicsQuality";
 
-    private void Awake()
+    private void Start()
     {
-        // Singleton Pattern
-        if (Instance == null)
-        {
-            Instance = this;
-            // Persist across scenes
-            DontDestroyOnLoad(gameObject); 
-        }
-        else
-        {
-            // Destroy duplicate
-            Destroy(gameObject); 
-            return;
-        }
-
-        // Load saved brightness value
-        brightnessValue = PlayerPrefs.GetFloat(BrightnessPrefKey, 0.5f);
-        UnityEngine.Debug.Log("Loaded brightness value: " + brightnessValue);
+        int savedQualityLevel = PlayerPrefs.GetInt(QualityPrefKey, QualitySettings.GetQualityLevel());
+        QualitySettings.SetQualityLevel(savedQualityLevel);
+        GraphicsDropdown.value = savedQualityLevel;
+        GraphicsDropdown.RefreshShownValue(); 
     }
 
-    // Update brightness and save it
-    public void UpdateBrightness(float value)
+    public void ChangeGraphicsQuality()
     {
-        brightnessValue = value;
-        PlayerPrefs.SetFloat(BrightnessPrefKey, value);
+        int selectedQualityLevel = GraphicsDropdown.value;
+        QualitySettings.SetQualityLevel(selectedQualityLevel);
+        PlayerPrefs.SetInt(QualityPrefKey, selectedQualityLevel); 
         PlayerPrefs.Save();
-        UnityEngine.Debug.Log("Brightness updated to: " + brightnessValue);
-        FindObjectOfType<BrightnessManager>().AdjustBrightness(brightnessValue);
+        UnityEngine.Debug.Log("Current Quality Level: " + QualitySettings.GetQualityLevel());
     }
 
-    // Apply the brightness value
-    public void SetBrightness()
-    {
-        FindObjectOfType<BrightnessManager>().AdjustBrightness(brightnessValue);
-    }
+
 }

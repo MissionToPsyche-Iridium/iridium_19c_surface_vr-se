@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Placeholder: {fileID: 0}
   m_ItemText: {fileID: 246341189}
   m_ItemImage: {fileID: 0}
-  m_Value: 0
+  m_Value: 2
   m_Options:
     m_Options:
     - m_Text: Low
@@ -265,9 +265,23 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: High
       m_Image: {fileID: 0}
+    - m_Text: Ultra
+      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1723357965}
+        m_TargetAssemblyTypeName: SettingsManager, Assembly-CSharp
+        m_MethodName: ChangeGraphicsQuality
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &20629747
 MonoBehaviour:
@@ -1016,6 +1030,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1120512342902176336, guid: 2c320d759b8ccd04d97a24a4ef38a7fa, type: 3}
+      propertyPath: weight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1414121861898082792, guid: 2c320d759b8ccd04d97a24a4ef38a7fa, type: 3}
       propertyPath: m_Name
       value: StarySkyPrefab
@@ -2428,19 +2446,7 @@ MonoBehaviour:
   m_Value: 0.66
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1723357965}
-        m_TargetAssemblyTypeName: SettingsManager, Assembly-CSharp
-        m_MethodName: UpdateBrightness
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0.5
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &878272295
 GameObject:
   m_ObjectHideFlags: 0
@@ -4056,17 +4062,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306782676}
   m_CullTransparentMesh: 1
---- !u!114 &1406663469 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1120512342902176336, guid: 2c320d759b8ccd04d97a24a4ef38a7fa, type: 3}
-  m_PrefabInstance: {fileID: 241072944}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1438214821
 GameObject:
   m_ObjectHideFlags: 0
@@ -4477,7 +4472,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Low
+  m_text: High
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f8f928b84b28154d83ec9ab54076a07, type: 2}
   m_sharedMaterial: {fileID: -1133905605482901817, guid: 8f8f928b84b28154d83ec9ab54076a07, type: 2}
@@ -5104,7 +5099,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1723357964}
   - component: {fileID: 1723357965}
-  - component: {fileID: 1723357966}
   m_Layer: 0
   m_Name: SettingsObject
   m_TagString: Untagged
@@ -5139,20 +5133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba364620b79f4d14bb7e276fc6a631aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brightnessValue: 0.407
---- !u!114 &1723357966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723357963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94b8f420745db3f449ec6c24cc80fe4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  globalVolume: {fileID: 1406663469}
+  GraphicsDropdown: {fileID: 20629746}
 --- !u!1 &1728000676
 GameObject:
   m_ObjectHideFlags: 0
