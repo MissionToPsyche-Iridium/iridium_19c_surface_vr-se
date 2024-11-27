@@ -1,0 +1,279 @@
+[33mcommit dea0a1b165e749f19ba830569989ebfe1b6ac209[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mUS#88Task#130[m[33m, [m[1;31morigin/US#88Task#130[m[33m)[m
+Author: neisamattos <nemattos@asu.edu>
+Date:   Thu Nov 14 00:31:27 2024 -0500
+
+    Add new Mars terrian file
+
+[33mcommit e0316f507ed07e5ba9a30b6909c62ca9d28fcb35[m[33m ([m[1;31morigin/dev[m[33m)[m
+Merge: 7abbb03 ba2ea65
+Author: Spiky-mouse <62823948+Spiky-mouse@users.noreply.github.com>
+Date:   Sat Nov 9 06:17:47 2024 -0600
+
+    Merge pull request #8 from MissionToPsyche-Iridium/GitConflictsforUS#86
+    
+    Git conflicts for us#86
+
+[33mcommit ba2ea6509bbc6407db105da321017cb32cbf1432[m[33m ([m[1;31morigin/GitConflictsforUS#86[m[33m)[m
+Author: Iuliia Orellana <juliavladimiram@gmail.com>
+Date:   Sat Nov 9 13:12:26 2024 +0100
+
+    fix small issues
+
+[33mcommit 972a6c68dc35a42169476b469f19956ade60e994[m
+Merge: c21a8c7 7abbb03
+Author: EstevanPerezASU <eperez56@asu.edu>
+Date:   Sat Nov 9 01:32:49 2024 -0800
+
+    Merge with current dev
+
+[33mcommit 7abbb035af11cf1d2dfa7b03db5b479710a113d6[m
+Merge: 0931c0e 9c08403
+Author: EstevanPerezASU <eperez56@asu.edu>
+Date:   Sat Nov 9 01:04:59 2024 -0800
+
+    Merge pull request #7 from MissionToPsyche-Iridium/US#85_Create_Menu_scenes
+    
+    #99 add reference page
+
+[33mcommit c21a8c70227501356eb33b3f7811e5e00fed0e3e[m
+Author: EstevanPerezASU <eperez56@asu.edu>
+Date:   Sat Nov 9 01:02:41 2024 -0800
+
+    Forgotten files
+
+[33mcommit f7d04742442ed0362af3dfe2f145ef0c0c52b954[m
+Author: EstevanPerezASU <eperez56@asu.edu>
+Date:   Sat Nov 9 01:01:42 2024 -0800
+
+    Manage Scene Skyboxes and Rendering
+
+[33mcommit 170732ac2c41a9fbe13136f65b117f951e285d49[m
+Author: EstevanPerezASU <eperez56@asu.edu>
+Date:   Sat Nov 9 00:40:35 2024 -0800
+
+    Attempt to fix prefab and rendering issues
+
+[33mcommit 00b16d922f2be7aabfe203ba09508da96d4b3c66[m
+Author: EstevanPerezASU <eperez56@asu.edu>
+Date:   Fri Nov 8 23:11:08 2024 -0800
+
+    Attempt to fix issues with skybox and Mar Site 2 rendering
+
+[33mcommit 9c0840368b7ebd684e12ba269f3c72f7be39556d[m[33m ([m[1;31morigin/US#85_Create_Menu_scenes[m[33m)[m
+Author: Iuliia Orellana <juliavladimiram@gmail.com>
+Date:   Fri Nov 8 21:06:58 2024 +0100
+
+    #99 add reference page
+
+[33mcommit 3211fedd5681538ac4bc59c8c115651e98e16200[m
+Author: EstevanPerezASU <eperez56@asu.edu>
+Date:   Fri Nov 8 04:48:51 2024 -0800
+
+    Add all the progress from US#86
+
+[33mcommit b6e876daf2cf82b7bdd3849c07d95bcdbbd5899b[m
+Author: EstevanPerezASU <eperez56@asu.edu>
+Date:   Fri Nov 8 04:17:36 2024 -0800
+
+    Conflict Work Around
+
+[33mcommit 0931c0efd0156517946f2d35853ba079fdd2084e[m
+Merge: adcecd8 b2aa225
+Author: EstevanPerezASU <eperez56@asu.edu>
+Date:   Fri Nov 8 02:01:57 2024 -0800
+
+    Merge pull request #4 from MissionToPsyche-Iridium/US#85_Create_Menu_scenes
+    
+    #98 create and populate About info screen
+
+[33mcommit b2aa225f934b906e7475d032190fabbe452b25bf[m
+Author: Iuliia Orellana <juliavladimiram@gmail.com>
+Date:   Thu Nov 7 00:09:11 2024 +0100
+
+    #98 create and populate About info screen
+
+[33mcommit adcecd806146719a324fa6b0c33259d926175bc9[m
+Merge: 57fb7ab f53f900
+Author: EstevanPerezASU <eperez56@asu.edu>
+Date:   Tue Nov 5 00:41:34 2024 -0800
+
+    Merge pull request #2 from MissionToPsyche-Iridium/US#85_Create_Menu_scenes
+    
+    #96 Added functionality to buttons, created base scenes for other screens
+
+[33mcommit f53f900036b988728af18a3f31ed6fd27311f817[m
+Author: Iuliia Orellana <juliavladimiram@gmail.com>
+Date:   Mon Nov 4 21:05:22 2024 +0100
+
+    Fix grammar errors
+
+[33mcommit 22fbbb5ccb7a6bd0e75f14431f132392cf6680bb[m
+Author: Iuliia Orellana <juliavladimiram@gmail.com>
+Date:   Mon Nov 4 11:46:17 2024 +0100
+
+    #96 Added functionality to buttons, created base scenes for other screens
+
+[33mcommit 57fb7ab63e716e096a38231d99802f3cc2541010[m
+Merge: 1d5c5a3 69d6fd6
+Author: Jose Grijalva <50001428+JLG1995@users.noreply.github.com>
+Date:   Sun Nov 3 14:36:17 2024 -0700
+
+    Merge pull request #1 from MissionToPsyche-Iridium/US#85_Create_Menu_scenes
+    
+    Us#85 create menu scenes
+
+[33mcommit 69d6fd62a9eb143fcec3e3401c4d23b3d4db1243[m
+Author: Iuliia Orellana <juliavladimiram@gmail.com>
+Date:   Sun Nov 3 18:50:37 2024 +0100
+
+    #96 change ray lengths in main menu
+
+[33mcommit 76c8581bc1c5fb2557c996c5092316dc1c6ef998[m
+Author: Iuliia Orellana <juliavladimiram@gmail.com>
+Date:   Sun Nov 3 17:50:26 2024 +0100
+
+    #97 New design and implementation for MainMenuVR scene
+
+[33mcommit 1d5c5a34ad1ac77cff42ad8982ac9af4a553cacb[m
+Merge: aa348ea dff641b
+Author: Jose Grijalva <jlgrijal@asu.edu>
+Date:   Sat Nov 2 21:27:06 2024 -0700
+
+    Merge branch 'UserStory#86' into dev
+
+[33mcommit dff641b63064d99afd1a5a2dfeef738eff10cb1f[m
+Author: Jose Grijalva <jlgrijal@asu.edu>
+Date:   Sat Nov 2 20:34:22 2024 -0700
+
+    Task #102 100% completed.
+
+[33mcommit 9d994ad7ec7848a3769dac5f937215b5223977f0[m
+Author: Jose Grijalva <jlgrijal@asu.edu>
+Date:   Sat Nov 2 17:58:18 2024 -0700
+
+    Pushing the current changes so Estevan can have a quick look at testing the software with actual VR.
+
+[33mcommit ba1ebd66e1eeaaec15736b2ecb1a480d6f3bbb54[m
+Author: Jose Grijalva <jlgrijal@asu.edu>
+Date:   Fri Nov 1 21:23:34 2024 -0700
+
+    Approximately 40% of Task #101 is completed. The rest of the task will be completed tomorrow(11/2/2024).
+
+[33mcommit f747fbad81c094e29971256ff011cfbddbd7b5a5[m
+Author: Iuliia Orellana <juliavladimiram@gmail.com>
+Date:   Sat Nov 2 01:08:05 2024 +0100
+
+    Add MainMenuVR scene
+
+[33mcommit aa348ea23389deb42b63bfa3565c6d1b477e1667[m
+Merge: b3c2eb3 c7db32d
+Author: Jose Grijalva <jlgrijal@asu.edu>
+Date:   Thu Oct 31 16:46:09 2024 -0700
+
+    Merge branch 'UserStory#86' into dev
+
+[33mcommit c7db32d2eaae29a480094c2ab63249feed885ad8[m
+Author: Jose Grijalva <jlgrijal@asu.edu>
+Date:   Thu Oct 31 16:29:17 2024 -0700
+
+    Task #101 is now 100% completed.
+
+[33mcommit f63df074a949ac6ac89b79bfc1f3643b267a48b8[m
+Author: Jose Grijalva <jlgrijal@asu.edu>
+Date:   Wed Oct 30 15:21:50 2024 -0700
+
+    Completed around 45-50% of Task #101 as of now. Will complete the rest tomorrow(10/31/2024).
+
+[33mcommit 92c37d476220c0f48e54854e5ef7a2e983374fd8[m
+Author: Iuliia Orellana <juliavladimiram@gmail.com>
+Date:   Wed Oct 30 01:27:39 2024 +0100
+
+    T#95 design Main Menu
+
+[33mcommit 114c251ab675c5c86d825c1f5005400fefd13e28[m[33m ([m[1;31morigin/starterBranch[m[33m, [m[1;31morigin/US84[m[33m)[m
+Author: EstevanyTheGamer <eperez56@asu.edu>
+Date:   Thu Oct 24 23:02:40 2024 -0700
+
+    Clean repo
+
+[33mcommit c8467899ca1248e9ced12edee2023f502bcf551c[m
+Author: EstevanyTheGamer <eperez56@asu.edu>
+Date:   Thu Oct 24 22:44:58 2024 -0700
+
+    Add folders to assets
+
+[33mcommit 4624ce18f724654585d7e69fecf27360a22add52[m
+Author: EstevanyTheGamer <eperez56@asu.edu>
+Date:   Thu Oct 24 22:43:20 2024 -0700
+
+    Increase clarity
+
+[33mcommit 9e3f053fa1ff72c6a0072023e0563d4f6ced9864[m
+Author: EstevanyTheGamer <eperez56@asu.edu>
+Date:   Thu Oct 24 22:38:48 2024 -0700
+
+    Initial Commits
+
+[33mcommit b3c2eb3072562359cbd6fa8477de81f2e99b2efd[m
+Author: Jose Grijalva <50001428+JLG1995@users.noreply.github.com>
+Date:   Wed Oct 23 13:18:04 2024 -0700
+
+    Delete Task #80 of US #79.pdf
+
+[33mcommit 020bf5c0d392c7a07fefc24d97df95b2cbe957d6[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;31morigin/BaseProject[m[33m, [m[1;32mmain[m[33m)[m
+Author: Jose Grijalva <50001428+JLG1995@users.noreply.github.com>
+Date:   Wed Oct 23 13:17:49 2024 -0700
+
+    Delete Task #80 of US #79.pdf
+
+[33mcommit 6f67fbac0896d4311aece87767cf967ee03a7536[m
+Author: Jose Grijalva <jlgrijal@asu.edu>
+Date:   Wed Oct 23 13:17:21 2024 -0700
+
+    Adding team's .gitignore file for Unity VR project of this Capstone.
+
+[33mcommit 3c2020d50da931b2bcd45f360d8ba0bf430467d2[m
+Author: Jose Grijalva <jlgrijal@asu.edu>
+Date:   Wed Oct 23 13:15:22 2024 -0700
+
+    Adding team's .gitignore file for Unity VR project of this Capstone.
+
+[33mcommit 6217432d71b96d040b8aee3c9c4408951ae48821[m
+Author: Jose Grijalva <50001428+JLG1995@users.noreply.github.com>
+Date:   Wed Oct 23 13:03:54 2024 -0700
+
+    Adding a downnloaded .gitignore
+    
+    Source of downloaded .gitignore file: https://github.com/github/gitignore/blob/main/Unity.gitignore
+    
+    This .gitignore file is downloaded because it is recommended by most to have a .gitignore file to be set up like this for Unity projects. Also, I had to add an additional file that is not hidden or else GitHub won't commit this change/addition of .gitignore file.
+
+[33mcommit f4ddcc768692ea33b0d9b944e7d43abc3de4524c[m
+Author: Jose Grijalva <50001428+JLG1995@users.noreply.github.com>
+Date:   Wed Oct 23 12:52:09 2024 -0700
+
+    Adding a policy markdown file created by the team.
+
+[33mcommit e3d092e9aaa07f22c568d973574fabd6356c558c[m
+Author: Jose Grijalva <50001428+JLG1995@users.noreply.github.com>
+Date:   Wed Oct 23 12:50:10 2024 -0700
+
+    Update README.md for ASU Capstone Team #32
+
+[33mcommit b6695bbc3581b0217dcf5318d79f68702d582e65[m
+Author: Jose Grijalva <50001428+JLG1995@users.noreply.github.com>
+Date:   Wed Oct 23 12:49:16 2024 -0700
+
+    Update README.md for ASU Capstone Team #32
+
+[33mcommit 21e1464692dcbca4cae73201d6cab52b6a2819d4[m
+Author: Jose Grijalva <50001428+JLG1995@users.noreply.github.com>
+Date:   Wed Oct 23 12:47:29 2024 -0700
+
+    Update README.md for ASU Capstone Team #32
+
+[33mcommit 01fda03ce47a04cf6e9fb9722c33cc572283b85b[m
+Author: Jose Grijalva <50001428+JLG1995@users.noreply.github.com>
+Date:   Wed Oct 23 12:44:28 2024 -0700
+
+    Initial commit
