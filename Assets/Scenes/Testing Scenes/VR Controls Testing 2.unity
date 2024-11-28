@@ -122,6 +122,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &191479460 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6450630540452649236, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
+  m_PrefabInstance: {fileID: 1879861127963350175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &191479462 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6450630540443134626, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
+  m_PrefabInstance: {fileID: 1879861127963350175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &191479463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191479460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d03fbde928f874b8066b032ce755b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatingPinch:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Animating Pinch
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: b53dc18b-543a-4782-9856-8e0ca866ff59
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  animatingGripping:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Animating Gripping
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: e3821f0c-4dc7-4299-bd76-5f53e0baae1b
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  handAnimator: {fileID: 191479462}
 --- !u!1 &382294368
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,6 +343,53 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4e32c0d0b90d334696127a649038165, type: 3}
+--- !u!1 &754493798 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6290362750095361561, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
+  m_PrefabInstance: {fileID: 1879861127963350175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &754493800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754493798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d03fbde928f874b8066b032ce755b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatingPinch:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Animating Pinch
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: dfedb179-2bbe-46db-8f77-8bdd2d0e6674
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  animatingGripping:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Animating Gripping
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 89a60dc4-5106-4b6f-bff2-8605b72c2262
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  handAnimator: {fileID: 754493801}
+--- !u!95 &754493801 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6290362750088115631, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
+  m_PrefabInstance: {fileID: 1879861127963350175}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1168713949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,7 +1215,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6450630540452649236, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 191479463}
+    - targetCorrespondingSourceObject: {fileID: 6290362750095361561, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 754493800}
   m_SourcePrefab: {fileID: 100100000, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
