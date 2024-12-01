@@ -42,4 +42,10 @@ public class ChangeScenes : MonoBehaviour
     {
         SceneManager.LoadScene("Mars Site 2");
     }
+
+    // Load the Mars site 3 scene
+    public void goToMars3Screen()
+    {
+        SceneManager.LoadScene("Mars Site 3");
+    }
 }
