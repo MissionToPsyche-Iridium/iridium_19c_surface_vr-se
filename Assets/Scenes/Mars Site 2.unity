@@ -148,7 +148,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72473966}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &72473969
 Camera:
   m_ObjectHideFlags: 0
@@ -790,7 +790,6 @@ GameObject:
   m_Component:
   - component: {fileID: 584819965}
   - component: {fileID: 584819964}
-  - component: {fileID: 584819963}
   - component: {fileID: 584819962}
   m_Layer: 0
   m_Name: Camera 3
@@ -928,14 +927,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!81 &584819963
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584819961}
-  m_Enabled: 1
 --- !u!20 &584819964
 Camera:
   m_ObjectHideFlags: 0
@@ -1102,7 +1093,6 @@ GameObject:
   m_Component:
   - component: {fileID: 647745780}
   - component: {fileID: 647745779}
-  - component: {fileID: 647745778}
   - component: {fileID: 647745777}
   m_Layer: 0
   m_Name: Camera 5
@@ -1240,14 +1230,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!81 &647745778
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 647745776}
-  m_Enabled: 1
 --- !u!20 &647745779
 Camera:
   m_ObjectHideFlags: 0
@@ -2100,7 +2082,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1976514477}
   - component: {fileID: 1976514476}
-  - component: {fileID: 1976514475}
   - component: {fileID: 1976514474}
   m_Layer: 0
   m_Name: Camera 4
@@ -2238,14 +2219,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!81 &1976514475
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1976514473}
-  m_Enabled: 1
 --- !u!20 &1976514476
 Camera:
   m_ObjectHideFlags: 0
