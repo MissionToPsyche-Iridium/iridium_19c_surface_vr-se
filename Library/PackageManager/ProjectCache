@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638675906413539186
-    m_Hash: 1251802187
+      ticks: 638686931098052461
+    m_Hash: 3432716134
   m_LockFileStatus:
     m_FilePath: C:/Users/neisa/SER401Project_NASA/iridium_19c_surface_vr-se/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638675906705867312
-    m_Hash: 3743812553
+      ticks: 638686931098052461
+    m_Hash: 430812335
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -1176,10 +1176,12 @@ m_ResolvedPackages:
     - 1.12.1
     - 1.13.0
     - 1.13.1
+    - 1.13.2
     compatible:
     - 1.12.1
     - 1.13.0
     - 1.13.1
+    - 1.13.2
     recommended: 1.12.1
     deprecated: []
   dependencies:
@@ -3218,8 +3220,10 @@ m_ResolvedPackages:
     - 2.4.4
     - 2.5.1
     - 2.5.2
+    - 2.6.0
     compatible:
     - 2.5.2
+    - 2.6.0
     recommended: 2.5.2
     deprecated: []
   dependencies: []
@@ -3500,11 +3504,13 @@ m_ResolvedPackages:
     - 2.4.0-exp.1
     - 2.4.0-exp.2
     - 2.4.0-exp.3
+    - 2.4.0
     compatible:
     - 2.3.0
     - 2.4.0-exp.1
     - 2.4.0-exp.2
     - 2.4.0-exp.3
+    - 2.4.0
     recommended: 2.3.0
     deprecated: []
   dependencies:
