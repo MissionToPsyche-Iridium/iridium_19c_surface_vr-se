@@ -583,7 +583,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 59}
+  m_AnchoredPosition: {x: 0, y: -44}
   m_SizeDelta: {x: 575, y: 210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &281000828
@@ -606,11 +606,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\t\t\tResources & Citations\n\nNASA Psyche Mission Data:\n\t-Source:
-    NASA Psyche Mission Website\n\t- DTM Files from HiRISE: HiRISE DTM Data\n\nTools
-    & Software:\n\t- Unity Game Engine\n\nExternal Assets & Libraries:\n\n[Library/Asset
-    Name] - Description or usage (e.g., \"Used for terrain texture generation\")\n[Library/Asset
-    Name] - Description or usage\n#\n#\n#\n#\n#\n#\n"
+  m_text: "\n\t\t    Resources & Citations\n\nNASA Psyche Mission Data: https://science.nasa.gov/mission/psyche\n\nHiRISE
+    DTM Data:  https://www.uahirise.org/dtm/\nDunes on Crater Floor: ESP_020854_1350
+    DTM\nLayered Rock Outcrops in Southwest Candor Chasma: PSP_001918_1735 DTM\n\nPsyche
+    Illustration: NASA Psyche Illustrations Gallery\nhttps://science.nasa.gov/gallery/psyche-illustrations/\n\nTools
+    & Software:\nUnity Game Engine 2022.3.50f1\n\nAssets & Libraries:\nhttps://assetstore.unity.com/ 
+    \n\n\n\n\n."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 9ad269c99dcf42b7aedefd83dd5a7b9d, type: 2}
@@ -644,7 +645,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -673,7 +674,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -0.82397467, w: -329.60815}
+  m_margin: {x: 0, y: 0, z: -0.82397467, w: -126.47095}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -721,7 +722,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 277}
+  m_AnchoredPosition: {x: 0, y: 391}
   m_SizeDelta: {x: 575, y: 210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &363910179
@@ -744,9 +745,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "This project was developed by a team of software engineering students
-    from Arizona State University (ASU): \n\t- Iuliia Orellana\n\t- Jose Grijalva\n\t-
-    Estevan Perez\n\t- Neisa Mattos\n\nProject Sponsor:\n\t- Cassie Bowman \n"
+  m_text: "This work was created in partial fulfillment of Arizona State University
+    Capstone Courses SER 401 and SER 402. The work is a result of the Psyche Student
+    Collaborations component of NASA\u2019s Psyche Mission (https://psyche.asu.edu).
+    \u201CPsyche: A Journey to a Metal World\u201D [Contract number NNM16AA09C] is
+    part of the NASA Discovery Program mission to solar system targets. Trade names
+    and trademarks of ASU and NASA are used in this work for identification only.
+    Their usage does not constitute an official endorsement, either expressed or
+    implied, by Arizona State University or National Aeronautics and Space Administration.
+    The content is solely the responsibility of the authors and does not necessarily
+    represent the official views of ASU or NASA.\r\nSoftware engineering students
+    responsible for developing this application: \n\t- Iuliia Orellana\n\t- Jose
+    Grijalva\n\t- Estevan Perez\n\t- Neisa Mattos\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 9ad269c99dcf42b7aedefd83dd5a7b9d, type: 2}
@@ -780,7 +790,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -809,7 +819,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -0.82397467, w: 2.9785175}
+  m_margin: {x: 0, y: 0, z: -0.82397467, w: -225.5127}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -987,7 +997,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 1.98}
-  m_SizeDelta: {x: 1000, y: 1000}
+  m_SizeDelta: {x: 1000, y: 1500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &579276718
 MonoBehaviour:
@@ -1908,8 +1918,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 320.0022, y: -399.9973}
-  m_SizeDelta: {x: 600, y: 800}
+  m_AnchoredPosition: {x: 320.0022, y: -499.9956}
+  m_SizeDelta: {x: 600, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1427296163
 GameObject:
@@ -1947,7 +1957,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3, y: -38}
+  m_AnchoredPosition: {x: -3, y: 1}
   m_SizeDelta: {x: 20, y: -17}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1427296165
@@ -1993,8 +2003,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1908349671}
   m_HandleRect: {fileID: 1908349670}
   m_Direction: 2
-  m_Value: 0.9999886
-  m_Size: 0.625
+  m_Value: 0.99999315
+  m_Size: 0.5
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2416,7 +2426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -22}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1787003526
@@ -3336,7 +3346,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 65}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1908349671
