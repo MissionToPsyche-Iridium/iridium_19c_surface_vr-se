@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Customizable Skybox/Materials/darken leafs.mat.meta
 guid: 3020cfb028abb6c4f977e1db1f72bef5
+========
+guid: 7c7f7e923f30d8b4193dfc9a7eb33ea9
+>>>>>>>> origin/dev:Assets/Customizable Skybox/Materials/dark trunk.mat.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0

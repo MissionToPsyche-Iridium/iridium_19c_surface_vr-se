@@ -1,9 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/New Material 1.mat.meta
-guid: 8e4418586c3994f4abbcf9fdef61a096
+guid: 6af8fc6b56e158c43b28d93bdac111b8
 ========
 guid: 302e56e127ccdf042987330af17f40c9
 >>>>>>>> 235e4be40a2a8cee5ef6976f14b2937d0a4d8e1d:Assets/Materials/Greenish-Yellow.mat.meta
+=======
+guid: 302e56e127ccdf042987330af17f40c9
+>>>>>>> origin/dev
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000

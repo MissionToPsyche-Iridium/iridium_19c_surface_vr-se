@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 <<<<<<<< HEAD:Assets/model.obj.meta
-guid: 6c0065348914b0e4f866f089e52171cc
+guid: 05796d8107b14694e9dc971f18006094
 ========
 guid: f4b8dc307b2fd174eb75f4d1c08b6570
+<<<<<<< HEAD
 >>>>>>>> 235e4be40a2a8cee5ef6976f14b2937d0a4d8e1d:Assets/Rocks/Real Martian Based Meteorite/Martian Meteorite.obj.meta
+=======
+>>>>>>>> origin/dev:Assets/Rocks/Real Martian Based Meteorite/Martian Meteorite.obj.meta
+>>>>>>> origin/dev
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []

@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 <<<<<<<< HEAD:Assets/HDRPDefaultResources/HDRenderPipelineGlobalSettings 13.asset.meta
-guid: 277e8443e3e1d4145b59d03f0144e8a4
+guid: 025e54454d5cf04499bfbcc467ff6ee0
 ========
 guid: 62d569f8009a7e849be314f7b6efe621
+<<<<<<< HEAD
 >>>>>>>> 235e4be40a2a8cee5ef6976f14b2937d0a4d8e1d:Assets/HDRPDefaultResources/HDRenderPipelineGlobalSettings 10.asset.meta
+=======
+>>>>>>>> origin/dev:Assets/HDRPDefaultResources/HDRenderPipelineGlobalSettings 10.asset.meta
+>>>>>>> origin/dev
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000

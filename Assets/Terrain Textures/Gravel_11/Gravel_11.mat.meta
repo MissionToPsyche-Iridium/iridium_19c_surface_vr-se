@@ -1,12 +1,19 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/New Physic Material 1.physicMaterial.meta
-guid: 507d0750e98a7304c94950d3ab99bcdf
+guid: 059f4cbc1b5a0f04492c7a0dd09ffd1c
 ========
 guid: a91e20c3169f7b84383c809f7a93fc4f
 >>>>>>>> 235e4be40a2a8cee5ef6976f14b2937d0a4d8e1d:Assets/Terrain Textures/Gravel_11/Gravel_11.mat.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 13400000
+=======
+guid: a91e20c3169f7b84383c809f7a93fc4f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+>>>>>>> origin/dev
   userData: 
   assetBundleName: 
   assetBundleVariant: 

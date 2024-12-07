@@ -18,7 +18,11 @@ Material:
   m_Name: Beach_Sand_1
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _NORMALMAP _PARALLAXMAP
+<<<<<<< HEAD
 >>>>>>>> 235e4be40a2a8cee5ef6976f14b2937d0a4d8e1d:Assets/Terrain Textures/Beach_Sand_1/Beach_Sand_1.mat
+=======
+>>>>>>>> origin/dev:Assets/Terrain Textures/Beach_Sand_1/Beach_Sand_1.mat
+>>>>>>> origin/dev
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0

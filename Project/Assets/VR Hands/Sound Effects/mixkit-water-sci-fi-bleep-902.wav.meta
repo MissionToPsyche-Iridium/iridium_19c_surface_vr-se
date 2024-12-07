@@ -3,7 +3,11 @@ fileFormatVersion: 2
 guid: 8eae4a7380e006041bedeec5b86215b7
 ========
 guid: 492d48e6d97e6df46948742de781a7b5
+<<<<<<< HEAD
 >>>>>>>> 235e4be40a2a8cee5ef6976f14b2937d0a4d8e1d:Project/Assets/VR Hands/Sound Effects/mixkit-water-sci-fi-bleep-902.wav.meta
+=======
+>>>>>>>> origin/dev:Project/Assets/VR Hands/Sound Effects/mixkit-water-sci-fi-bleep-902.wav.meta
+>>>>>>> origin/dev
 AudioImporter:
   externalObjects: {}
   serializedVersion: 7

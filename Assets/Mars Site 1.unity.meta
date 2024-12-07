@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Mars Site 1.unity.meta
 guid: ab1f260d83fb83246a463557a3010c76
+========
+guid: e647f1943470674409b5e4746f18711e
+>>>>>>>> origin/dev:Assets/Scenes/Mars Site 3.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

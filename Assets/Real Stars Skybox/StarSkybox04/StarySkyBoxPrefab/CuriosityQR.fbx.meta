@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Real Stars Skybox/StarSkybox04/StarySkyBoxPrefab/CuriosityQR.fbx.meta
 guid: d558fa4ed3612c34ea127a0e6791d387
+========
+guid: b4e32c0d0b90d334696127a649038165
+>>>>>>>> origin/dev:Assets/Scenes/Testing Scenes/Assets for this scene/mars-rocks/source/MarsRocks.fbx.meta
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []

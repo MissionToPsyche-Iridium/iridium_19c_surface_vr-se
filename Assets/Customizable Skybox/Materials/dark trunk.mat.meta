@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Customizable Skybox/Materials/dark trunk.mat.meta
 guid: 7c7f7e923f30d8b4193dfc9a7eb33ea9
+========
+guid: 36624e9898987d34da7dcc3c01a72523
+>>>>>>>> origin/dev:Assets/Customizable Skybox/Materials/No Name.mat.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0

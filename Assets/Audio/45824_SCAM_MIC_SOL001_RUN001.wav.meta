@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Audio/45824_SCAM_MIC_SOL001_RUN001.wav.meta
 guid: 8eae4a7380e006041bedeec5b86215b7
+========
+guid: 492d48e6d97e6df46948742de781a7b5
+>>>>>>>> origin/dev:Project/Assets/VR Hands/Sound Effects/mixkit-water-sci-fi-bleep-902.wav.meta
 AudioImporter:
   externalObjects: {}
   serializedVersion: 7

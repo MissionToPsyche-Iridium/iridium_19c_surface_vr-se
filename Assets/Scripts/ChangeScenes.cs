@@ -43,11 +43,9 @@ public class ChangeScenes : MonoBehaviour
         SceneManager.LoadScene("Mars Site 2");
     }
 
-    // Exit the application
-    public void exitApp()
+    // Load the Mars site 3 scene
+    public void goToMars3Screen()
     {
-        Application.Quit();
-        UnityEngine.Debug.Log("Exit application");
+        SceneManager.LoadScene("Mars Site 3");
     }
-
 }

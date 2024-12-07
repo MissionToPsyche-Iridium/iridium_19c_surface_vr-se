@@ -11,7 +11,11 @@ Material:
   m_Name: New Material
 ========
   m_Name: Rock029_1K_NormalDX
+<<<<<<< HEAD
 >>>>>>>> 235e4be40a2a8cee5ef6976f14b2937d0a4d8e1d:Assets/Scenes/Testing Scenes/Assets for this scene/mars-rocks/Materials/Rock029_1K_NormalDX.mat
+=======
+>>>>>>>> origin/dev:Assets/Scenes/Testing Scenes/Assets for this scene/mars-rocks/Materials/Rock029_1K_NormalDX.mat
+>>>>>>> origin/dev
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0

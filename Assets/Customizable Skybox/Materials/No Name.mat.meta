@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Customizable Skybox/Materials/No Name.mat.meta
 guid: 36624e9898987d34da7dcc3c01a72523
+========
+guid: a4b1c9205184ab7479ebcb6d01e9bdaa
+>>>>>>>> origin/dev:Assets/Customizable Skybox/Materials/Material.003.mat.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 0

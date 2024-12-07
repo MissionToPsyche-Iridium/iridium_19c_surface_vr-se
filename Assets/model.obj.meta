@@ -1,9 +1,18 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/model.obj.meta
 guid: 6c0065348914b0e4f866f089e52171cc
+========
+guid: f4b8dc307b2fd174eb75f4d1c08b6570
+>>>>>>>> origin/dev:Assets/Rocks/Real Martian Based Meteorite/Martian Meteorite.obj.meta
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: defaultMat
+    second: {fileID: 2100000, guid: 5565fc6f2c09e1d468cce92f1708345c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
