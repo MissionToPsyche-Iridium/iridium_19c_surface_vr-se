@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 47714938}
   - component: {fileID: 47714937}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HDRP Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -275,7 +275,7 @@ Transform:
   m_GameObject: {fileID: 306277341}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2993.8591, y: 33.98481, z: 2615.3052}
+  m_LocalPosition: {x: 2993.8591, y: -464, z: 2615.3052}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 474056361}
   - component: {fileID: 474056360}
   - component: {fileID: 474056362}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Directional Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ Transform:
   m_GameObject: {fileID: 474056359}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 2829, y: 2172, z: -468}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -525,13 +525,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 503938718}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.8660253, z: 0, w: 0.5000002}
+  m_LocalPosition: {x: 712, y: 16, z: -1874}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714921957}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 840, z: 0}
 --- !u!114 &503938720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -882,7 +882,7 @@ GameObject:
   - component: {fileID: 616803556}
   - component: {fileID: 616803559}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Desktop Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -927,9 +927,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 1
-  far clip plane: 10000
-  field of view: 50
+  near clip plane: 0.01
+  far clip plane: 1000
+  field of view: 66
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -955,13 +955,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616803555}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.1386515, y: 0.5239138, z: 0.098907776, w: 0.8345701}
-  m_LocalPosition: {x: 2149.2, y: 440.2, z: 2338.3}
-  m_LocalScale: {x: 1, y: 1.1811, z: 1.6624457}
+  m_LocalRotation: {x: 0, y: 0.2588191, z: 0, w: 0.9659258}
+  m_LocalPosition: {x: 2170, y: 1.6, z: 2347}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -19.577, y: 64.03, z: 1.205}
+  m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
 --- !u!114 &616803559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1774,7 +1774,7 @@ Transform:
   m_GameObject: {fileID: 714921956}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1176, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2498,6 +2498,7 @@ GameObject:
   - component: {fileID: 1783779131}
   - component: {fileID: 1783779130}
   - component: {fileID: 1783779129}
+  - component: {fileID: 1783779132}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -2534,8 +2535,8 @@ MonoBehaviour:
   m_Camera: {fileID: 503938722}
   m_OriginBaseGameObject: {fileID: 1783779128}
   m_CameraFloorOffsetObject: {fileID: 714921956}
-  m_RequestedTrackingOriginMode: 0
-  m_CameraYOffset: 1.1176
+  m_RequestedTrackingOriginMode: 1
+  m_CameraYOffset: 1
 --- !u!4 &1783779131
 Transform:
   m_ObjectHideFlags: 0
@@ -2545,13 +2546,31 @@ Transform:
   m_GameObject: {fileID: 1783779128}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2379.379, y: 548.5167, z: 2106.4185}
+  m_LocalPosition: {x: 2104.648, y: 63, z: 6792.867}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 714921957}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1783779132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783779128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd93d19ece9b8340873c88f8758db4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xrCamera: {fileID: 503938719}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 129
+  heightOffset: 1.6
+  checkDistance: 5
 --- !u!1 &2105407312
 GameObject:
   m_ObjectHideFlags: 0
@@ -2563,7 +2582,7 @@ GameObject:
   - component: {fileID: 2105407313}
   - component: {fileID: 2105407315}
   - component: {fileID: 2105407314}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Terrain3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2579,7 +2598,7 @@ Transform:
   m_GameObject: {fileID: 2105407312}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 379, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
