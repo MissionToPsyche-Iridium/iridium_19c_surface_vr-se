@@ -2392,7 +2392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3260692472805119547, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
       propertyPath: m_Radius
-      value: 0.16
+      value: 0.195
       objectReference: {fileID: 0}
     - target: {fileID: 5375842157158498824, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2400,7 +2400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8967074848612851493, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
       propertyPath: m_Radius
-      value: 0.16
+      value: 0.195
       objectReference: {fileID: 0}
     - target: {fileID: 9222802479244962929, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2868,7 +2868,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10, y: 7, z: 7}
+  m_Size: {x: 10, y: 9.5, z: 7}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
