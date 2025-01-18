@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MarsMenu.unity
     guid: 711fa58c81912f7469f68c29f74492e8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/1.unity
     guid: ba46a3eed86423e40a109eb928a2ecd8
   - enabled: 1
@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mars Site 3.unity
     guid: e647f1943470674409b5e4746f18711e
+  - enabled: 1
+    path: Assets/Scenes/SettingsScreen.unity
+    guid: 670f99afff5dd444cb9e69dfd297a983
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ef478b4084e8157469357db2ba815b60, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 32c73466c19c831438990f08cedec3f6, type: 2}
