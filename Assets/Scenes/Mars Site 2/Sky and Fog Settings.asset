@@ -532,7 +532,7 @@ MonoBehaviour:
     m_Value: {r: 0.7484276, g: 0.59002954, b: 0.4589414, a: 1}
   zenithTint:
     m_OverrideState: 1
-    m_Value: {r: 0.62040657, g: 0.6649904, b: 0.49411765, a: 0.8745098}
+    m_Value: {r: 0.29183966, g: 0.43076724, b: 0.7798742, a: 0.8745098}
   horizonZenithShift:
     m_OverrideState: 1
     m_Value: -0.448
