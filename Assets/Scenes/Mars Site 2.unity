@@ -134,13 +134,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin (XR Rig) 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3260692472805119547, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+      propertyPath: m_Radius
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8967074848612851493, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+      propertyPath: m_Radius
+      value: 0.19
+      objectReference: {fileID: 0}
     - target: {fileID: 9222802479244962929, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3036.0706
       objectReference: {fileID: 0}
     - target: {fileID: 9222802479244962929, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 34.902706
+      value: 30.99
       objectReference: {fileID: 0}
     - target: {fileID: 9222802479244962929, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -177,8 +185,108 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6450630540452649236, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 49124604}
+    - targetCorrespondingSourceObject: {fileID: 6290362750095361561, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 49124603}
   m_SourcePrefab: {fileID: 100100000, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+--- !u!1 &49124599 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6290362750095361561, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+  m_PrefabInstance: {fileID: 49124598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &49124600 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6290362750088115631, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+  m_PrefabInstance: {fileID: 49124598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &49124601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6450630540452649236, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+  m_PrefabInstance: {fileID: 49124598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &49124602 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6450630540443134626, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+  m_PrefabInstance: {fileID: 49124598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &49124603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49124599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7972e2ab4896624cba39406caedb9bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handAnimator: {fileID: 49124600}
+  animatingPinch:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Animating Pinch
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: d43928ff-8d2e-4ae7-bfc0-35ec9c4d3496
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  animatingGrip:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Animating Grip
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: fbadf0d1-c58d-4a8b-92d8-0f677ed28600
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!114 &49124604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49124601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7972e2ab4896624cba39406caedb9bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handAnimator: {fileID: 49124602}
+  animatingPinch:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Animating Pinch
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 969fb38b-d28c-4970-a5da-4af2528633b5
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  animatingGrip:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Animating Grip
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 479ffb21-46b6-438c-9d04-8c028d1430c3
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &72473966
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,176 +2543,6 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
---- !u!1001 &2108624269
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1128630994163225353, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-      propertyPath: m_Name
-      value: XR Origin (XR Rig)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3260692472805119547, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-      propertyPath: m_Radius
-      value: 0.195
-      objectReference: {fileID: 0}
-    - target: {fileID: 5375842157158498824, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 8967074848612851493, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-      propertyPath: m_Radius
-      value: 0.195
-      objectReference: {fileID: 0}
-    - target: {fileID: 9222802479244962929, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4499.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 9222802479244962929, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 18.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 9222802479244962929, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 4918.109
-      objectReference: {fileID: 0}
-    - target: {fileID: 9222802479244962929, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9222802479244962929, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9222802479244962929, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9222802479244962929, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9222802479244962929, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9222802479244962929, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9222802479244962929, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6450630540452649236, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2108624275}
-    - targetCorrespondingSourceObject: {fileID: 6290362750095361561, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2108624274}
-  m_SourcePrefab: {fileID: 100100000, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
---- !u!1 &2108624270 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6290362750095361561, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-  m_PrefabInstance: {fileID: 2108624269}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &2108624271 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6290362750088115631, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-  m_PrefabInstance: {fileID: 2108624269}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2108624272 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6450630540452649236, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-  m_PrefabInstance: {fileID: 2108624269}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &2108624273 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6450630540443134626, guid: d096b2e893ed7e145b3a57456c9743b7, type: 3}
-  m_PrefabInstance: {fileID: 2108624269}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2108624274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2108624270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7972e2ab4896624cba39406caedb9bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  handAnimator: {fileID: 2108624271}
-  animatingPinch:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Animating Pinch
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 0ec5f880-44b5-4515-9e7f-876ff1e1a5be
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  animatingGrip:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Animating Grip
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 0106ba50-364e-40ac-8f17-c243205f78fe
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
---- !u!114 &2108624275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2108624272}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7972e2ab4896624cba39406caedb9bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  handAnimator: {fileID: 2108624273}
-  animatingPinch:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Animating Pinch
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 143c13d8-edbd-4214-91d8-bea77765cf94
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  animatingGrip:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Animating Grip
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: ec30f5bb-99dd-4e00-b9a5-e63b2eed7ed5
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-
 --- !u!1001 &2142119452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2631,15 +2569,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05e04fedc78047c48af519e94c595e13, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4501.2
+      value: 3060.372
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05e04fedc78047c48af519e94c595e13, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.121
+      value: 26.402
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05e04fedc78047c48af519e94c595e13, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4929.354
+      value: 2478.647
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05e04fedc78047c48af519e94c595e13, type: 3}
       propertyPath: m_LocalRotation.w
