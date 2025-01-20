@@ -134,13 +134,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin (XR Rig) 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1900584095498570684, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3260692472805119547, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
       propertyPath: m_Radius
-      value: 0.19
+      value: 0.192
+      objectReference: {fileID: 0}
+    - target: {fileID: 7183217842088534074, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8967074848612851493, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
       propertyPath: m_Radius
-      value: 0.19
+      value: 0.192
       objectReference: {fileID: 0}
     - target: {fileID: 9222802479244962929, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
       propertyPath: m_LocalPosition.x
