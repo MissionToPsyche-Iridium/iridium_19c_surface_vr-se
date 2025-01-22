@@ -21,7 +21,7 @@ MonoBehaviour:
     m_Value: 1
   skyAmbientMode:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   windOrientation:
     m_OverrideState: 1
     m_Value: 66
@@ -45,20 +45,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   mode:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 3
   meteringMode:
     m_OverrideState: 0
-    m_Value: 2
+    m_Value: 4
   luminanceSource:
     m_OverrideState: 0
     m_Value: 1
   fixedExposure:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 8.726033
   compensation:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 5.5
   limitMin:
     m_OverrideState: 0
     m_Value: 0.039053053
@@ -71,19 +71,19 @@ MonoBehaviour:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: -10
-        value: -10
+        time: 0
+        value: 0
         inSlope: 0
-        outSlope: 1
+        outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 20
-        value: 20
-        inSlope: 1
-        outSlope: 0
+        time: 1
+        value: 1
+        inSlope: 2
+        outSlope: 2
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
@@ -144,8 +144,8 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   adaptationMode:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 0
   adaptationSpeedDarkToLight:
     m_OverrideState: 0
     m_Value: 3
@@ -378,7 +378,7 @@ MonoBehaviour:
     m_Value: {r: 0.54088044, g: 0.47327036, b: 0.41960785, a: 1}
   globalLightProbeDimmer:
     m_OverrideState: 1
-    m_Value: 0.726
+    m_Value: 0.69
   depthExtent:
     m_OverrideState: 1
     m_Value: 900
@@ -427,13 +427,13 @@ MonoBehaviour:
     m_Value: 0
   skyIntensityMode:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 2
   exposure:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 1
   multiplier:
     m_OverrideState: 1
-    m_Value: 2.8
+    m_Value: 1
   upperHemisphereLuxValue:
     m_OverrideState: 0
     m_Value: 1
@@ -451,7 +451,7 @@ MonoBehaviour:
     m_Value: 0
   includeSunInBaking:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 1
   type:
     m_OverrideState: 1
     m_Value: 2
@@ -496,9 +496,9 @@ MonoBehaviour:
     m_Value: 0.09
   groundTint:
     m_OverrideState: 1
-    m_Value: {r: 0.7484276, g: 0.6809593, b: 0.64722514, a: 1}
+    m_Value: {r: 0.5921569, g: 0.454902, b: 0.34117648, a: 1}
   groundColorTexture:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {fileID: 0}
   groundEmissionTexture:
     m_OverrideState: 0
@@ -529,10 +529,10 @@ MonoBehaviour:
     m_Value: 1
   horizonTint:
     m_OverrideState: 1
-    m_Value: {r: 0.7484276, g: 0.59002954, b: 0.4589414, a: 1}
+    m_Value: {r: 0.6627451, g: 0.54901963, b: 0.4901961, a: 1}
   zenithTint:
     m_OverrideState: 1
-    m_Value: {r: 0.29183966, g: 0.43076724, b: 0.7798742, a: 0.8745098}
+    m_Value: {r: 0.6156863, g: 0.48627454, b: 0.4431373, a: 1}
   horizonZenithShift:
     m_OverrideState: 1
     m_Value: -0.448
