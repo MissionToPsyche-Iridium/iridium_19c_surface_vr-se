@@ -46,7 +46,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_TrackedDeviceDragThresholdMultiplier
-    value: 1.4
+    value: 100
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_TrackedScrollDeltaMultiplier
