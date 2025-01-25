@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: CustomSettings
   m_EditorClassIdentifier: 
   isVRMode: 1
+  volume: 0.454

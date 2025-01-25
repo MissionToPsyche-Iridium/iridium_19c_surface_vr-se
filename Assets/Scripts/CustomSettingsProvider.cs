@@ -29,6 +29,7 @@ class CustomSettingsProvider : SettingsProvider
     {
         // Use IMGUI to display UI:
         EditorGUILayout.PropertyField(m_CustomSettings.FindProperty("isVRMode"));
+        EditorGUILayout.PropertyField(m_CustomSettings.FindProperty("volume"));
         m_CustomSettings.ApplyModifiedPropertiesWithoutUndo();
     }
 
