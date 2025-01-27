@@ -472,7 +472,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1723357965}
+        m_TargetAssemblyTypeName: SettingsManager, Assembly-CSharp
+        m_MethodName: ChangeVRMode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &40428922
 GameObject:
@@ -2458,7 +2470,19 @@ MonoBehaviour:
   m_Value: 0.66
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1723357965}
+        m_TargetAssemblyTypeName: SettingsManager, Assembly-CSharp
+        m_MethodName: ChangeBrightnessLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &878272295
 GameObject:
   m_ObjectHideFlags: 0
@@ -4855,7 +4879,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1723357965}
+        m_TargetAssemblyTypeName: SettingsManager, Assembly-CSharp
+        m_MethodName: ChangeInteractionFeedbackLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1563730227
 GameObject:
   m_ObjectHideFlags: 0
@@ -5332,8 +5368,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba364620b79f4d14bb7e276fc6a631aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GraphicsDropdown: {fileID: 20629746}
+  VRModeToggle: {fileID: 37371338}
+  BrightnessSlider: {fileID: 856476914}
   VolumeSlider: {fileID: 712153670}
+  GraphicsDropdown: {fileID: 20629746}
+  InteractionFeedbackSlider: {fileID: 1538434339}
 --- !u!1 &1728000676
 GameObject:
   m_ObjectHideFlags: 0

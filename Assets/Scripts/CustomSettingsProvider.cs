@@ -8,12 +8,13 @@ using UnityEditor.UIElements;
 class CustomSettingsProvider : SettingsProvider
 {
     private SerializedObject m_CustomSettings;
-    
+
 
     const string customSettingsPath = "Assets/Resources/CustomSettings.asset";
     public CustomSettingsProvider(string path, SettingsScope scope = SettingsScope.Project)
         : base(path, scope) {}
 
+   
     public static bool IsSettingsAvailable()
     {
         return File.Exists(customSettingsPath);
@@ -27,9 +28,14 @@ class CustomSettingsProvider : SettingsProvider
 
     public override void OnGUI(string searchContext)
     {
+        m_CustomSettings.Update();
+        
         // Use IMGUI to display UI:
         EditorGUILayout.PropertyField(m_CustomSettings.FindProperty("isVRMode"));
+        EditorGUILayout.PropertyField(m_CustomSettings.FindProperty("brightness"));
         EditorGUILayout.PropertyField(m_CustomSettings.FindProperty("volume"));
+        EditorGUILayout.PropertyField(m_CustomSettings.FindProperty("interactionFeedback"));
+        
         m_CustomSettings.ApplyModifiedPropertiesWithoutUndo();
     }
 
@@ -39,4 +45,5 @@ class CustomSettingsProvider : SettingsProvider
     {
         return new CustomSettingsProvider("Project/Config", SettingsScope.Project);;
     }
+
 }
