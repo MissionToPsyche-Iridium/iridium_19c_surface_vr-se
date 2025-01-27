@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 6137
+  controlID: 58
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 6138
+  controlID: 59
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 6139
+  controlID: 60
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 354.4
     height: 410.4
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -218,8 +218,8 @@ MonoBehaviour:
     y: 0
     width: 782.4
     height: 410.4
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -246,8 +246,8 @@ MonoBehaviour:
     y: 0
     width: 399.19995
     height: 410.4
-  m_MinSize: {x: 275, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -675,9 +675,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 3036.0706, y: 32.1076, z: 2482.964}
+    m_Target: {x: 3006.3926, y: 54.647255, z: 2486.0361}
     speed: 2
-    m_Value: {x: 3036.0706, y: 32.1076, z: 2482.964}
+    m_Value: {x: 3006.3926, y: 54.64725, z: 2486.0361}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -723,13 +723,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.11357276, y: 0.056000147, z: -0.0064118607, w: 0.99193263}
+    m_Target: {x: 0.0007895427, y: -0.9861285, z: 0.16602904, w: 0.0047259266}
     speed: 2
-    m_Value: {x: 0.11357241, y: 0.055999972, z: -0.0064118407, w: 0.99192953}
+    m_Value: {x: 0.0007895277, y: -0.9861098, z: 0.16602589, w: 0.004725837}
   m_Size:
-    m_Target: 10.92025
+    m_Target: 10
     speed: 2
-    m_Value: 10.45
+    m_Value: 9.999999
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -791,23 +791,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 3aa10000
-      m_LastClickedID: 41274
-      m_ExpandedIDs: 7a1df2ffd028f6ff5829f6ff6829f6ff7829f6ff7a29f6ff462cf6fffaccfcff3cdffcff3ce2fcff68c6ffff42cdffff52cdffff62cdffff64cdffff96daffff14fbffff0c7d0000647d0000867d00003aa0000058a00000
+      m_SelectedIDs: 726c0000
+      m_LastClickedID: 27762
+      m_ExpandedIDs: 8cfaffff98faffffa6faffff20fbffffba6c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: XR Origin (XR Rig) 1
-        m_OriginalName: XR Origin (XR Rig) 1
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -644744
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -1033,7 +1033,7 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
   m_SearchFilter:
-    m_NameFilter: Pause
+    m_NameFilter: XRI Default
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -1043,38 +1043,38 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Samples/XR Interaction Toolkit/2.6.3/Starter Assets
+    - Assets
     m_Globs: []
-    m_OriginalText: Pause
+    m_OriginalText: XRI Default
     m_ImportLogFlags: 0
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
   m_StartGridSize: 65
   m_LastFolders:
-  - Assets/Samples/XR Interaction Toolkit/2.6.3/Starter Assets
+  - Assets
   m_LastFoldersGridSize: 65
   m_LastProjectPath: C:\Users\Jose\Documents\ASU_SER401-F24_Sp25\Team work(GitHub)\iridium_19c_surface_vr-se
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 160.6}
-    m_SelectedIDs: b2a30000
-    m_LastClickedID: 41906
-    m_ExpandedIDs: 0000000062700000647000002c7200006c720000527d0000b0a30000aaa40000aca4000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: c2720000
+    m_LastClickedID: 29378
+    m_ExpandedIDs: 00000000c2720000c4720000f27200003a7300003c73000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: All Materials
-      m_OriginalName: All Materials
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 1000000001
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
@@ -1088,7 +1088,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000627000006470000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000c2720000c4720000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
