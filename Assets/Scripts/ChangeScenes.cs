@@ -36,7 +36,11 @@ public class ChangeScenes : MonoBehaviour
     {
         SceneManager.LoadScene("CreditsScreen");
     }
-
+    // Load the Mars site 1 scene
+    public void goToMars1Screen()
+    {
+        SceneManager.LoadScene("Mars Site 1");
+    }
     // Load the Mars site 2 scene
     public void goToMars2Screen()
     {
