@@ -2529,7 +2529,7 @@ GameObject:
   - component: {fileID: 2105407313}
   - component: {fileID: 2105407315}
   - component: {fileID: 2105407314}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Terrain3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2558,7 +2558,7 @@ TerrainCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105407312}
-  m_Material: {fileID: 13400000, guid: 852682d372e54c2469d1a42ab6589798, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2566,7 +2566,7 @@ TerrainCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
+  m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 2
   m_TerrainData: {fileID: 15600000, guid: 722f015e53b6dee4c80b0b3320cea22b, type: 2}
