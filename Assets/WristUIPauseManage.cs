@@ -1,0 +1,65 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+using UnityEngine.InputSystem; // Import the Unity Engine Input System library for the InputAction.CallbackContext.
+using UnityEngine.SceneManagement; // Import the Unity Engine Scene Management library for the SceneManager.
+
+public class WristUIPauseManage : MonoBehaviour
+{
+    public GameObject wristPauseUI; // The wrist pause UI object.
+
+    public bool turnOnWristPauseUI = true; // A boolean to turn on the wrist pause UI when a specific button is pressed(X button on left VR controller).
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        ShowUIForWristPause();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    /// <summary>
+    /// A method to show the wrist pause UI when the X button on the left VR controller is pressed.
+    /// </summary>
+    /// <param name="context"></param>
+    public void PressingWristUIButton(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            ShowUIForWristPause();
+        }
+    }
+
+    /// <summary>
+    /// A method to fully handle the wrist pause UI. If the boolean is true, turn off the wrist pause UI and set the time scale to 1.
+    /// </summary>
+    public void ShowUIForWristPause()
+    {
+        // If the boolean is true, turn off the wrist pause UI and set the time scale to 1.
+        if (turnOnWristPauseUI)
+        {
+            wristPauseUI.SetActive(false);
+            turnOnWristPauseUI = false;
+            Time.timeScale = 1;
+        } // If the boolean is false, turn on the wrist pause UI and set the time scale to 0.
+        else if (!turnOnWristPauseUI)
+        {
+            wristPauseUI.SetActive(true);
+            turnOnWristPauseUI = true;
+            Time.timeScale = 0;
+        }
+    }
+
+    /// <summary>
+    /// A method to exit the application completely once you click/touch the exit button on the wrist pause UI.
+    /// </summary>
+    public void CloseApplication()
+    {
+        Application.Quit();
+    }
+}
