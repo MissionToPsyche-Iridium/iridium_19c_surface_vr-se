@@ -134,13 +134,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin (XR Rig) 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1900584095498570684, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260692472805119547, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+      propertyPath: m_Radius
+      value: 0.192
+      objectReference: {fileID: 0}
+    - target: {fileID: 7183217842088534074, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8967074848612851493, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+      propertyPath: m_Radius
+      value: 0.192
+      objectReference: {fileID: 0}
     - target: {fileID: 9222802479244962929, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3036.0706
       objectReference: {fileID: 0}
     - target: {fileID: 9222802479244962929, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 34.902706
+      value: 30.99
       objectReference: {fileID: 0}
     - target: {fileID: 9222802479244962929, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -177,8 +193,108 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6450630540452649236, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 49124604}
+    - targetCorrespondingSourceObject: {fileID: 6290362750095361561, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 49124603}
   m_SourcePrefab: {fileID: 100100000, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+--- !u!1 &49124599 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6290362750095361561, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+  m_PrefabInstance: {fileID: 49124598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &49124600 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6290362750088115631, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+  m_PrefabInstance: {fileID: 49124598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &49124601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6450630540452649236, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+  m_PrefabInstance: {fileID: 49124598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &49124602 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6450630540443134626, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+  m_PrefabInstance: {fileID: 49124598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &49124603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49124599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7972e2ab4896624cba39406caedb9bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handAnimator: {fileID: 49124600}
+  animatingPinch:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Animating Pinch
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: d43928ff-8d2e-4ae7-bfc0-35ec9c4d3496
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  animatingGrip:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Animating Grip
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: fbadf0d1-c58d-4a8b-92d8-0f677ed28600
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!114 &49124604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49124601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7972e2ab4896624cba39406caedb9bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handAnimator: {fileID: 49124602}
+  animatingPinch:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Animating Pinch
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 969fb38b-d28c-4970-a5da-4af2528633b5
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  animatingGrip:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Animating Grip
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 479ffb21-46b6-438c-9d04-8c028d1430c3
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &72473966
 GameObject:
   m_ObjectHideFlags: 0
@@ -2457,19 +2573,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05e04fedc78047c48af519e94c595e13, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.09696951
+      value: 0.12517793
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05e04fedc78047c48af519e94c595e13, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4501.2
+      value: 3036.635
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05e04fedc78047c48af519e94c595e13, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.121
+      value: 30.143
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05e04fedc78047c48af519e94c595e13, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4929.354
+      value: 2468.152
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05e04fedc78047c48af519e94c595e13, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2756,7 +2872,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10, y: 7, z: 7}
+  m_Size: {x: 10, y: 9.5, z: 7}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
