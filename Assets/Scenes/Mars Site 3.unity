@@ -2561,7 +2561,7 @@ TerrainCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2590,7 +2590,7 @@ Terrain:
   m_HeightmapPixelError: 1
   m_SplatMapDistance: 1000
   m_HeightmapMinimumLODSimplification: 0
-  m_HeightmapMaximumLOD: 0
+  m_HeightmapMaximumLOD: 1
   m_ShadowCastingMode: 2
   m_DrawHeightmap: 1
   m_DrawInstanced: 0
