@@ -169,7 +169,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _DetailMap:
         m_Texture: {fileID: 2800000, guid: fd561a5a557997748a4299a1f449a078, type: 3}
-        m_Scale: {x: 2, y: 2}
+        m_Scale: {x: 4, y: 4}
         m_Offset: {x: 0, y: 0}
     - _DetailMap0:
         m_Texture: {fileID: 0}
@@ -288,7 +288,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: fd561a5a557997748a4299a1f449a078, type: 3}
+        m_Texture: {fileID: 2800000, guid: 17f8f12c87d191b49baa67d573bbc96f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap0:
@@ -526,12 +526,12 @@ Material:
     - _DetailAlbedoScale2: 1
     - _DetailAlbedoScale3: 1
     - _DetailNormalMapScale: 1
-    - _DetailNormalScale: 0.05
+    - _DetailNormalScale: 0
     - _DetailNormalScale0: 1
     - _DetailNormalScale1: 1
     - _DetailNormalScale2: 1
     - _DetailNormalScale3: 1
-    - _DetailSmoothnessScale: 0
+    - _DetailSmoothnessScale: 0.42
     - _DetailSmoothnessScale0: 1
     - _DetailSmoothnessScale1: 1
     - _DetailSmoothnessScale2: 1
@@ -657,7 +657,7 @@ Material:
     - _METALNESS: 0
     - _MaterialID: 1
     - _Mesh_Scale: 1
-    - _Metallic: 0.184
+    - _Metallic: 0.28
     - _Metallic0: 0
     - _Metallic1: 0
     - _Metallic2: 0
@@ -679,7 +679,7 @@ Material:
     - _NormalMapSpace1: 0
     - _NormalMapSpace2: 0
     - _NormalMapSpace3: 0
-    - _NormalScale: 2.22
+    - _NormalScale: 0
     - _NormalScale0: 1
     - _NormalScale1: 1
     - _NormalScale2: 1
@@ -814,7 +814,7 @@ Material:
     - DiffusionProfile_bfbe0deb8ec4428a9cfcdb968651903c_Asset: {r: 0, g: 0, b: 0, a: 0}
     - Diffusion_Profile_Asset: {r: 0, g: 0, b: 0, a: 0}
     - _BASE_COLOR: {r: 1, g: 1, b: 1, a: 1}
-    - _BaseColor: {r: 0.69238794, g: 0.6431707, b: 0.754717, a: 1}
+    - _BaseColor: {r: 0.72156864, g: 0.7019608, b: 0.8235294, a: 1}
     - _BaseColor0: {r: 0.9063317, g: 0.9063317, b: 0.9063317, a: 1}
     - _BaseColor1: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColor2: {r: 1, g: 1, b: 1, a: 1}
@@ -822,7 +822,7 @@ Material:
     - _BaseColorMap0_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _COAT_COLOR: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.6923879, g: 0.6431707, b: 0.75471693, a: 1}
+    - _Color: {r: 0.72156864, g: 0.7019608, b: 0.8235294, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DiffusionProfileAsset0: {r: 0, g: 0, b: 0, a: 0}
     - _DiffusionProfileAsset1: {r: 0, g: 0, b: 0, a: 0}
