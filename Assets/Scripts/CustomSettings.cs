@@ -36,7 +36,11 @@ public class CustomSettings : ScriptableObject
     public bool IsVRMode
     {
         get => isVRMode;
-        set => isVRMode = value;
+        set
+        {
+            isVRMode = value;
+            Save();
+        }
     }
     
     [SerializeField]
@@ -66,6 +70,7 @@ public class CustomSettings : ScriptableObject
         {
             if (Mathf.Approximately(volume, value)) return; // Doesn't change if it is about the right value
             volume = value;
+            Save();
         }
     
     }
@@ -80,6 +85,7 @@ public class CustomSettings : ScriptableObject
         {
             if (Mathf.Approximately(interactionFeedback, value)) return; // Doesn't change if it is about the right value
             interactionFeedback = value;
+            Save();
         }
     
     }
