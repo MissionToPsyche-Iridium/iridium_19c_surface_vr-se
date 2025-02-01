@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1900584095498570684, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3260692472805119547, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
       propertyPath: m_Radius
@@ -144,7 +144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7183217842088534074, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8967074848612851493, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
       propertyPath: m_Radius
@@ -1946,6 +1946,7 @@ GameObject:
   - component: {fileID: 769903461}
   - component: {fileID: 769903460}
   - component: {fileID: 769903459}
+  - component: {fileID: 769903462}
   m_Layer: 0
   m_Name: ApplicationClose
   m_TagString: Untagged
@@ -2067,6 +2068,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769903457}
   m_CullTransparentMesh: 1
+--- !u!114 &769903462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769903457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0255501a313eeb44895b3ae576585d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regularColor: {r: 1, g: 1, b: 1, a: 1}
+  colorHighlighting: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!4 &799112118 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f4b8dc307b2fd174eb75f4d1c08b6570, type: 3}
