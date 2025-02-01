@@ -23,14 +23,13 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: mars texture1
-  m_Shader: {fileID: 4800000, guid: 756bac9090102564582875f4c7e30202, type: 3}
+  m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _DETAIL_MAP
   - _DISABLE_SSR
   - _DISABLE_SSR_TRANSPARENT
-  - _SPECULAR_OCCLUSION_FROM_BENT_NORMAL_MAP
   m_InvalidKeywords:
   - _EMISSION
   - _LAYEREDLIT_4_LAYERS
@@ -43,7 +42,7 @@ Material:
   - _TERRAIN_INSTANCED_PERPIXEL_NORMAL
   - _WINDQUALITY_BEST
   m_LightmapFlags: 2
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2225
   stringTagMap:
@@ -727,7 +726,7 @@ Material:
     - _SpecularAAScreenSpaceVariance: 0.1
     - _SpecularAAThreshold: 0.2
     - _SpecularHighlights: 1
-    - _SpecularOcclusionMode: 2
+    - _SpecularOcclusionMode: 1
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 0
@@ -814,7 +813,7 @@ Material:
     - DiffusionProfile_bfbe0deb8ec4428a9cfcdb968651903c_Asset: {r: 0, g: 0, b: 0, a: 0}
     - Diffusion_Profile_Asset: {r: 0, g: 0, b: 0, a: 0}
     - _BASE_COLOR: {r: 1, g: 1, b: 1, a: 1}
-    - _BaseColor: {r: 0.56709474, g: 0.55239105, b: 0.6901961, a: 1}
+    - _BaseColor: {r: 0.7071196, g: 0.6820338, b: 0.7610062, a: 1}
     - _BaseColor0: {r: 0.9063317, g: 0.9063317, b: 0.9063317, a: 1}
     - _BaseColor1: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColor2: {r: 1, g: 1, b: 1, a: 1}
@@ -822,7 +821,7 @@ Material:
     - _BaseColorMap0_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _COAT_COLOR: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.56709474, g: 0.552391, b: 0.6901961, a: 1}
+    - _Color: {r: 0.7071196, g: 0.6820338, b: 0.7610062, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DiffusionProfileAsset0: {r: 0, g: 0, b: 0, a: 0}
     - _DiffusionProfileAsset1: {r: 0, g: 0, b: 0, a: 0}
