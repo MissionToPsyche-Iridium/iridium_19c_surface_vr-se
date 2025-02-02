@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SettingsApplier : MonoBehaviour
 {
-    [SerializeField] private AudioSource[] AudioSources;
+    private AudioSource[] AudioSources;
 
     private float prevVolume;
 
@@ -14,24 +14,40 @@ public class SettingsApplier : MonoBehaviour
     {
         _customSettings = LoadCustomSettings();
         prevVolume = _customSettings.Volume;
-        foreach (var VARIABLE in AudioSources)
+        AudioSources = FindObjectsOfType<AudioSource>();
+        if (AudioSources != null)
         {
-            VARIABLE.volume = prevVolume;
+            foreach (var VARIABLE in AudioSources)
+            {
+                VARIABLE.volume = prevVolume;
+            }
+        }
+        else
+        {
+            Debug.Log("SettingsAppliers: AudioSources not initialized.");
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!Mathf.Approximately(prevVolume, _customSettings.Volume) ) // If the volume has change by a noticeable amount that way it isn't re-writing every update
+        if (AudioSources != null)
         {
-            prevVolume = _customSettings.Volume;
-            foreach (var VARIABLE in AudioSources)
+            if (!Mathf.Approximately(prevVolume, _customSettings.Volume) ) // If the volume has change by a noticeable amount that way it isn't re-writing every update
             {
-                VARIABLE.volume = prevVolume;
-            }
+                prevVolume = _customSettings.Volume;
+                foreach (var VARIABLE in AudioSources)
+                {
+                    VARIABLE.volume = prevVolume;
+                }
             
+            }
         }
+        else
+        {
+            Debug.Log("SettingsAppliers: AudioSources not initialized.");
+        }
+        
     }
     
     private CustomSettings LoadCustomSettings()
