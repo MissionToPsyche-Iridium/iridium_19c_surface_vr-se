@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.Rendering.HighDefinition;
 
 public class SettingsApplier : MonoBehaviour
@@ -9,8 +10,10 @@ public class SettingsApplier : MonoBehaviour
     private float _prevVolume; //Records previous volume setting
     private CustomSettings _customSettings; //Custom settings asset to read the settings from
     private bool _errorMessageDisplayed; //Check to display an error message only once
-    private HDAdditionalLightData _lightSource; //The light source of the scene
-    private float _lightIntensityBase; //The base intensity of the light source of the scene
+    private Volume _volume; //The light source of the scene
+    private Exposure _exposure; // The exposure of the volume
+    private float _lightIntensityBase; //The base intensity of the light in the scene
+    private float _lightIntensityRange; //The range of intensity of the light in the scene
     
     // Start is called before the first frame update
     void Start()
@@ -20,7 +23,8 @@ public class SettingsApplier : MonoBehaviour
         _customSettings = LoadCustomSettings();
         _prevVolume = _customSettings.Volume;
         _audioSources = FindObjectsOfType<AudioSource>();
-        _lightSource = FindObjectOfType<HDAdditionalLightData>();
+        _volume = FindObjectOfType<Volume>();
+        _lightIntensityRange = 4;
         
         // Apply audio
         if (_audioSources != null)
@@ -39,21 +43,20 @@ public class SettingsApplier : MonoBehaviour
         }
         
         // Apply brightness
-        if (_lightSource != null)
+        if (_volume.profile.TryGet(out _exposure))
         {
-            _lightIntensityBase = _lightSource.intensity;
-            _lightSource.intensity = _lightIntensityBase * _customSettings.Brighntness;
+            _exposure.compensation.value = (_lightIntensityRange * _customSettings.Brighntness) - _lightIntensityRange/2;
         }
         
         // Handles null error messaging
         if (_errorMessageDisplayed == false)
         {
-            if (_audioSources == null && _lightSource == null)
+            if (_audioSources == null && _volume == null)
             {
                 Debug.Log("SettingsAppliers: AudioSources and LightSource not initialized.");
                 _errorMessageDisplayed = true;
             }
-            else if(_lightSource == null){
+            else if(_volume == null){
                 Debug.Log("SettingsAppliers: LightSource not initialized.");
                 _errorMessageDisplayed = true;
             }
@@ -87,20 +90,20 @@ public class SettingsApplier : MonoBehaviour
         }
         
         // Updates Brightness
-        if (_lightSource != null)
+        if (_volume.profile.TryGet(out _exposure))
         {
-            _lightSource.intensity = _lightIntensityBase * _customSettings.Brighntness;
+            _exposure.compensation.value = (_lightIntensityRange * _customSettings.Brighntness) - _lightIntensityRange/2;
         }
         
         // Handles null error messaging
         if (_errorMessageDisplayed == false)
         {
-            if (_audioSources == null && _lightSource == null)
+            if (_audioSources == null && _volume == null)
             {
                 Debug.Log("SettingsAppliers: AudioSources and LightSource not initialized.");
                 _errorMessageDisplayed = true;
             }
-            else if(_lightSource == null){
+            else if(_volume == null){
                 Debug.Log("SettingsAppliers: LightSource not initialized.");
                 _errorMessageDisplayed = true;
             }
