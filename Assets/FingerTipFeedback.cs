@@ -12,6 +12,16 @@ using UnityEngine.XR.Interaction.Toolkit;
 [SerializeField] 
 public class FingerTipFeedback : MonoBehaviour
 {
+
+    [SerializeField, Range(0f, 1f)]
+    private float m_VibrationIntensity = 0.5f;
+
+    public float VibrationIntensity
+    {
+        get => m_VibrationIntensity;
+        set => m_VibrationIntensity = value;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
