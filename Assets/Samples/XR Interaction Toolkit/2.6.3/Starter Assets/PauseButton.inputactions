@@ -1,0 +1,34 @@
+{
+    "name": "PauseButton",
+    "maps": [
+        {
+            "name": "WristUIMenu",
+            "id": "8db632f8-383c-4a48-bce8-d076d5acf4b4",
+            "actions": [
+                {
+                    "name": "WristUIMenPressed",
+                    "type": "Button",
+                    "id": "ff8bfe64-9070-40a7-94a1-01d461a74b82",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "357576c7-ab58-44dc-afed-4610087a41eb",
+                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WristUIMenPressed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
