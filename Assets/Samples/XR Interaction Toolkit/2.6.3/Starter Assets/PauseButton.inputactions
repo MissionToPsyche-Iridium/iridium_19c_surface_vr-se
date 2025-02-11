@@ -26,6 +26,17 @@
                     "action": "WristUIMenPressed",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1e1bba4f-ef46-448b-8236-6f9719227aa3",
+                    "path": "<ViveController>/trackpadClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WristUIMenPressed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
