@@ -2381,6 +2381,83 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 1
+--- !u!1001 &820910003
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 221300722854710275, guid: 5a9f9c730c0ac46489e98e9f316e4c0e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 490
+      objectReference: {fileID: 0}
+    - target: {fileID: 221300722854710275, guid: 5a9f9c730c0ac46489e98e9f316e4c0e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 223.10687
+      objectReference: {fileID: 0}
+    - target: {fileID: 221300722854710275, guid: 5a9f9c730c0ac46489e98e9f316e4c0e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -447.3544
+      objectReference: {fileID: 0}
+    - target: {fileID: 221300722854710275, guid: 5a9f9c730c0ac46489e98e9f316e4c0e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 221300722854710275, guid: 5a9f9c730c0ac46489e98e9f316e4c0e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 221300722854710275, guid: 5a9f9c730c0ac46489e98e9f316e4c0e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 221300722854710275, guid: 5a9f9c730c0ac46489e98e9f316e4c0e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 221300722854710275, guid: 5a9f9c730c0ac46489e98e9f316e4c0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 221300722854710275, guid: 5a9f9c730c0ac46489e98e9f316e4c0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 221300722854710275, guid: 5a9f9c730c0ac46489e98e9f316e4c0e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263551958475322100, guid: 5a9f9c730c0ac46489e98e9f316e4c0e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668353866052805560, guid: 5a9f9c730c0ac46489e98e9f316e4c0e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668353866052805560, guid: 5a9f9c730c0ac46489e98e9f316e4c0e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 50.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668353866052805560, guid: 5a9f9c730c0ac46489e98e9f316e4c0e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 548.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 8731317962004478241, guid: 5a9f9c730c0ac46489e98e9f316e4c0e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8951617762123897857, guid: 5a9f9c730c0ac46489e98e9f316e4c0e, type: 3}
+      propertyPath: m_Name
+      value: XR Origin (XR Rig) MarsSite2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5a9f9c730c0ac46489e98e9f316e4c0e, type: 3}
 --- !u!1 &856476914
 GameObject:
   m_ObjectHideFlags: 0
@@ -5070,6 +5147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin (XR Rig) 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1128630994163225353, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9222802479244962929, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 487.80975
@@ -6430,3 +6511,4 @@ SceneRoots:
   - {fileID: 241072944}
   - {fileID: 30151716}
   - {fileID: 1644863793}
+  - {fileID: 820910003}
