@@ -24,7 +24,7 @@ public class SettingsApplier : MonoBehaviour
         _prevVolume = _customSettings.Volume;
         _audioSources = FindObjectsOfType<AudioSource>();
         _volume = FindObjectOfType<Volume>();
-        _lightIntensityRange = 4;
+        _lightIntensityRange = 6;
         
         // Apply audio
         if (_audioSources != null)
@@ -45,7 +45,7 @@ public class SettingsApplier : MonoBehaviour
         // Apply brightness
         if (_volume.profile.TryGet(out _exposure))
         {
-            _exposure.compensation.value = (_lightIntensityRange * _customSettings.Brighntness) - _lightIntensityRange/2;
+            _exposure.compensation.value = (_lightIntensityRange * _customSettings.Brighntness);
         }
         
         // Handles null error messaging
@@ -92,7 +92,7 @@ public class SettingsApplier : MonoBehaviour
         // Updates Brightness
         if (_volume.profile.TryGet(out _exposure))
         {
-            _exposure.compensation.value = (_lightIntensityRange * _customSettings.Brighntness) - _lightIntensityRange/2;
+            _exposure.compensation.value = (_lightIntensityRange * _customSettings.Brighntness);
         }
         
         // Handles null error messaging
