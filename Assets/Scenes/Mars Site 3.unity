@@ -554,9 +554,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1542371982010181140, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
+      propertyPath: m_text
+      value: Close Application
+      objectReference: {fileID: 0}
+    - target: {fileID: 1841285055790845001, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
+      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1841285055790845001, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
+      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1841285055790845001, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
+      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5085292442955065234, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
       propertyPath: m_Name
       value: XR Origin (XR Rig) 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5733199918519820063, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
+      propertyPath: m_Name
+      value: CloseApp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135134199374921057, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
+      propertyPath: m_Name
+      value: ReturnToTitle
       objectReference: {fileID: 0}
     - target: {fileID: 7462946758446440454, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
       propertyPath: m_LocalPosition.x
