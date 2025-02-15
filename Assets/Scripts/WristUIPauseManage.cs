@@ -76,12 +76,21 @@ public class WristUIPauseManage : MonoBehaviour
     }
 
     /// <summary>
-    /// Description: Task #258 - Adding the additional function, which is to Go to the Mars Site 4 Scene, from Mars Site 2.
+    /// Description: Task #258 - Adding the additional function, which is to Go to the Mars Site 2 Scene, from Mars Site 3 or Mars Site 1.
     /// Contribution: jlgrijal(Jose)
     /// Date: 02/15/2025
-    public void GoToMarsSite4()
+    public void GoToMarsSite2()
     {
         SceneManager.LoadScene("Mars Site 2");
+    }
+
+    /// <summary>
+    /// Description: Task #258 - Adding the additional function, which is to Go to the Mars Site 1 Scene, from Mars Site 3 or Mars Site 2.
+    /// Contribution: jlgrijal(Jose)
+    /// Date: 02/15/2025
+    public void GoToMarsSite1()
+    {
+        SceneManager.LoadScene("Mars Site 1");
     }
 
     /// <summary>
