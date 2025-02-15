@@ -1592,6 +1592,7 @@ CanvasRenderer:
   m_GameObject: {fileID: 993972644}
   m_CullTransparentMesh: 1
 --- !u!1 &1021977398
+
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5001,6 +5002,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 211953115}
   m_LocalEulerAnglesHint: {x: 0, y: 100.954, z: 0}
+
 --- !u!1 &2105407312
 GameObject:
   m_ObjectHideFlags: 0
