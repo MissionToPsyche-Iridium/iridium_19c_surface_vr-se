@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isVRMode: 1
   brightness: 1
-  volume: 0.853
+  volume: 0.085
   interactionFeedback: 0.10011908
