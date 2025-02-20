@@ -8,20 +8,27 @@ using UnityEngine.SceneManagement; // Import the Unity Engine Scene Management l
 public class WristUIPauseManage : MonoBehaviour
 {
     public GameObject wristPauseUI; // The wrist pause UI object.
-
     public bool turnOnWristPauseUI = true; // A boolean to turn on the wrist pause UI when a specific button is pressed(X button on left VR controller).
+    public GameObject decisionPanel; // The object for the decision panel to handle "Yes" or "No" buttons
 
     // Start is called before the first frame update
+    // Update: 02/19/2025 - Added the decisionPanel.SetActive(false)
+    // to set the decision panel to false when the game starts.
     void Start()
     {
         ShowUIForWristPause();
+
+        if (decisionPanel != null)
+            decisionPanel.SetActive(false);
     }
 
+    /*
     // Update is called once per frame
     void Update()
     {
 
     }
+    */
 
     /// <summary>
     /// A method to show the wrist pause UI when the X button on the left VR controller is pressed.
@@ -99,5 +106,35 @@ public class WristUIPauseManage : MonoBehaviour
     public void CloseApplication()
     {
         Application.Quit();
+    }
+
+
+    /// <summary>
+    /// A method to display the decision panel when you click the "Close Application" button 
+    /// on the wrist pause UI.
+    /// Contribution: jlgrijal(Jose)
+    /// Date: 02/19/2025
+    /// </summary>
+    public void DisplayDecisionPanel()
+    {
+        if (decisionPanel != null)
+        {
+            decisionPanel.SetActive(true);
+            wristPauseUI.SetActive(false); // Hide the wrist pause UI when you click the "Close Application" button
+        }
+    }
+
+    /// <summary>
+    /// A method to close the application when you click the "Yes" button on the decision panel.
+    /// Contribution: jlgrijal(Jose)
+    /// Date: 02/19/2025
+    /// </summary>
+    public void DoNotCloseApplication()
+    {
+        if (decisionPanel != null)
+        {
+            decisionPanel.SetActive(false);
+            wristPauseUI.SetActive(true); // Show the wrist pause UI when you click the "No" button on the deicsion panel
+        }
     }
 }

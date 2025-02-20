@@ -80,3 +80,6 @@ crashlytics-build.properties
 /Logs
 *.log
 *.dwlt
+*.dwlt
+*.dwlt
+*.log

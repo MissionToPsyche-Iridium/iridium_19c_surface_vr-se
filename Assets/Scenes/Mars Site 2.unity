@@ -475,7 +475,7 @@ GameObject:
   - component: {fileID: 356261631}
   - component: {fileID: 356261630}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: AreYouSure?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1512,7 +1512,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 727249284}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6652480455446395979}
+        m_TargetAssemblyTypeName: WristUIPauseManage, Assembly-CSharp
+        m_MethodName: CloseApplication
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &727249284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2322,7 +2334,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1640022462}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6652480455446395979}
+        m_TargetAssemblyTypeName: WristUIPauseManage, Assembly-CSharp
+        m_MethodName: DoNotCloseApplication
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1640022462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4002,6 +4026,10 @@ PrefabInstance:
     - target: {fileID: 7846882879183147574, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0.1105
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372200875689050195, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayDecisionPanel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
