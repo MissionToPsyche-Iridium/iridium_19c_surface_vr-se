@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI; // Import the Unity Engine UI library for the Button.
 using UnityEngine;
 
 using UnityEngine.InputSystem; // Import the Unity Engine Input System library for the InputAction.CallbackContext.
@@ -20,15 +21,31 @@ public class WristUIPauseManage : MonoBehaviour
 
         if (decisionPanel != null)
             decisionPanel.SetActive(false);
+
+        // For now, trying to force trigger a button click for testing
+        // as the buttons on the main Wrist UI menu suddenly becoming completely
+        // unresponsive after implementing the DecisionPanel function.
+        Button[] testbuttons = wristPauseUI.GetComponentsInChildren<Button>();
+        foreach (Button btn in testbuttons)
+        {
+            Debug.Log("Found Button: " + btn.gameObject.name);
+        }
     }
 
-    /*
+
     // Update is called once per frame
     void Update()
     {
-
+        RaycastHit hit;
+        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 10f))
+        {
+            Debug.Log("XR Raycast hit: " + hit.collider.gameObject.name);
+        }
+        else
+        {
+            Debug.Log("XR Raycast is NOT hitting anything.");
+        }
     }
-    */
 
     /// <summary>
     /// A method to show the wrist pause UI when the X button on the left VR controller is pressed.
@@ -105,6 +122,7 @@ public class WristUIPauseManage : MonoBehaviour
     /// </summary>
     public void CloseApplication()
     {
+        Debug.Log("Yes button clicked - Quitting Application");
         Application.Quit();
     }
 
@@ -131,6 +149,7 @@ public class WristUIPauseManage : MonoBehaviour
     /// </summary>
     public void DoNotCloseApplication()
     {
+        Debug.Log("No button clicked - Returning to Main UI");
         if (decisionPanel != null)
         {
             decisionPanel.SetActive(false);
