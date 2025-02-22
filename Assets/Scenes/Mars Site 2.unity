@@ -1041,7 +1041,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8117e9a97ee54ba4a9f4042abc36f13e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ambientSoundVolume: 50
 --- !u!4 &562028227 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f4b8dc307b2fd174eb75f4d1c08b6570, type: 3}
@@ -3363,7 +3362,7 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.5, y: 0.5}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 2
   m_ColorTemperature: 20000
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 9.1835e-41, y: 7.43868e-39, z: 9.78048e-39, w: 1.37753e-40}

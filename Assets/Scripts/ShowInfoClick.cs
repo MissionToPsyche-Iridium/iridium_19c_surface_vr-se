@@ -34,7 +34,7 @@ public class ShowInfoClick : MonoBehaviour
     private void TogglePanels()
     {
         if (infoPanel != null) infoPanel.SetActive(!infoPanel.activeSelf);
-        if (pointPanel != null) pointPanel.SetActive(!pointPanel.activeSelf);
+        if (pointPanel != null) pointPanel.SetActive(!infoPanel.activeSelf);
     }
 
 
