@@ -6,9 +6,9 @@ using UnityEngine;
 /// </summary>
 public class BasicObjectHover : MonoBehaviour
 {
-    public float range = 0.2f;
-    public float speed = 1f;
-    private Vector3 origin;
+    public float range = 0.2f; // The range of going up and down
+    public float speed = 1f; // The speed of the hovering
+    private Vector3 origin; // The original position of the gameObject
 
     void Start()
     {
