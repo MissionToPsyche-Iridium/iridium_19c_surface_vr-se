@@ -7319,6 +7319,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9882de31a8e58d9428f849c50e679bbd, type: 3}
+--- !u!1001 &6379290242177504538
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 141060180094638820, guid: 940d61f0dadb6e84a91678b257613194, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2993.8591
+      objectReference: {fileID: 0}
+    - target: {fileID: 141060180094638820, guid: 940d61f0dadb6e84a91678b257613194, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -464
+      objectReference: {fileID: 0}
+    - target: {fileID: 141060180094638820, guid: 940d61f0dadb6e84a91678b257613194, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2615.3052
+      objectReference: {fileID: 0}
+    - target: {fileID: 141060180094638820, guid: 940d61f0dadb6e84a91678b257613194, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 141060180094638820, guid: 940d61f0dadb6e84a91678b257613194, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 141060180094638820, guid: 940d61f0dadb6e84a91678b257613194, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 141060180094638820, guid: 940d61f0dadb6e84a91678b257613194, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 141060180094638820, guid: 940d61f0dadb6e84a91678b257613194, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 141060180094638820, guid: 940d61f0dadb6e84a91678b257613194, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 141060180094638820, guid: 940d61f0dadb6e84a91678b257613194, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125127749212351635, guid: 940d61f0dadb6e84a91678b257613194, type: 3}
+      propertyPath: m_Name
+      value: Sky and Fog Global Volume (mars 3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125127749212351635, guid: 940d61f0dadb6e84a91678b257613194, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 940d61f0dadb6e84a91678b257613194, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -7326,6 +7387,7 @@ SceneRoots:
   - {fileID: 474056361}
   - {fileID: 47714938}
   - {fileID: 306277343}
+  - {fileID: 6379290242177504538}
   - {fileID: 591943179}
   - {fileID: 1390852430}
   - {fileID: 216875779}
