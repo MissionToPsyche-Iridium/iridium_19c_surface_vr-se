@@ -7371,6 +7371,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sky and Fog Global Volume (mars 3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3125127749212351635, guid: 940d61f0dadb6e84a91678b257613194, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
