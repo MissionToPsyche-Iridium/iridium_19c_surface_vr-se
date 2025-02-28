@@ -10,7 +10,7 @@ public class SettingsApplier : MonoBehaviour
     private float _prevVolume; //Records previous volume setting
     private CustomSettings _customSettings; //Custom settings asset to read the settings from
     private bool _errorMessageDisplayed; //Check to display an error message only once
-    private Volume _volume; //The light source of the scene
+    private Volume[] _volume; //The light source of the scene
     private Exposure _exposure; // The exposure of the volume
     private float _lightIntensityBase; //The base intensity of the light in the scene
     private float _lightIntensityRange; //The range of intensity of the light in the scene
@@ -23,7 +23,7 @@ public class SettingsApplier : MonoBehaviour
         _customSettings = LoadCustomSettings();
         _prevVolume = _customSettings.Volume;
         _audioSources = FindObjectsOfType<AudioSource>();
-        _volume = FindObjectOfType<Volume>();
+        _volume = FindObjectsOfType<Volume>();
         _lightIntensityRange = 6;
         
         // Apply audio
@@ -43,10 +43,14 @@ public class SettingsApplier : MonoBehaviour
         }
         
         // Apply brightness
-        if (_volume.profile.TryGet(out _exposure))
+        for (int i = 0; i < _volume.Length; i++)
         {
-            _exposure.compensation.value = (_lightIntensityRange * _customSettings.Brighntness);
+            if (_volume[i].profile.TryGet(out _exposure))
+            {
+                _exposure.compensation.value = (_lightIntensityRange * _customSettings.Brighntness);
+            }
         }
+        
         
         // Handles null error messaging
         if (_errorMessageDisplayed == false)
@@ -90,9 +94,12 @@ public class SettingsApplier : MonoBehaviour
         }
         
         // Updates Brightness
-        if (_volume.profile.TryGet(out _exposure))
+        for (int i = 0; i < _volume.Length; i++)
         {
-            _exposure.compensation.value = (_lightIntensityRange * _customSettings.Brighntness);
+            if (_volume[i].profile.TryGet(out _exposure))
+            {
+                _exposure.compensation.value = (_lightIntensityRange * _customSettings.Brighntness);
+            }
         }
         
         // Handles null error messaging
