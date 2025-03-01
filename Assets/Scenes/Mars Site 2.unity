@@ -417,6 +417,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Martian Meteorite (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f4b8dc307b2fd174eb75f4d1c08b6570, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: f4b8dc307b2fd174eb75f4d1c08b6570, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -906,6 +914,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Martian Meteorite (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f4b8dc307b2fd174eb75f4d1c08b6570, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: f4b8dc307b2fd174eb75f4d1c08b6570, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -978,6 +994,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f4b8dc307b2fd174eb75f4d1c08b6570, type: 3}
       propertyPath: m_Name
       value: Martian Meteorite (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f4b8dc307b2fd174eb75f4d1c08b6570, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: f4b8dc307b2fd174eb75f4d1c08b6570, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1451,6 +1475,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f4b8dc307b2fd174eb75f4d1c08b6570, type: 3}
       propertyPath: m_Name
       value: Martian Meteorite
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f4b8dc307b2fd174eb75f4d1c08b6570, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: f4b8dc307b2fd174eb75f4d1c08b6570, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2066,6 +2098,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Martian Meteorite (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f4b8dc307b2fd174eb75f4d1c08b6570, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: f4b8dc307b2fd174eb75f4d1c08b6570, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2080,7 +2120,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 960155321}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2252,7 +2292,7 @@ GameObject:
   - component: {fileID: 1025691793}
   - component: {fileID: 1025691795}
   - component: {fileID: 1025691794}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Mars Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2734,7 +2774,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1537002230}
   - component: {fileID: 1537002229}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: HDRP Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3707,7 +3747,7 @@ GameObject:
   - component: {fileID: 1955133754}
   - component: {fileID: 1955133753}
   - component: {fileID: 1955133752}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4776,6 +4816,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5085292442955065234, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6652480455446395982}
+    - targetCorrespondingSourceObject: {fileID: 5085292442955065234, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6652480455446395983}
     - targetCorrespondingSourceObject: {fileID: 5727784054556976546, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6652480455446395988}
@@ -4813,7 +4856,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6652480455446395981}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7cf4a358ec85e8141b057f76e2ef0f6a, type: 3}
   m_Name: 
@@ -4835,6 +4878,47 @@ MonoBehaviour:
   layersForGround:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &6652480455446395983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6652480455446395981}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f727bcb9f6a4c344a1f9d13266855dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionForJump:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Action For Jump
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 241573aa-f9a9-4f79-90f8-2c4631c6a0cc
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -3340924736456411870, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  controllerForCharacter: {fileID: 6652480455446395980}
+  jumpForce: 5
+  marsGravity: -1.5
+  maximumSpeedForFalling: -7
+  speedForMovement: 2
+  actionForLateralMovement:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Action For Lateral Movement
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: dca7054a-1d7c-46d8-a4c6-355425b2d10f
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
 --- !u!225 &6652480455446395988
 CanvasGroup:
   m_ObjectHideFlags: 0

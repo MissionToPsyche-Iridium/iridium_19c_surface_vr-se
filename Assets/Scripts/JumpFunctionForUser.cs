@@ -10,15 +10,17 @@ public class JumpFunctionForUser : MonoBehaviour
     [SerializeField] private CharacterController controllerForCharacter;
     [SerializeField] private LayerMask layersForGround;
 
-    private float gravityForMars = Physics.gravity.y; // To calculate how high we want to jump in Mars.
+    private float gravityForMars = -3.711f; // Mars gravity in m/s^2
     private Vector3 jumpMovement;
+    private bool wasLanded;
 
     /// <summary>
     /// This function is used to check with CheckSphere if the player is touching any of the ground layers or not, to ensure proper landing.
     /// </summary>
     private bool isLanded()
     {
-        return Physics.CheckSphere(transform.position, 0.2f, layersForGround);
+        Vector3 spherePosition = controllerForCharacter.bounds.center + Vector3.down * (controllerForCharacter.bounds.extents.y + 0.1f); // Adjust the position to the bottom of the CharacterController
+        return Physics.CheckSphere(spherePosition, 0.3f, layersForGround); // Increase the radius to 0.3f
     }
 
     /// <summary>
@@ -34,6 +36,7 @@ public class JumpFunctionForUser : MonoBehaviour
     {
         // Ensure the jumpMovement is initialized
         jumpMovement = Vector3.zero;
+        wasLanded = true;
     }
 
     // Update is called once per frame
@@ -41,12 +44,25 @@ public class JumpFunctionForUser : MonoBehaviour
     // and if the player is landed, then the player can jump.
     void Update()
     {
-        if (buttonForJumping.action.WasPressedThisFrame() && isLanded())
+        bool Landed = isLanded();
+        if (buttonForJumping.action.WasPressedThisFrame() && Landed)
         {
             JumpInVR();
         }
 
-        jumpMovement.y += gravityForMars * Time.deltaTime; // Calculating the gravity for the jump.
+        if (Landed && !wasLanded)
+        {
+            // Reset the entire jumpMovement vector when the player is landed to avoid residual forces
+            jumpMovement = Vector3.zero;
+        }
+
+        if (!Landed)
+        {
+            jumpMovement.y += gravityForMars * Time.deltaTime; // Calculating the gravity for the jump.
+        }
+
+        wasLanded = Landed;
+
         controllerForCharacter.Move(jumpMovement * Time.deltaTime); // Moving the player in the jumping motion.
     }
 }

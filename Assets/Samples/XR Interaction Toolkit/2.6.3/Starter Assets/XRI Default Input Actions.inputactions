@@ -1757,10 +1757,10 @@
                 {
                     "name": "",
                     "id": "1cd626ad-c3f6-4d77-bc0e-320f87f6db7e",
-                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "path": "<XRController>{RightHand}/{SecondaryButton}",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Generic XR Controller",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
