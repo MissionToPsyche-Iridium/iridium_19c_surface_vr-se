@@ -2252,7 +2252,7 @@ GameObject:
   - component: {fileID: 1025691793}
   - component: {fileID: 1025691795}
   - component: {fileID: 1025691794}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mars Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2734,7 +2734,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1537002230}
   - component: {fileID: 1537002229}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HDRP Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2830,11 +2830,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2781763167690038219, guid: cc246f14f44a7304e8d048bc49de11aa, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.039716806
+      value: 0.039716803
       objectReference: {fileID: 0}
     - target: {fileID: 2781763167690038219, guid: cc246f14f44a7304e8d048bc49de11aa, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0010831271
+      value: 0.0010830336
       objectReference: {fileID: 0}
     - target: {fileID: 2781763167690038219, guid: cc246f14f44a7304e8d048bc49de11aa, type: 3}
       propertyPath: m_LocalRotation.y
@@ -2842,7 +2842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2781763167690038219, guid: cc246f14f44a7304e8d048bc49de11aa, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.027237242
+      value: -0.027237246
       objectReference: {fileID: 0}
     - target: {fileID: 4454072878491803713, guid: cc246f14f44a7304e8d048bc49de11aa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3707,7 +3707,7 @@ GameObject:
   - component: {fileID: 1955133754}
   - component: {fileID: 1955133753}
   - component: {fileID: 1955133752}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4773,6 +4773,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1922484474}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5085292442955065234, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6652480455446395982}
     - targetCorrespondingSourceObject: {fileID: 5727784054556976546, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6652480455446395988}
@@ -4793,6 +4796,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74df9aecfdaa7034db213dc411b4529b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!143 &6652480455446395980 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 23216308935053946, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
+  m_PrefabInstance: {fileID: 6652480455446395977}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6652480455446395981 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5085292442955065234, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
+  m_PrefabInstance: {fileID: 6652480455446395977}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6652480455446395982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6652480455446395981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf4a358ec85e8141b057f76e2ef0f6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonForJumping:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Button For Jumping
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: e7792c93-b2bc-406c-b41f-f7bcafedb1e7
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -3340924736456411870, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  heightOfJump: 3
+  controllerForCharacter: {fileID: 6652480455446395980}
+  layersForGround:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!225 &6652480455446395988
 CanvasGroup:
   m_ObjectHideFlags: 0
