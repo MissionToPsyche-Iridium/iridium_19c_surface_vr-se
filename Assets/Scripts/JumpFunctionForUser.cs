@@ -37,6 +37,8 @@ public class JumpFunctionForUser : MonoBehaviour
     }
 
     // Update is called once per frame
+    // My updated version of this Update() function is used to check if the player is landed or not,
+    // and if the player is landed, then the player can jump.
     void Update()
     {
         if (buttonForJumping.action.WasPressedThisFrame() && isLanded())
