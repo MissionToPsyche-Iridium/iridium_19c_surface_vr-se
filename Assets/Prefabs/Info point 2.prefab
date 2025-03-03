@@ -168,6 +168,7 @@ GameObject:
   - component: {fileID: 2649486252518884104}
   - component: {fileID: 529907309235376218}
   - component: {fileID: 4213775293389042167}
+  - component: {fileID: 8082898856262016179}
   m_Layer: 5
   m_Name: CanvasPsyche
   m_TagString: Untagged
@@ -182,7 +183,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3469107570687858387}
-  m_LocalRotation: {x: 0.00030155672, y: 0.9991357, z: -0.007369776, w: 0.040908072}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1.18}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
@@ -280,6 +281,18 @@ LookAtConstraint:
   m_Sources:
   - sourceTransform: {fileID: 0}
     weight: 1
+--- !u!114 &8082898856262016179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3469107570687858387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4837b1ef595a1344eacc91b328def897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3482986270702172720
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,6 +308,7 @@ GameObject:
   - component: {fileID: 4674489611134344686}
   - component: {fileID: 7999641209859916135}
   - component: {fileID: 6691681887014175392}
+  - component: {fileID: 7703995056087822419}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -386,7 +400,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 3.5
+  m_Radius: 0.67
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4674489611134344686
 MonoBehaviour:
@@ -530,6 +544,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoPanel: {fileID: 3469107570687858387}
   pointPanel: {fileID: 6941000792388102977}
+--- !u!114 &7703995056087822419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482986270702172720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2411cab7fffed02469dc0882a0713a03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4023654305408304366
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,7 +614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 0.8117647}
+  m_Color: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 0.89411765}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1101,6 +1127,7 @@ GameObject:
   - component: {fileID: 4556275382508661386}
   - component: {fileID: 6454045029366987731}
   - component: {fileID: 5869477029791498831}
+  - component: {fileID: 8206907435521984304}
   m_Layer: 5
   m_Name: CanvasPoint
   m_TagString: Untagged
@@ -1115,7 +1142,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6941000792388102977}
-  m_LocalRotation: {x: -0.00026409252, y: 0.9991425, z: 0.006451803, w: 0.040898036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
   m_ConstrainProportionsScale: 1
@@ -1211,6 +1238,18 @@ LookAtConstraint:
   m_Sources:
   - sourceTransform: {fileID: 0}
     weight: 1
+--- !u!114 &8206907435521984304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6941000792388102977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4837b1ef595a1344eacc91b328def897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6985312550415989972
 GameObject:
   m_ObjectHideFlags: 0
