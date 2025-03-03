@@ -1,0 +1,34 @@
+{
+    "name": "JumpButton",
+    "maps": [
+        {
+            "name": "JumpFunctionality",
+            "id": "2f671f1d-776e-4679-88da-97541fda9d52",
+            "actions": [
+                {
+                    "name": "JumpButton",
+                    "type": "Button",
+                    "id": "e3b6534f-022f-4fc4-9823-5fbf3ff5bc50",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "009b4397-5ad2-4668-9ae1-bd587999d454",
+                    "path": "<XRController>{RightHand}/{SecondaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "JumpButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
