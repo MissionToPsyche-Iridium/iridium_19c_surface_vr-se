@@ -10,8 +10,6 @@ using UnityEngine.UI;
 
 public class SettingsManager : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject VRModeToggle;
     
     [SerializeField]
     private GameObject BrightnessSlider;
@@ -35,7 +33,6 @@ public class SettingsManager : MonoBehaviour
         
         //Set Settings from the config project settings
         CustomSettings configSettings = loadCustomSettings();
-        VRModeToggle.GetComponent<UnityEngine.UI.Toggle>().isOn = configSettings.IsVRMode;
         BrightnessSlider.GetComponent<UnityEngine.UI.Slider>().value = configSettings.Brighntness;
         VolumeSlider.GetComponent<UnityEngine.UI.Slider>().value = configSettings.Volume;
         InteractionFeedbackSlider.GetComponent<UnityEngine.UI.Slider>().value = configSettings.InteractionFeedback;
@@ -49,19 +46,6 @@ public class SettingsManager : MonoBehaviour
         PlayerPrefs.SetInt(QualityPrefKey, selectedQualityLevel); 
         PlayerPrefs.Save();
         UnityEngine.Debug.Log("Current Quality Level: " + QualitySettings.GetQualityLevel());
-    }
-
-    // Need to implement actually switching to VR later
-    public void ChangeVRMode()
-    {
-        if (VRModeToggle == null)
-        {
-            UnityEngine.Debug.LogError("VR Toggle is not assigned!");
-            return;
-        }
-        // Get the toggle's current value
-        loadCustomSettings().IsVRMode = VRModeToggle.GetComponent<UnityEngine.UI.Toggle>().isOn;
-        
     }
     
     public void ChangeBrightnessLevel()
