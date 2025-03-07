@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -23,7 +24,7 @@ public class SettingsManager : MonoBehaviour
     private GameObject InteractionFeedbackSlider;
     
     private const string QualityPrefKey = "GraphicsQuality";
-
+    
     private void Start()
     {
         int savedQualityLevel = PlayerPrefs.GetInt(QualityPrefKey, QualitySettings.GetQualityLevel());
