@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Skybox Camera
   - SkyboxCamera
+  - FastTravel
   layers:
   - Default
   - TransparentFX

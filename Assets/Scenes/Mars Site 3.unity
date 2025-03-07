@@ -1123,7 +1123,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &334848255
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1970,6 +1970,8 @@ MonoBehaviour:
   wristPauseUI: {fileID: 839314890}
   turnOnWristPauseUI: 1
   decisionPanel: {fileID: 1857668457}
+  vrUser: {fileID: 1212901785}
+  extraTeleportSpots: []
 --- !u!114 &635429109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2403,7 +2405,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 758758008}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 635429108}
+        m_TargetAssemblyTypeName: WristUIPauseManage, Assembly-CSharp
+        m_MethodName: EnactFastTravel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &758758008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3186,6 +3200,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000010968662070, guid: 30b99e7dc1382e346a7f9789de00de5e, type: 3}
   m_PrefabInstance: {fileID: 1739521647}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1212901785 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9222802479244962929, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+  m_PrefabInstance: {fileID: 635429104}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1245420167
 GameObject:
   m_ObjectHideFlags: 0
@@ -3891,7 +3910,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1453471486
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6900,7 +6919,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2045362792
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7504,6 +7523,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1489694331}
+    - target: {fileID: 6478240221549692651, guid: 9882de31a8e58d9428f849c50e679bbd, type: 3}
+      propertyPath: m_TagString
+      value: FastTravel
+      objectReference: {fileID: 0}
     - target: {fileID: 6634371802990951451, guid: 9882de31a8e58d9428f849c50e679bbd, type: 3}
       propertyPath: m_Camera
       value: 
