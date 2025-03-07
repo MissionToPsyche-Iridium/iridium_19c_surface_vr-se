@@ -178,7 +178,8 @@ public class SettingsApplier : MonoBehaviour
             || tempScene.Equals(SceneManager.GetSceneByName("SettingsScreen"))
             || tempScene.Equals(SceneManager.GetSceneByName("MarsMenu"))
             || tempScene.Equals(SceneManager.GetSceneByName("MainMenuVR"))
-            || tempScene.Equals(SceneManager.GetSceneByName("CreditsScreen")))
+            || tempScene.Equals(SceneManager.GetSceneByName("CreditsScreen"))
+            || tempScene.Equals(SceneManager.GetSceneByName("Quiz")))
         {
             answer = true;
         }
