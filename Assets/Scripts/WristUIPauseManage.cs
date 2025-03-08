@@ -228,9 +228,11 @@ public class WristUIPauseManage : MonoBehaviour
             return;
         }
 
+        // Incrementing the most recent index to cycle back to 0 if needed to.
+        mostRecentIndex = (mostRecentIndex + 1) % teleportSpots.Length;
 
         // Defining the intended position to teleport to.
-        Vector3 intendedPosition = teleportSpots[0].position;
+        Vector3 intendedPosition = teleportSpots[mostRecentIndex].position;
 
         // Checking if the XR Origin has a Character Controller component and then to temporarily disable it before teleporting
         // so the character controller does not block the teleportation.
@@ -241,6 +243,8 @@ public class WristUIPauseManage : MonoBehaviour
             cc.enabled = false;
         }
 
+        // Teleporting to the new position coodrinate to add
+        // a marginal offset to make sure the movement occurs.
         vrUser.position = intendedPosition + new Vector3(0, 0.5f, 0); // Adding marginal offset to
                                                                       // to make sure movement occurs.
 
