@@ -1259,6 +1259,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1128630994163225353, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 635429109}
+    - targetCorrespondingSourceObject: {fileID: 1128630994163225353, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 635429110}
     - targetCorrespondingSourceObject: {fileID: 7993348495816081455, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 635429108}
@@ -1269,6 +1272,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 159636131}
   m_SourcePrefab: {fileID: 100100000, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+--- !u!143 &635429105 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 2402812058140551725, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
+  m_PrefabInstance: {fileID: 635429104}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &635429106 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7993348495816081455, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
@@ -1340,6 +1348,33 @@ MonoBehaviour:
   m_DefaultActionMap: WristUIMenu
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &635429110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635429107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f727bcb9f6a4c344a1f9d13266855dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionForJump:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Action For Jump
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 7360e974-4f31-4847-abe0-1f8f6af529cb
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -3340924736456411870, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  controllerForCharacter: {fileID: 635429105}
+  jumpForce: 6
+  marsGravity: -9.83
 --- !u!4 &635429111 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3371081240427723414, guid: c5d36dd4173ee6540a1ac4ff90811fbc, type: 3}
