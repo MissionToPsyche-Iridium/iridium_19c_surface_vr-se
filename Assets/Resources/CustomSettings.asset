@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CustomSettings
   m_EditorClassIdentifier: 
   isVRMode: 1
-  brightness: 0.7356044
-  volume: 0.454
+  brightness: 1
+  volume: 0.853
   interactionFeedback: 0.10011908
