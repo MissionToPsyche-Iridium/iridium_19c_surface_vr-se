@@ -7,6 +7,8 @@ TagManager:
   - Skybox Camera
   - SkyboxCamera
   - CameraOffSet
+  - XRInteractors
+  - InfoPoint
   layers:
   - Default
   - TransparentFX

@@ -40,7 +40,7 @@ public class HapticFeedbackV2 : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("HapticFeedback: Error no gameObject with Player tag found.");
+            Debug.LogWarning("HapticFeedback: Error no gameObject with CameraOffSet tag found.");
         }
     }
 
@@ -49,14 +49,18 @@ public class HapticFeedbackV2 : MonoBehaviour
     /// </summary>
     private void OnHoverEnter(HoverEnterEventArgs args)
     {
-        Debug.Log("Haptic triggered on a Controller: " + args.interactableObject.transform.name);
-        
-        // Get the interactor that triggered the event
-        XRBaseInteractor interactor = args.interactorObject as XRBaseInteractor;
-        if (interactor is XRRayInteractor rayInteractor)
+
+        if (args.interactableObject.transform.gameObject.CompareTag("InfoPoint"))
         {
-            rayInteractor.SendHapticImpulse(_hapticIntensity, _hapticDuration);
+            Debug.Log("Haptic triggered on a Controller: " + args.interactableObject.transform.name + " with tag " + args.interactableObject.transform.tag);
+            // Get the interactor that triggered the event
+            XRBaseInteractor interactor = args.interactorObject as XRBaseInteractor;
+            if (interactor is XRRayInteractor rayInteractor)
+            {
+                rayInteractor.SendHapticImpulse(_hapticIntensity, _hapticDuration);
+            }
         }
+        
     }
 
     /// <summary>

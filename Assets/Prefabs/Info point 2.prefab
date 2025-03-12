@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4292334734827887811}
   m_Layer: 0
   m_Name: Info point 2
-  m_TagString: Untagged
+  m_TagString: InfoPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 7703995056087822419}
   m_Layer: 0
   m_Name: Model
-  m_TagString: Untagged
+  m_TagString: InfoPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
