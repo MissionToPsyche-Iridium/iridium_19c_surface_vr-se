@@ -10,7 +10,7 @@ using TMPro;
 public class QuestionSetup : MonoBehaviour
 {
     [SerializeField]
-    private List<QuestionData> questions; 
+    public List<QuestionData> questions; 
     private QuestionData currentQuestion;
 
     [SerializeField]
@@ -31,7 +31,7 @@ public class QuestionSetup : MonoBehaviour
     /// <summary>
     /// Initializes the quiz by selecting and displaying a new question.
     /// </summary>
-    void Start()
+    public void Start()
     {
         SelectNewQuestion();
         SetQuestionValues();
@@ -81,7 +81,7 @@ public class QuestionSetup : MonoBehaviour
             }
 
             answerButtons[i].SetIsCorrect(isCorrect);
-            answerButtons[i].SetAnswerText(answers[i]);
+            answerButtons[i].SetAnswerButton(answers[i]);
         }
     }
 
