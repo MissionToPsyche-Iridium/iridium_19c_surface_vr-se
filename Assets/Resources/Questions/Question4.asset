@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78e04bce8f53a1645aec05b5a56a9954, type: 3}
-  m_Name: Test Question
+  m_Name: Question4
   m_EditorClassIdentifier: 
-  question: Test Question
+  question: Test question, correct answer 4
   answers:
-  - Correct answer
-  - Wrong 1
-  - Wrong 2
-  - Wrong 3
+  - 4
+  - Earth
+  - Mars
+  - Psyche
