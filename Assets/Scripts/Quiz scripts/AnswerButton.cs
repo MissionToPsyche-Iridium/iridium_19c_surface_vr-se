@@ -11,7 +11,7 @@ public class AnswerButton : MonoBehaviour
 {
     private bool isCorrect;
     private static bool hasBeenClicked; // Ensures answer is counted only once
-    private static int correctAnswerCount = 0; // Static counter shared across all buttons
+    public static int correctAnswerCount = 0; // Static counter shared across all buttons
 
     [SerializeField]
     private TextMeshProUGUI answerText; // Text component displaying the answer

@@ -41,7 +41,7 @@ public class QuestionSetup : MonoBehaviour
     /// <summary>
     /// Loads all question assets from the "Resources/Questions" folder.
     /// </summary>
-    private void GetQuestionAssets()
+    public void GetQuestionAssets()
     {
         questions = new List<QuestionData>(Resources.LoadAll<QuestionData>("Questions"));
     }
@@ -69,6 +69,7 @@ public class QuestionSetup : MonoBehaviour
     /// </summary>
     private void SetAnswerValues()
     {
+
         List<string> answers = RandomizeAnswers(new List<string>(currentQuestion.answers));
 
         for (int i = 0; i < answerButtons.Length; i++)
