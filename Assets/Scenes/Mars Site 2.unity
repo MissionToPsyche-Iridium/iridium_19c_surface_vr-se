@@ -615,6 +615,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: m_text
+      value: A mission goal of Psyche is to understand iron cores, a previously unexplored
+        building block of planet formation.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: m_fontSize
+      value: 309.85
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -844,6 +853,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: m_text
+      value: A mission goal of Psyche is to look inside terrestrial planets, including
+        Earth [and Mars!], by directly examining the interior of a differentiated
+        (layered) body, which otherwise could not be seen.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: m_fontSize
+      value: 234
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -905,6 +924,15 @@ PrefabInstance:
     - target: {fileID: 4292334734827887811, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: m_text
+      value: "A mission goal of Psyche is to explore a new type of world \u2013 one
+        made not of rock and ice, but significant amounts of metal."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: m_fontSize
+      value: 297.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -987,6 +1015,15 @@ PrefabInstance:
     - target: {fileID: 5794918293004797810, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: m_text
+      value: Psyche was found in 1852 by Italian astronomer Annibale de Gasparis,
+        who named it for the goddess of the soul in ancient Greek mythology.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: m_fontSize
+      value: 285.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2338,6 +2375,16 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: m_text
+      value: "Psyche is both the name of an asteroid orbiting the Sun between Mars
+        and Jupiter \u2014 and the name of a NASA space mission to visit that asteroid,
+        led by Arizona State University.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: m_fontSize
+      value: 258.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2565,6 +2612,17 @@ PrefabInstance:
     - target: {fileID: 5794918293004797810, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: m_text
+      value: "Psyche launched at 10:19 a.m. EDT Friday, October 13, 2023 aboard a
+        SpaceX Falcon Heavy rocket from Launch Pad 39A at NASA\u2019s Kennedy Space
+        Center in Florida. Expected arrival is in 2029 after a Mars flyby and gravity
+        assist in 2026."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: m_fontSize
+      value: 221.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
