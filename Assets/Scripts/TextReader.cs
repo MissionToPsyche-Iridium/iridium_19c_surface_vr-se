@@ -1,37 +1,73 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
-using Newtonsoft.Json;
+using System.Collections.Generic;
+
+[System.Serializable]
+public class InfoPoint
+{
+    public string pointName;  // Name of the info point (e.g., "Point 1", "Point 2")
+    public string infoText;   // Text for that info point
+}
+
+[System.Serializable]
+public class SiteInfo
+{
+    public string siteName;   // Name of the site (e.g., "Gale Crater")
+    public List<InfoPoint> infoPoints;  // List of info points for this site
+}
+
+[System.Serializable]
+public class SiteData
+{
+    public List<SiteInfo> sites;  // List of all sites with their info points
+}
 
 public class TextReader : MonoBehaviour
 {
-    [System.Serializable]
-    public class TextData
-    {
-        public string introText;
-        public string descriptionText;
-    }
+    public string currentSiteName;  // Set this in Unity Inspector for each Info Point
+    public string currentPointName; // Set this in Unity Inspector for each specific point
+    public Text infoTextUI;  // Assign this to the UI Text component
 
-    public Text introTextUI;  // Drag the UI Text component for intro text here
-    public Text descriptionTextUI;  // Drag the UI Text component for description text here
-
-    private string jsonFilePath = "Assets/Resources/TextData.json";  // Path to your JSON file
+    private string jsonFilePath = "TextData";  // JSON file located in Resources folder
 
     void Start()
     {
-        // Check if the file exists
-        if (File.Exists(jsonFilePath))
-        {
-            string json = File.ReadAllText(jsonFilePath);
-            TextData textData = JsonConvert.DeserializeObject<TextData>(json);
+        LoadTextForSite();
+    }
 
-            // Assign the read text to UI elements
-            introTextUI.text = textData.introText;
-            descriptionTextUI.text = textData.descriptionText;
-        }
-        else
+    void LoadTextForSite()
+    {
+        // Load the JSON file from Resources
+        TextAsset jsonFile = Resources.Load<TextAsset>(jsonFilePath);
+
+        if (jsonFile == null)
         {
-            Debug.LogError("TextData.json file not found!");
+            Debug.LogError("TextData.json file not found in Resources!");
+            return;
         }
+
+        // Parse JSON
+        SiteData siteData = JsonUtility.FromJson<SiteData>(jsonFile.text);
+
+        // Find the correct site and point
+        foreach (var site in siteData.sites)
+        {
+            if (site.siteName == currentSiteName)
+            {
+                // Search for the correct point within the site
+                foreach (var point in site.infoPoints)
+                {
+                    if (point.pointName == currentPointName)
+                    {
+                        infoTextUI.text = point.infoText;  // Update UI with the correct text
+                        return;
+                    }
+                }
+            }
+        }
+
+        Debug.LogWarning($"No text found for site: {currentSiteName} or point: {currentPointName}");
     }
 }
+
