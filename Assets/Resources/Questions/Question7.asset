@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e04bce8f53a1645aec05b5a56a9954, type: 3}
   m_Name: Question7
   m_EditorClassIdentifier: 
-  question: Test question, correct answer 7
+  question: "What is Psyche\u2019s approximate diameter if it were a perfect sphere?"
   answers:
-  - 7
-  - Earth
-  - Mars
-  - Psyche
+  - 140 miles (226 kilometers)
+  - 50 miles (80 kilometers)
+  - 500 miles (800 kilometers)
+  - 20 miles (32 kilometers)

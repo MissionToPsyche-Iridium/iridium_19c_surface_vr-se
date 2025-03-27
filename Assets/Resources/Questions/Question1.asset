@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e04bce8f53a1645aec05b5a56a9954, type: 3}
   m_Name: Question1
   m_EditorClassIdentifier: 
-  question: Test question, correct answer 1
+  question: Who discovered the asteroid Psyche in 1852?
   answers:
-  - 1
-  - Earth
-  - Mars
-  - Psyche
+  - Annibale de Gasparis
+  - Galileo Galilei
+  - Johannes Kepler
+  - Isaac Newton

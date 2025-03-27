@@ -10,14 +10,17 @@ using TMPro;
 public class AnswerButton : MonoBehaviour
 {
     private bool isCorrect;
-    private static bool hasBeenClicked; // Ensures answer is counted only once
-    public static int correctAnswerCount = 0; // Static counter shared across all buttons
+    private static bool hasBeenClicked; 
+    public static int correctAnswerCount = 0; 
 
     [SerializeField]
-    private TextMeshProUGUI answerText; // Text component displaying the answer
+    private TextMeshProUGUI answerText;
 
     [SerializeField]
-    private UnityEngine.UI.Image buttonImage; // Button's image component
+    private TextMeshProUGUI answerCheck;
+
+    [SerializeField]
+    private UnityEngine.UI.Image buttonImage; 
 
     /// <summary>
     /// Sets the answer text displayed on the button. And resets button color to gray.
@@ -29,6 +32,7 @@ public class AnswerButton : MonoBehaviour
         buttonImage = GetComponent<UnityEngine.UI.Image>();
         buttonImage.color = new Color32(132, 126, 122, 106); // gray
         hasBeenClicked = false;
+        answerCheck.text = "";
 
     }
 
@@ -61,14 +65,16 @@ public class AnswerButton : MonoBehaviour
                 Debug.Log("Correct answer");
                 Debug.Log($"Total correct answers: {correctAnswerCount}");
                 buttonImage.color = new Color32(79, 185, 127, 255); // green 
+                answerCheck.text = "Correct!";
             }
             else
             {
                 Debug.Log("Wrong answer");
                 Debug.Log($"Total correct answers: {correctAnswerCount}");
                 buttonImage.color = new Color32(183, 33, 9, 255); // red
+                answerCheck.text = "wrong answer";
 
-            }
+        }
 
         
     }

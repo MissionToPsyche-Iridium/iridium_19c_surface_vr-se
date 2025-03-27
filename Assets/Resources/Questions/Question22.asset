@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78e04bce8f53a1645aec05b5a56a9954, type: 3}
-  m_Name: Question10
+  m_Name: Question22
   m_EditorClassIdentifier: 
-  question: What makes Psyche unique among asteroids?
+  question: How large is the Psyche spacecraft with its solar panels deployed?
   answers:
-  - It is rich in metal
-  - It is entirely made of ice
-  - It is covered in volcanic lava
-  - It has an atmosphere
+  - About the size of a singles tennis court
+  - As big as a football field
+  - As small as a microwave
+  - The size of a cruise ship

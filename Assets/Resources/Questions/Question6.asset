@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e04bce8f53a1645aec05b5a56a9954, type: 3}
   m_Name: Question6
   m_EditorClassIdentifier: 
-  question: Test question, correct answer 6
+  question: "What is Mars\u2019 average distance from the Sun?"
   answers:
-  - 6
-  - Earth
-  - Mars
-  - Psyche
+  - 1.5 AU
+  - 3 AU
+  - 1 AU
+  - 5 AU

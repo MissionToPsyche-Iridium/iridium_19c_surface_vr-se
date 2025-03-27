@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78e04bce8f53a1645aec05b5a56a9954, type: 3}
-  m_Name: Question10
+  m_Name: Question11
   m_EditorClassIdentifier: 
-  question: What makes Psyche unique among asteroids?
+  question: "What percentage of Psyche\u2019s volume is estimated to be metal?"
   answers:
-  - It is rich in metal
-  - It is entirely made of ice
-  - It is covered in volcanic lava
-  - It has an atmosphere
+  - 30% to 60%
+  - 10% to 20%
+  - 80% to 90%
+  - 100%

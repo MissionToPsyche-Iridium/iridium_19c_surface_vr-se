@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e04bce8f53a1645aec05b5a56a9954, type: 3}
   m_Name: Question3
   m_EditorClassIdentifier: 
-  question: Test question, correct answer 3
+  question: Where is Psyche located in the solar system?
   answers:
-  - 3
-  - Earth
-  - Mars
-  - Psyche
+  - In the outer part of the main asteroid belt
+  - Between Earth and Venus
+  - In the Kuiper Belt
+  - "Near Saturn\u2019s rings"

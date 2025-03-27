@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e04bce8f53a1645aec05b5a56a9954, type: 3}
   m_Name: Question9
   m_EditorClassIdentifier: 
-  question: Test question, correct answer 9
+  question: What is the estimated surface area of Psyche?
   answers:
-  - 9
-  - Earth
-  - Mars
-  - Psyche
+  - 64,000 square miles (165,800 square kilometers)
+  - 100,000 square miles
+  - 10,000 square miles
+  - 500,000 square miles

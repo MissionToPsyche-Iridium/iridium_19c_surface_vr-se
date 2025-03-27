@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78e04bce8f53a1645aec05b5a56a9954, type: 3}
-  m_Name: Question10
+  m_Name: Question12
   m_EditorClassIdentifier: 
-  question: What makes Psyche unique among asteroids?
+  question: Who is leading the Psyche mission?
   answers:
-  - It is rich in metal
-  - It is entirely made of ice
-  - It is covered in volcanic lava
-  - It has an atmosphere
+  - Arizona State University
+  - NASA Ames Research Center
+  - European Space Agency
+  - SpaceX

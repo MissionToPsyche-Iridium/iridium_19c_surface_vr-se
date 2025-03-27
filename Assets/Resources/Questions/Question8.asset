@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e04bce8f53a1645aec05b5a56a9954, type: 3}
   m_Name: Question8
   m_EditorClassIdentifier: 
-  question: Test question, correct answer 8
+  question: "How does Psyche\u2019s size compare to a U.S. state?"
   answers:
-  - 8
-  - Earth
-  - Mars
-  - Psyche
+  - About the length of Massachusetts (excluding Cape Cod)
+  - About the size of Texas
+  - The same size as California
+  - The size of Rhode Island

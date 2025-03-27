@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e04bce8f53a1645aec05b5a56a9954, type: 3}
   m_Name: Question2
   m_EditorClassIdentifier: 
-  question: Test question, correct answer 2
+  question: What does the name "Psyche" refer to in Greek mythology?
   answers:
-  - 2
-  - Earth
-  - Mars
-  - Psyche
+  - Goddess of the soul
+  - God of war
+  - Goddess of love
+  - o God of the underworld

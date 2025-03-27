@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78e04bce8f53a1645aec05b5a56a9954, type: 3}
-  m_Name: Question10
+  m_Name: Question29
   m_EditorClassIdentifier: 
-  question: What makes Psyche unique among asteroids?
+  question: Why does the Psyche spacecraft turn off its thrusters during the gravity
+    assist?
   answers:
-  - It is rich in metal
-  - It is entirely made of ice
-  - It is covered in volcanic lava
-  - It has an atmosphere
+  - To conserve fuel
+  - To take scientific measurements
+  - To avoid overheating
+  - To test emergency systems

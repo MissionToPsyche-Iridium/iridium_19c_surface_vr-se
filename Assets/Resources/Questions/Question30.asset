@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78e04bce8f53a1645aec05b5a56a9954, type: 3}
-  m_Name: Question0
+  m_Name: Question30
   m_EditorClassIdentifier: 
-  question: QUESTION
+  question: What will Psyche do upon arrival at the asteroid?
   answers:
-  - CORRECT
-  - WRONG 1
-  - WRONG 2
-  - WRONG 3
+  - Map the asteroid and study its properties
+  - Land and collect samples
+  - Drill into the core
+  - Deploy a rover
