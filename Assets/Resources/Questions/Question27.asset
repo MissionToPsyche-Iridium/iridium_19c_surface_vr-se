@@ -9,10 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45c430609ea852540ae45b4540db4432, type: 3}
-  m_Name: CustomSettings
+  m_Script: {fileID: 11500000, guid: 78e04bce8f53a1645aec05b5a56a9954, type: 3}
+  m_Name: Question27
   m_EditorClassIdentifier: 
-  isVRMode: 1
-  brightness: 0.801
-  volume: 0.85459584
-  interactionFeedback: 0.2715018
+  question: "What instrument will be used to study Psyche\u2019s magnetic field?"
+  answers:
+  - Magnetometer
+  - Seismometer
+  - Barometer
+  - Telescope

@@ -9,10 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45c430609ea852540ae45b4540db4432, type: 3}
-  m_Name: CustomSettings
+  m_Script: {fileID: 11500000, guid: 78e04bce8f53a1645aec05b5a56a9954, type: 3}
+  m_Name: Question9
   m_EditorClassIdentifier: 
-  isVRMode: 1
-  brightness: 0.801
-  volume: 0.85459584
-  interactionFeedback: 0.2715018
+  question: What is the estimated surface area of Psyche?
+  answers:
+  - 64,000 square miles (165,800 square kilometers)
+  - 100,000 square miles
+  - 10,000 square miles
+  - 500,000 square miles
