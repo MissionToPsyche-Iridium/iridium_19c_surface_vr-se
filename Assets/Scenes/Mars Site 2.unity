@@ -1898,7 +1898,7 @@ GameObject:
   - component: {fileID: 895692055}
   m_Layer: 0
   m_Name: Teleport Here Area 2
-  m_TagString: Untagged
+  m_TagString: FastTravel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2943,7 +2943,7 @@ GameObject:
   - component: {fileID: 1450760459}
   m_Layer: 0
   m_Name: Teleport Here Area 1
-  m_TagString: Untagged
+  m_TagString: FastTravel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3313,7 +3313,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1779167740}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6652480455446395979}
+        m_TargetAssemblyTypeName: WristUIPauseManage, Assembly-CSharp
+        m_MethodName: EnactFastTravel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1779167740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4787,6 +4799,10 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2292167903350646297, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
+      propertyPath: vrUser
+      value: 
+      objectReference: {fileID: 307121297}
     - target: {fileID: 2292167903350646297, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
       propertyPath: decisionPanel
       value: 
