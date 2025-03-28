@@ -48,4 +48,10 @@ public class ChangeScenes : MonoBehaviour
     {
         SceneManager.LoadScene("Mars Site 3");
     }
+    
+    // Exits the Application
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
