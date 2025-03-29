@@ -428,13 +428,36 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1131976657123728348, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1394479816191296098}
   m_SourcePrefab: {fileID: 100100000, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
 --- !u!4 &1414176755494114158 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4292334734827887811, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
   m_PrefabInstance: {fileID: 2896172963318189997}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2847633078309819505 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1131976657123728348, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+  m_PrefabInstance: {fileID: 2896172963318189997}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1394479816191296098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2847633078309819505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acef7c5774ae7614cad75827d85ad555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSiteName: Mars Site 3
+  currentPointName: Info point (1)
+  infoTextUI: {fileID: 0}
 --- !u!1001 &5982312782289377965
 PrefabInstance:
   m_ObjectHideFlags: 0

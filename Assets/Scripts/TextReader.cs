@@ -1,6 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI;
-using System.IO;
+using TMPro;  // Import TextMeshPro namespace
 using System.Collections.Generic;
 
 [System.Serializable]
@@ -27,7 +26,7 @@ public class TextReader : MonoBehaviour
 {
     public string currentSiteName;  // Set this in Unity Inspector for each Info Point
     public string currentPointName; // Set this in Unity Inspector for each specific point
-    public Text infoTextUI;  // Assign this to the UI Text component
+    public TMP_Text infoTextUI;  // Use TMP_Text for TextMeshPro UI
 
     private string jsonFilePath = "TextData";  // JSON file located in Resources folder
 
