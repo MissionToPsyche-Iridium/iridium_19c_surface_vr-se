@@ -1115,6 +1115,7 @@ GameObject:
   - component: {fileID: 786158712}
   - component: {fileID: 786158711}
   - component: {fileID: 786158710}
+  - component: {fileID: 786158713}
   m_Layer: 0
   m_Name: BackButton
   m_TagString: Untagged
@@ -1236,6 +1237,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786158708}
   m_CullTransparentMesh: 1
+--- !u!114 &786158713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786158708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb50b5e13bf766940b005833f0f87ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffectForButton: {fileID: 8300000, guid: 624257a2624a72744948790088d7dd46, type: 3}
 --- !u!1001 &1291358313
 PrefabInstance:
   m_ObjectHideFlags: 0

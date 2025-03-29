@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb50b5e13bf766940b005833f0f87ce0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundEffectForButton: {fileID: 8300000, guid: 2f0694638d49dd44490d31743aaad041, type: 3}
+  soundEffectForButton: {fileID: 8300000, guid: 624257a2624a72744948790088d7dd46, type: 3}
 --- !u!1 &47714936
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,7 +531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb50b5e13bf766940b005833f0f87ce0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundEffectForButton: {fileID: 8300000, guid: 2f0694638d49dd44490d31743aaad041, type: 3}
+  soundEffectForButton: {fileID: 8300000, guid: 624257a2624a72744948790088d7dd46, type: 3}
 --- !u!1 &86176803 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000012968262300, guid: 30b99e7dc1382e346a7f9789de00de5e, type: 3}
@@ -782,7 +782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb50b5e13bf766940b005833f0f87ce0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundEffectForButton: {fileID: 8300000, guid: 2f0694638d49dd44490d31743aaad041, type: 3}
+  soundEffectForButton: {fileID: 8300000, guid: 624257a2624a72744948790088d7dd46, type: 3}
 --- !u!1001 &187936486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2247,7 +2247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb50b5e13bf766940b005833f0f87ce0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundEffectForButton: {fileID: 8300000, guid: 2f0694638d49dd44490d31743aaad041, type: 3}
+  soundEffectForButton: {fileID: 8300000, guid: 624257a2624a72744948790088d7dd46, type: 3}
 --- !u!1 &839314890
 GameObject:
   m_ObjectHideFlags: 0
@@ -2735,7 +2735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb50b5e13bf766940b005833f0f87ce0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundEffectForButton: {fileID: 8300000, guid: 2f0694638d49dd44490d31743aaad041, type: 3}
+  soundEffectForButton: {fileID: 8300000, guid: 624257a2624a72744948790088d7dd46, type: 3}
 --- !u!1 &1012839656
 GameObject:
   m_ObjectHideFlags: 0
@@ -4557,7 +4557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb50b5e13bf766940b005833f0f87ce0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundEffectForButton: {fileID: 8300000, guid: 2f0694638d49dd44490d31743aaad041, type: 3}
+  soundEffectForButton: {fileID: 8300000, guid: 624257a2624a72744948790088d7dd46, type: 3}
 --- !u!1001 &1588733306
 PrefabInstance:
   m_ObjectHideFlags: 0
