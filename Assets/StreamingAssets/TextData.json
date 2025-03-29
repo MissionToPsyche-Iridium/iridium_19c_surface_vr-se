@@ -4,11 +4,7 @@
       "siteName": "Mars Site 2",
       "infoPoints": [
         {
-          "pointName": "Point 1",
-          "infoText": "..."
-        },
-        {
-          "pointName": "Point 2",
+          "pointName": " Info point 2",
           "infoText": "..."
         }
       ]
@@ -17,11 +13,27 @@
       "siteName": "Mars Site 3",
       "infoPoints": [
         {
-          "pointName": "Point 1",
+          "pointName": "Info point (1)",
           "infoText": "..."
         },
         {
-          "pointName": "Point 2",
+          "pointName": "Info point (2)",
+          "infoText": "..."
+        }
+        {
+          "pointName": "Info point (3)",
+          "infoText": "..."
+        }
+        {
+          "pointName": "Info point (4)",
+          "infoText": "..."
+        }
+        {
+          "pointName": "Info point (2-1)",
+          "infoText": "..."
+        }
+        {
+          "pointName": "Info point (2-2)",
           "infoText": "..."
         }
       ]
