@@ -6,19 +6,19 @@ using UnityEngine;
 /// </summary>
 public class BasicObjectHover : MonoBehaviour
 {
-    public float range = 0.2f; // The range of going up and down
-    public float speed = 1f; // The speed of the hovering
-    private Vector3 origin; // The original position of the gameObject
+    public float range = 0.1f; // The range of going up and down
+    public float speed = 0.5f; // The speed of the hovering
+    private Vector3 _origin; // The original position of the gameObject
 
     void Start()
     {
-        origin = transform.position;
+        _origin = transform.position; // Gets the position of the object this script is attached too
     }
 
     private void Update()
     {
-        float objectHeight = origin.y + Mathf.Sin(Time.time * speed) * range;
+        float objectHeight = _origin.y + Mathf.Sin(Time.time * speed) * range;
 
-        transform.position = new Vector3(origin.x, objectHeight, origin.z);
+        transform.position = new Vector3(_origin.x, objectHeight, _origin.z);
     }
 }

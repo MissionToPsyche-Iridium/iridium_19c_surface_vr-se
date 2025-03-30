@@ -52,4 +52,10 @@ public class ChangeScenes : MonoBehaviour
     {
         SceneManager.LoadScene("Mars Site 3");
     }
+
+    // Load Quiz scene
+    public void goToQuizScreen()
+    {
+        SceneManager.LoadScene("Quiz");
+    }
 }
