@@ -11,8 +11,9 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Button))] // This component makes sure that Button component is attached to the GameObject
 public class ButtonClickSoundEffect : MonoBehaviour
 {
-    public AudioClip soundEffectForButton;
+    [SerializeField] private AudioClip soundEffectForButton;
     private AudioSource sourceForAudio;
+    private Button button;
 
     /// <summary>
     /// Awake function for when the script instance is being loaded.
@@ -24,10 +25,10 @@ public class ButtonClickSoundEffect : MonoBehaviour
         sourceForAudio = Camera.main.GetComponent<AudioSource>();
         if (sourceForAudio == null)
         {
-            UnityEngine.Debug.LogWarning("No AudioSource component found on the Camera GameObject");
+            UnityEngine.Debug.LogWarning("AudioSource component for Camera GameObject is missing.");
         }
 
-        Button button = GetComponent<Button>();
+        button = GetComponent<Button>();
         button.onClick.AddListener(PlayForSoundEffect);
 
     }
