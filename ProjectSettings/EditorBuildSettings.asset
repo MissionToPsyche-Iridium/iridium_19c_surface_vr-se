@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SettingsScreen.unity
     guid: 670f99afff5dd444cb9e69dfd297a983
+  - enabled: 1
+    path: Assets/Scenes/Quiz.unity
+    guid: cf79c8b222a69ac4680e3586a242ab64
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: ef478b4084e8157469357db2ba815b60, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 32c73466c19c831438990f08cedec3f6, type: 2}
