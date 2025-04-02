@@ -2542,7 +2542,6 @@ GameObject:
   - component: {fileID: 1748538316}
   - component: {fileID: 1748538315}
   - component: {fileID: 1748538314}
-  - component: {fileID: 1748538317}
   m_Layer: 0
   m_Name: QuizButton
   m_TagString: Untagged
@@ -2707,7 +2706,6 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-
   m_GameObject: {fileID: 1803847461}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2731,8 +2729,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3756387836
-  m_fontColor: {r: 0.98742133, g: 0.9285007, b: 0.89737344, a: 0.8745098}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2757,7 +2755,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
