@@ -5,61 +5,66 @@ using System.Collections.Generic;
 [System.Serializable]
 public class InfoPoint
 {
-    public string pointName;  // Name of the info point (e.g., "Point 1", "Point 2")
-    public string infoText;   // Text for that info point
+    public string pointName;
+    public string infoText;
 }
 
 [System.Serializable]
 public class SiteInfo
 {
-    public string siteName;   // Name of the site (e.g., "Gale Crater")
-    public List<InfoPoint> infoPoints;  // List of info points for this site
+    public string siteName;
+    public List<InfoPoint> infoPoints;
 }
 
 [System.Serializable]
 public class SiteData
 {
-    public List<SiteInfo> sites;  // List of all sites with their info points
+    public List<SiteInfo> sites;
 }
 
 public class TextReader : MonoBehaviour
 {
-    public string currentSiteName;  // Set this in Unity Inspector for each Info Point
-    public string currentPointName; // Set this in Unity Inspector for each specific point
-    public TMP_Text infoTextUI;  // Use TMP_Text for TextMeshPro UI
+    public string currentSiteName;
+    public string currentPointName;
+    public TMP_Text infoTextUI;
 
-    private string jsonFilePath = "TextData";  // JSON file located in Resources folder
+    private SiteData siteData;  // Store loaded data
+    private string jsonFilePath = "TextData";
 
     void Start()
     {
-        LoadTextForSite();
+        LoadSiteData();
+        UpdateText();  // Ensure initial text is loaded
     }
 
-    void LoadTextForSite()
+    void LoadSiteData()
     {
-        // Load the JSON file from Resources
         TextAsset jsonFile = Resources.Load<TextAsset>(jsonFilePath);
-
         if (jsonFile == null)
         {
             Debug.LogError("TextData.json file not found in Resources!");
             return;
         }
+        siteData = JsonUtility.FromJson<SiteData>(jsonFile.text);
+    }
 
-        // Parse JSON
-        SiteData siteData = JsonUtility.FromJson<SiteData>(jsonFile.text);
+    public void UpdateText()
+    {
+        if (siteData == null)
+        {
+            Debug.LogError("Site data is not loaded!");
+            return;
+        }
 
-        // Find the correct site and point
         foreach (var site in siteData.sites)
         {
-            if (site.siteName == currentSiteName)
+            if (site.siteName.Trim() == currentSiteName.Trim())
             {
-                // Search for the correct point within the site
                 foreach (var point in site.infoPoints)
                 {
-                    if (point.pointName == currentPointName)
+                    if (point.pointName.Trim() == currentPointName.Trim())
                     {
-                        infoTextUI.text = point.infoText;  // Update UI with the correct text
+                        infoTextUI.text = point.infoText;
                         return;
                     }
                 }
@@ -67,6 +72,14 @@ public class TextReader : MonoBehaviour
         }
 
         Debug.LogWarning($"No text found for site: {currentSiteName} or point: {currentPointName}");
+    }
+
+    // Call this method externally when you change the site or point
+    public void SetInfo(string newSite, string newPoint)
+    {
+        currentSiteName = newSite;
+        currentPointName = newPoint;
+        UpdateText();  // Refresh the displayed text
     }
 }
 
