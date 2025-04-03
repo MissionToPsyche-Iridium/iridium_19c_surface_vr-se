@@ -54,7 +54,7 @@ public class ChangeScenes : MonoBehaviour
     {
         Application.Quit();
     }
-    
+
     // Load Quiz scene
     public void goToQuizScreen()
     {
