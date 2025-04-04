@@ -4,12 +4,15 @@ using System.Collections.Generic;
 
 public class VRChecker : MonoBehaviour
 {
-    
+    public GameObject warningTextUI; // UI Text GameObject here to be updated if no VR headset is detected.
+        
     void Start()
     {
         if (!IsVRHeadsetConnected())
         {
             Debug.LogWarning("No VR headset detected.");
+            if (warningTextUI != null)
+                warningTextUI.SetActive(true);
         }
     }
 
