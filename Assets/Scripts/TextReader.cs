@@ -1,6 +1,7 @@
 using UnityEngine;
-using TMPro;  // Import TextMeshPro namespace
+using TMPro;
 using System.Collections.Generic;
+using System.IO;
 
 [System.Serializable]
 public class InfoPoint
@@ -28,24 +29,27 @@ public class TextReader : MonoBehaviour
     public string currentPointName;
     public TMP_Text infoTextUI;
 
-    private SiteData siteData;  // Store loaded data
-    private string jsonFilePath = "TextData";
+    private SiteData siteData;
+    private string jsonFileName = "TextData.json";
 
     void Start()
     {
         LoadSiteData();
-        UpdateText();  // Ensure initial text is loaded
+        UpdateText();  // Initial update
     }
 
     void LoadSiteData()
     {
-        TextAsset jsonFile = Resources.Load<TextAsset>(jsonFilePath);
-        if (jsonFile == null)
+        string fullPath = Path.Combine(Application.streamingAssetsPath, jsonFileName);
+
+        if (!File.Exists(fullPath))
         {
-            Debug.LogError("TextData.json file not found in Resources!");
+            Debug.LogError("TextData.json file not found in StreamingAssets!");
             return;
         }
-        siteData = JsonUtility.FromJson<SiteData>(jsonFile.text);
+
+        string jsonText = File.ReadAllText(fullPath);
+        siteData = JsonUtility.FromJson<SiteData>(jsonText);
     }
 
     public void UpdateText()
@@ -74,12 +78,11 @@ public class TextReader : MonoBehaviour
         Debug.LogWarning($"No text found for site: {currentSiteName} or point: {currentPointName}");
     }
 
-    // Call this method externally when you change the site or point
     public void SetInfo(string newSite, string newPoint)
     {
         currentSiteName = newSite;
         currentPointName = newPoint;
-        UpdateText();  // Refresh the displayed text
+        UpdateText();
     }
 }
 
