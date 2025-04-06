@@ -6,7 +6,7 @@
 3. [Technology Used](#technology)
 4. [Guide how to build the project](#build)
 5. [Video of an application](#video)
-6. [Information Points Guide](#infopoints)
+6. [Quiz Guide](#quiz)
 
 
 ## Overview
@@ -48,8 +48,45 @@ C# – Used for scripting game mechanics, UI, and VR interactions.
 ## Video
 ......
 
-## Infopoints
-......
+## Quiz
+The Psyche Quiz is an interactive trivia game designed to test users' knowledge about NASA’s Psyche mission. The quiz presents a series of multiple-choice questions, tracks user scores, and displays a final score screen based on performance. The application supports a retry option, allowing users to restart the quiz after completing it.
+### Game Flow:
+- The user starts the quiz and is presented with a question.
+- Each question has one correct answer and multiple incorrect answers.
+- When an answer is selected, the button color changes, and the text indicator appears under the question:
+  - Green and “Correct!” for correct answers
+  - Red and “Wrong answer” for incorrect answers
+- After answering, the user can proceed to the next question clicking “Next question” button.
+- The quiz consists of five questions per session.
+- Skipped question counts as incorrectly answered.
+- Once all questions are answered, the score screen is displayed, showing performance feedback, and “Try again” button appears, allowing users to play again.
 
+### Scripts Responsible for Quiz
+Assets > Scripts > Quiz scripts:
+- AnswerButton.cs (Handles the behavior of answer buttons in the quiz game and correct answers count.)
+- NextQuestionButton.cs (Manages next question button and try again button setup. Manages the score canvas and resets the game.)
+- QuestionData.cs (Defines a question structure using ScriptableObjects, that hold question string and a list of possible answers.)
+- QuestionSetup.cs (Manages quiz questions and answer button setup. Randomly selects a question, assigns answers to buttons, and ensures correct answer placement.)   
+Assets > Editor:
+- TSVtoSO.cs (Utility class for converting a TSV (Tab-Separated Values) file into ScriptableObject assets for storing quiz questions).   
+Each question is stored in SO (Scriptable Object) in Assets/Resources/Questions folder.
 
+### How to Add Questions and Answers
+1. Create a new TSV file. The easiest way to do so is to use Google sheets (create a new Google sheet file, add data, and save it as TSV).
+2. The file should have the following format (one question per line, separated by tabs):   
+QUESTION  |  CORRECT ANSWER  |  WRONG ANSWER 1  |  WRONG ANSWER 2  |  WRONG ANSWER 3
+3. The correct answer always must be listed first, right after the question. It will be randomized by the script later.
+4. Name the file Questions and place it in Assets > Editor > TSVs.
+5. Generate Scriptable Objects:   
+  a. Open Unity   
+  b. In the top menu, go to Utilities > Generate Questions   
+6. This will parse the TSV file and create/update Scriptable Object assets in Assets > Resources > Questions folder.
+7. Once completed, the updated questions will be available in the quiz.
 
+### How to Update Questions and Answers
+There are two ways to update questions:
+1. Go to Assets/Resources/Questions folder, locate the Question SO, and update the needed information there.
+2. Update the TSV file (Assets > Editor > TSVs>Questions.tsv) and re generate the questions (in Unity editor’s the top menu, go to Utilities > Generate Questions)   
+
+### How to Delete Questions   
+Go to Assets/Resources/Questions folder, locate the Question SO, and delete it.  
