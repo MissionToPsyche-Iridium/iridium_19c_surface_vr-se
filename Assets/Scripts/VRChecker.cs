@@ -1,21 +1,35 @@
 using UnityEngine;
 using UnityEngine.XR;
+using System.Collections;
 using System.Collections.Generic;
 
 public class VRChecker : MonoBehaviour
 {
-    public GameObject warningTextUI; // UI Text GameObject here to be updated if no VR headset is detected.
+    // UI Text GameObject here to be updated if no VR headset is detected.
+    public GameObject warningTextUI; 
         
     void Start()
     {
+        StartCoroutine(CheckHeadsetWithDelay());
+    }
+
+    IEnumerator CheckHeadsetWithDelay()
+    {
+        // Needs to use coroutine to wait for a second to give XR time to initialize.
+        yield return new WaitForSeconds(1f); 
+
         if (!IsVRHeadsetConnected())
         {
-            Debug.LogWarning("No VR headset detected.");
+            Debug.LogWarning("VRChecker: No VR headset detected.");
             if (warningTextUI != null)
                 warningTextUI.SetActive(true);
         }
+        else
+        {
+            Debug.Log("VRChecker: VR headset or VR headset software is detected.");
+        }
     }
-
+    
     // Checks if a VR Headset is detected.
     public bool IsVRHeadsetConnected()
     {
