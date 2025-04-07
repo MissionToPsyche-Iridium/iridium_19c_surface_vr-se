@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Diagnostics;
+using UnityEngine.XR.Interaction.Toolkit;
 
 
 /// <summary>
@@ -11,23 +12,40 @@ using System.Diagnostics;
 /// </summary>
 public class InfoPointClickSound : MonoBehaviour
 {
-    [SerializeField] private AudioSource infoPointClickSound;
+    [SerializeField] private AudioSource infoAudioSource;
+    public AudioClip infoClickSound;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    /// <summary>
+    /// The XRBaseInteractable component is used to detect when the info point sphere object is clicked by either VR hands grabbing
+    /// with the XR Ray Interactor or by the mouse pointer.
+    /// </summary>
     void Awake()
     {
-        // Get the AudioSource component attached to this GameObject
-        infoPointClickSound = GetComponent<AudioSource>();
+        var interactable = GetComponent<XRBaseInteractable>();
+        interactable.selectEntered.AddListener(_ => PlayClickSound());
+    }
+
+    /// <summary>
+    /// This method is called to play the click sound when the info point sphere object is clicked.
+    /// </summary>
+    public void PlayClickSound()
+    {
+        UnityEngine.Debug.Log("Sphere clicked!");
+        if (infoClickSound != null && infoAudioSource != null)
+        {
+            infoAudioSource.PlayOneShot(infoClickSound, 1f);
+        }
+        else
+        {
+            UnityEngine.Debug.LogWarning("Missing AudioClip or AudioSource.");
+        }
+    }
+
+    /// <summary>
+    /// Just an extra method to play the click sound when the info point sphere object is clicked with the mouse pointer.
+    /// </summary>
+    void OnMouseDown()
+    {
+        PlayClickSound();
     }
 }
