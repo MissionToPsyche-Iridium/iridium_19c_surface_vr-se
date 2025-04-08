@@ -43,7 +43,14 @@ C# – Used for scripting game mechanics, UI, and VR interactions.
 
 
 ## Build
-.....
+- Open Unity Hub.
+- Make sure to have installed the Unity editor version of 2022.3.50f1. To check go to the installs tab in Unity Hub.
+- Open the Projects tab in Unity Hub.
+- Right click the dropdown menu next to "Open" and then select "Add project from disk."
+- Navigate to where the root folder of this repo is installed and then open the project in Unity.
+- When the project is open go to File -> Build Settings.
+- In the Build Settings window in the bottom right you are able to build the project with "Build" button.
+
 
 ## Video
 ......
