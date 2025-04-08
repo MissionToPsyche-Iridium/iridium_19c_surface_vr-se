@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45c430609ea852540ae45b4540db4432, type: 3}
   m_Name: CustomSettings
   m_EditorClassIdentifier: 
-  isVRMode: 1
-  brightness: 0.5763288
-  volume: 0.4478498
-  interactionFeedback: 0.62428504
+  brightness: 0.7444553
+  volume: 0.2027239
+  interactionFeedback: 0.29582867
