@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+
+/// <summary>
+/// Functionality: Starts a timer for X minutes and Y seconds. After which it changes the scene back to the main menu.
+/// This script is supposed to be called by a button with the script "FindPlayTimer."
+/// Should be a child of a gameObject with a DontDestroyOnLoad.
+/// </summary>
 public class PlayTimer : MonoBehaviour
 {
-
     [SerializeField]
     private float minutes; // Amount of minutes for timer.
 
@@ -25,14 +30,15 @@ public class PlayTimer : MonoBehaviour
     private GameObject StartTimerButtonUI; // The UI button that starts the timer.
 
     [SerializeField] 
-    private ChangeScenes sceneChanger;
+    private ChangeScenes sceneChanger; // Needs access to a sceneChanger script to move the scene.
     
-    private bool isRunning = false;
+    private bool isRunning = false; // Tracks to see if the Coroutine is still running.
 
-    private Coroutine timerCoroutine;
+    private Coroutine timerCoroutine; // Stores a reference to the Coroutine so that it can stop and reset it.
 
     public void StartTimer()
     {
+        
         if (!isRunning)
         {
             // Starts the timer.
@@ -76,6 +82,7 @@ public class PlayTimer : MonoBehaviour
         
         // Turns off the timer then returns to the Main Menu Scene.
         TimerUI.SetActive(false);
+        isRunning = false;
         sceneChanger.goToMainMenuScreen();
     }
 
