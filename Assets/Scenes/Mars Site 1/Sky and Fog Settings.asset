@@ -45,13 +45,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   rotation:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   skyIntensityMode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   exposure:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   multiplier:
     m_OverrideState: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 20000
   updateMode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   updatePeriod:
     m_OverrideState: 0
@@ -75,10 +75,10 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   hdriSky:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {fileID: 0}
   distortionMode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   flowmap:
     m_OverrideState: 0
@@ -179,7 +179,7 @@ MonoBehaviour:
     m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   tint:
     m_OverrideState: 1
-    m_Value: {r: 0.21698111, g: 0.18515433, b: 0.16682982, a: 1}
+    m_Value: {r: 0.09961586, g: 0.04041021, b: 0.010807383, a: 1}
   maxFogDistance:
     m_OverrideState: 1
     m_Value: 5000
@@ -206,7 +206,7 @@ MonoBehaviour:
     m_Value: 1
   albedo:
     m_OverrideState: 1
-    m_Value: {r: 0.21698111, g: 0.10951406, b: 0.10951406, a: 1}
+    m_Value: {r: 0.9529412, g: 0.54509807, b: 0.16862746, a: 1}
   globalLightProbeDimmer:
     m_OverrideState: 1
     m_Value: 1
@@ -344,7 +344,7 @@ MonoBehaviour:
     m_Value: 0
   groundTint:
     m_OverrideState: 1
-    m_Value: {r: 0.13207549, g: 0.12648799, b: 0.10653259, a: 1}
+    m_Value: {r: 0.9339623, g: 0.6734095, b: 0.022027409, a: 1}
   groundColorTexture:
     m_OverrideState: 1
     m_Value: {fileID: 0}
@@ -380,7 +380,7 @@ MonoBehaviour:
     m_Value: {r: 0.6792453, g: 0.39423767, b: 0.16981132, a: 1}
   zenithTint:
     m_OverrideState: 1
-    m_Value: {r: 0.5849056, g: 0.5215972, b: 0.31728372, a: 1}
+    m_Value: {r: 0.7075472, g: 0.59053886, b: 0.21026166, a: 1}
   horizonZenithShift:
     m_OverrideState: 1
     m_Value: 0
