@@ -6,8 +6,12 @@ using System.Collections.Generic;
 public class VRChecker : MonoBehaviour
 {
     // UI Text GameObject here to be updated if no VR headset is detected.
-    public GameObject warningTextUI; 
-        
+    public GameObject warningTextUI;
+
+    // bool for toggling this script on and off for testing purposes.
+    [SerializeField]
+    private bool isVRCheckerEnabled = true;
+    
     void Start()
     {
         StartCoroutine(CheckHeadsetWithDelay());
@@ -16,8 +20,9 @@ public class VRChecker : MonoBehaviour
     IEnumerator CheckHeadsetWithDelay()
     {
         // Needs to use coroutine to wait for a second to give XR time to initialize.
-        yield return new WaitForSeconds(1f); 
+        yield return new WaitForSeconds(1f);
 
+        if (!isVRCheckerEnabled) yield break; // If VRChecker is disabled don't do anything.
         if (!IsVRHeadsetConnected())
         {
             Debug.LogWarning("VRChecker: No VR headset detected.");
@@ -28,6 +33,7 @@ public class VRChecker : MonoBehaviour
         {
             Debug.Log("VRChecker: VR headset or VR headset software is detected.");
         }
+
     }
     
     // Checks if a VR Headset is detected.
