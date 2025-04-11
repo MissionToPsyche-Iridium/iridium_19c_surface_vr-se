@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: CustomSettings
   m_EditorClassIdentifier: 
   brightness: 0.7444553
-  volume: 0.2027239
-  interactionFeedback: 0.29582867
+  volume: 0.105285645
+  interactionFeedback: 0.07697405
+  framesPerSecond: 1

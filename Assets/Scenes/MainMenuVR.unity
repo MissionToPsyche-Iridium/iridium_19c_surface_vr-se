@@ -695,6 +695,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8111414707829322500, guid: 75605f1272f08434a95e3f7310bd29ff, type: 3}
+      propertyPath: isVRCheckerEnabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1098,7 +1102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 658f5febd78a398479835c6d223a6c64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vrChecker: {fileID: 0}
 --- !u!1001 &664653187
 PrefabInstance:
   m_ObjectHideFlags: 0

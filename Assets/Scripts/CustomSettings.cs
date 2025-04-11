@@ -19,6 +19,7 @@ public class CustomSettings : ScriptableObject
         settings.brightness = 0.5f;
         settings.volume = 0.5f;
         settings.interactionFeedback = 0.5f;
+        settings.framesPerSecond = false;
         AssetDatabase.CreateAsset(settings, CustomSettingsPath);
         AssetDatabase.SaveAssets();
         return settings;
@@ -66,6 +67,17 @@ public class CustomSettings : ScriptableObject
         }
     }
 
+    [SerializeField] private bool framesPerSecond;
+    public bool FramesPerSecond
+    {
+        get => framesPerSecond;
+        set
+        {
+            framesPerSecond = value;
+            Save();
+        }
+    }
+    
     private void Save()
     {
         #if UNITY_EDITOR

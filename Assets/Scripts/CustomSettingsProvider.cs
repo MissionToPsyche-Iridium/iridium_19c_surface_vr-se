@@ -30,6 +30,7 @@ internal class CustomSettingsProvider : SettingsProvider
         EditorGUILayout.PropertyField(m_CustomSettings.FindProperty("brightness"));
         EditorGUILayout.PropertyField(m_CustomSettings.FindProperty("volume"));
         EditorGUILayout.PropertyField(m_CustomSettings.FindProperty("interactionFeedback"));
+        EditorGUILayout.PropertyField(m_CustomSettings.FindProperty("framesPerSecond"));
 
         m_CustomSettings.ApplyModifiedPropertiesWithoutUndo();
     }
