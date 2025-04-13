@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4292334734827887811}
+  - component: {fileID: 844955932290947103}
   m_Layer: 0
   m_Name: Info point 2
   m_TagString: InfoPoint
@@ -34,6 +35,21 @@ Transform:
   - {fileID: 6260860668267172473}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &844955932290947103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131976657123728348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acef7c5774ae7614cad75827d85ad555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSiteName: Mars Site 3
+  currentPointName: Info point (1)
+  infoTextUI: {fileID: 0}
 --- !u!1 &2447210616143492895
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,7 +1005,7 @@ GameObject:
   - component: {fileID: 6226593390323676100}
   - component: {fileID: 6900922820688664166}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text (TMP) 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1029,7 +1045,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6786907960599405998}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
