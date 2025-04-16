@@ -6875,7 +6875,7 @@ Terrain:
   m_DetailObjectDistance: 596
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 4
-  m_SplatMapDistance: 1000
+  m_SplatMapDistance: 10000
   m_HeightmapMinimumLODSimplification: 0
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
