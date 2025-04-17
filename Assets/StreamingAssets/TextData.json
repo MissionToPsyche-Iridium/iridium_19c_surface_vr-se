@@ -4,8 +4,28 @@
       "siteName": "Mars Site 2",
       "infoPoints": [
         {
-          "pointName": "Info point 2",
-          "infoText": "..."
+          "pointName": "Info point 2(1)",
+          "infoText": "Psyche is both the name of an asteroid orbiting the Sun between Mars and Jupiter — and the name of a NASA space mission to visit that asteroid, led by Arizona State University."
+        }
+        {
+          "pointName": "Info point 2(2)",
+          "infoText": "Psyche was found in 1852 by Italian astronomer Annibale de Gasparis, who named it for the goddess of the soul in ancient Greek mythology."
+        }
+        {
+          "pointName": "Info point 2(3)",
+          "infoText": "Psyche launched at 10:19 a.m. EDT Friday, October 13, 2023 aboard a SpaceX Falcon Heavy rocket from Launch Pad 39A at NASA’s Kennedy Space Center in Florida. Expected arrival is in 2029 after a Mars flyby and gravity assist in 2026."
+        }
+        {
+          "pointName": "Info point 2(4)",
+          "infoText": "A mission goal of Psyche is to understand iron cores, a previously unexplored building block of planet formation."
+        }
+        {
+          "pointName": "Info point 2(5)",
+          "infoText": "A mission goal of Psyche is to look inside terrestrial planets, including Earth [and Mars!], by directly examining the interior of a differentiated (layered) body, which otherwise could not be seen."
+        }
+        {
+          "pointName": "Info point 2(6)",
+          "infoText": "A mission goal of Psyche is to explore a new type of world – one made not of rock and ice, but significant amounts of metal."
         }
       ]
     },
@@ -14,11 +34,11 @@
       "infoPoints": [
         {
           "pointName": "Info point (1)",
-          "infoText": "hi"
+          "infoText": "If Psyche were a perfect sphere, it would have a diameter of 140 miles (226 kilometers), or about the length of the State of Massachusetts (leaving out Cape Cod). It is estimated to have a surface area of about 64,000 square miles or approximately 165,800 square kilometers."
         },
         {
           "pointName": "Info point (2)",
-          "infoText": "..."
+          "infoText": "At Psyche scientists will explore, for the first time ever, a world made not of rock or ice, but rich in metal (between 30% to 60% of its volume). It may consist largely of metal from the core of a planetesimal, one of the building blocks of the Sun’s planetary system."
         },
         {
           "pointName": "Info point (3)",
@@ -26,15 +46,15 @@
         },
         {
           "pointName": "Info point (4)",
-          "infoText": "..."
+          "infoText": "Psyche will be flying relatively close to Mars for what is called a gravity assist: Harnessing the planet’s gravity, Psyche will use the speed at which Mars travels around the Sun to increase the spacecraft’s own speed and change its direction without using much propellant. During the Mars Gravity Assist period, Psyche will mostly turn off its thrusters and coast to Mars. The spacecraft is expected to fly between about 1,900 to 2,700 miles (3,000 to 4,400 kilometers) above Mars – a safe distance above the planet yet close enough to get a gravity assist."
         },
         {
           "pointName": "Info point (2-1)",
-          "infoText": "..."
+          "infoText": "The full flight system, including the spacecraft’s two five-panel solar arrays, is about the size of a singles tennis court: 81 feet (24.76 meters) long by 24 feet (7.34 meters) wide. The body of the spacecraft is slightly bigger than a small van and about as tall as a regulation basketball hoop."
         },
         {
           "pointName": "Info point (2-2)",
-          "infoText": "..."
+          "infoText": "Psyche has three dedicated instruments – a gamma-ray and neutron spectrometer, a multispectral imager, and a magnetometer. It will also use the X-band radio telecommunications system for gravity science. "
         }
       ]
     }

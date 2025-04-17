@@ -590,9 +590,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2066131788}
     m_Modifications:
+    - target: {fileID: 844955932290947103, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: infoTextUI
+      value: 
+      objectReference: {fileID: 299687893}
+    - target: {fileID: 844955932290947103, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: currentSiteName
+      value: Mars Site 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1131976657123728348, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_Name
-      value: Info point 2
+      value: Info point 2 (4)
       objectReference: {fileID: 0}
     - target: {fileID: 4292334734827887811, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_LocalPosition.x
@@ -633,6 +641,10 @@ PrefabInstance:
     - target: {fileID: 4292334734827887811, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786907960599405998, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: m_Name
+      value: Text (TMP) 2(4)
       objectReference: {fileID: 0}
     - target: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_text
@@ -675,6 +687,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoAudioSource: {fileID: 611760401}
   infoClickSound: {fileID: 8300000, guid: db5a8e912367a474db91f13e6a1cc86b, type: 3}
+--- !u!114 &299687893 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+  m_PrefabInstance: {fileID: 299687889}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &307121297 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7462946758446440454, guid: 6925447644e3a004184af0e7b4ed0882, type: 3}
@@ -850,9 +873,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2066131788}
     m_Modifications:
+    - target: {fileID: 844955932290947103, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: infoTextUI
+      value: 
+      objectReference: {fileID: 445146157}
+    - target: {fileID: 844955932290947103, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: currentSiteName
+      value: Mars Site 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1131976657123728348, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_Name
-      value: Info point 2 (1)
+      value: Info point 2 (5)
       objectReference: {fileID: 0}
     - target: {fileID: 4292334734827887811, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_LocalPosition.x
@@ -893,6 +924,10 @@ PrefabInstance:
     - target: {fileID: 4292334734827887811, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786907960599405998, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: m_Name
+      value: Text (TMP) 2(5)
       objectReference: {fileID: 0}
     - target: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_text
@@ -936,6 +971,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoAudioSource: {fileID: 611760401}
   infoClickSound: {fileID: 8300000, guid: db5a8e912367a474db91f13e6a1cc86b, type: 3}
+--- !u!114 &445146157 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+  m_PrefabInstance: {fileID: 445146153}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &451519774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -944,9 +990,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2066131788}
     m_Modifications:
+    - target: {fileID: 844955932290947103, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: infoTextUI
+      value: 
+      objectReference: {fileID: 451519778}
+    - target: {fileID: 844955932290947103, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: currentSiteName
+      value: Mars Site 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1131976657123728348, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_Name
-      value: Info point 2 (2)
+      value: Info point 2 (6)
       objectReference: {fileID: 0}
     - target: {fileID: 4292334734827887811, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_LocalPosition.x
@@ -987,6 +1041,10 @@ PrefabInstance:
     - target: {fileID: 4292334734827887811, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6786907960599405998, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: m_Name
+      value: Text (TMP) 2(6)
       objectReference: {fileID: 0}
     - target: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_text
@@ -1029,6 +1087,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoAudioSource: {fileID: 611760401}
   infoClickSound: {fileID: 8300000, guid: db5a8e912367a474db91f13e6a1cc86b, type: 3}
+--- !u!114 &451519778 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+  m_PrefabInstance: {fileID: 451519774}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &457627307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1037,6 +1106,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 649593716}
     m_Modifications:
+    - target: {fileID: 844955932290947103, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: infoTextUI
+      value: 
+      objectReference: {fileID: 457627311}
+    - target: {fileID: 844955932290947103, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: currentSiteName
+      value: Mars Site 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1131976657123728348, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_Name
       value: Info point 2 (2)
@@ -1101,6 +1178,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6786907960599405998, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: m_Name
+      value: Text (TMP) 2(2)
+      objectReference: {fileID: 0}
     - target: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_text
       value: Psyche was found in 1852 by Italian astronomer Annibale de Gasparis,
@@ -1142,6 +1223,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoAudioSource: {fileID: 611760401}
   infoClickSound: {fileID: 8300000, guid: db5a8e912367a474db91f13e6a1cc86b, type: 3}
+--- !u!114 &457627311 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+  m_PrefabInstance: {fileID: 457627307}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &494471495
 GameObject:
   m_ObjectHideFlags: 0
@@ -2548,6 +2640,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 649593716}
     m_Modifications:
+    - target: {fileID: 844955932290947103, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: infoTextUI
+      value: 
+      objectReference: {fileID: 1219320541}
+    - target: {fileID: 844955932290947103, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: currentSiteName
+      value: Mars Site 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1131976657123728348, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_Name
       value: Info point 2 (1)
@@ -2612,6 +2712,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6786907960599405998, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: m_Name
+      value: Text (TMP) 2(1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_text
       value: "Psyche is both the name of an asteroid orbiting the Sun between Mars
@@ -2654,6 +2758,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoAudioSource: {fileID: 611760401}
   infoClickSound: {fileID: 8300000, guid: db5a8e912367a474db91f13e6a1cc86b, type: 3}
+--- !u!114 &1219320541 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+  m_PrefabInstance: {fileID: 1219320537}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1256768544
 GameObject:
   m_ObjectHideFlags: 0
@@ -2814,6 +2929,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 649593716}
     m_Modifications:
+    - target: {fileID: 844955932290947103, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: infoTextUI
+      value: 
+      objectReference: {fileID: 1288723326}
+    - target: {fileID: 844955932290947103, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: currentSiteName
+      value: Mars Site 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1131976657123728348, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_Name
       value: Info point 2 (3)
@@ -2886,6 +3009,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6786907960599405998, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+      propertyPath: m_Name
+      value: Text (TMP) 2(3)
+      objectReference: {fileID: 0}
     - target: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
       propertyPath: m_text
       value: "Psyche launched at 10:19 a.m. EDT Friday, October 13, 2023 aboard a
@@ -2929,6 +3056,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoAudioSource: {fileID: 611760401}
   infoClickSound: {fileID: 8300000, guid: db5a8e912367a474db91f13e6a1cc86b, type: 3}
+--- !u!114 &1288723326 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6900922820688664166, guid: 8b239be1dba6a6c468fc25706c2fff87, type: 3}
+  m_PrefabInstance: {fileID: 1288723322}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1303006774
 GameObject:
   m_ObjectHideFlags: 0
