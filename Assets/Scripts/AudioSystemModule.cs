@@ -7,9 +7,6 @@ public class AudioSystemModule : MonoBehaviour
 
     private AudioSource ambientSoundPlayer;
 
-    [Range(0, 100)]
-    public float ambientSoundVolume = 50;
-
     private AudioClip[] ambientSounds;
     private int currentSound = 0;
     // Start is called before the first frame update
@@ -24,7 +21,6 @@ public class AudioSystemModule : MonoBehaviour
             if(ambientSounds != null)
             {
                 ambientSoundPlayer.clip = ambientSounds[currentSound]; // Sets the first audio clip
-                ambientSoundPlayer.volume = ambientSoundVolume / 100; // Sets volume
                 ambientSoundPlayer.Play(); // Plays the audio
             }
         }
@@ -38,6 +34,8 @@ public class AudioSystemModule : MonoBehaviour
             ambientSoundPlayer.clip = ambientSounds[(++currentSound) % ambientSounds.Length]; // Switches to next sound in the lists of Ambient Sounds
             ambientSoundPlayer.Play(); // Plays the audio
         }
-        ambientSoundPlayer.volume = ambientSoundVolume / 100; // Sets volume
     }
+    
+    
+    
 }
