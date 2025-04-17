@@ -123,6 +123,7 @@ public class SettingsApplier : MonoBehaviour
         // Updates Volume
         if (_audioSources != null)
         {
+            
             if (_audioSources.Length == 0 && _errorMessageDisplayed == false) // If there are no audioSources
             {
                 Debug.Log("SettingsAppliers: No AudioSources found in this scene.");
@@ -133,7 +134,10 @@ public class SettingsApplier : MonoBehaviour
                 _prevVolume = _customSettings.Volume;
                 foreach (var variable in _audioSources)
                 {
-                    variable.volume = _prevVolume;
+                    if (variable != null)
+                    {
+                        variable.volume = _prevVolume;
+                    }
                 }
             }
         }
