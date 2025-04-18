@@ -2351,7 +2351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0a48672932ee047a9560c1bdfafde7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FPSUI: {fileID: 95581863}
+  framesPerSecondUserInterface: {fileID: 0}
 --- !u!1 &1535195869
 GameObject:
   m_ObjectHideFlags: 0
@@ -3348,6 +3348,14 @@ PrefabInstance:
     - target: {fileID: 5431620286608933698, guid: 294359dc8a76dda40952b5dea2cbadca, type: 3}
       propertyPath: m_Name
       value: PlayTimerUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611886959444734231, guid: 294359dc8a76dda40952b5dea2cbadca, type: 3}
+      propertyPath: minutes
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611886959444734231, guid: 294359dc8a76dda40952b5dea2cbadca, type: 3}
+      propertyPath: seconds
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8611886959444734231, guid: 294359dc8a76dda40952b5dea2cbadca, type: 3}
       propertyPath: StartTimerButtonUI
