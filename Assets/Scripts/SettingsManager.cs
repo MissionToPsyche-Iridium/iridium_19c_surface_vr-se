@@ -102,6 +102,7 @@ public class SettingsManager : MonoBehaviour
         bool selectedFramesPerSecond = framesPerSecondToggle.GetComponent<UnityEngine.UI.Toggle>().isOn;
         CustomSettings temp = loadCustomSettings();
         temp.FramesPerSecond = selectedFramesPerSecond;
+        
     }
     
     private CustomSettings loadCustomSettings()
