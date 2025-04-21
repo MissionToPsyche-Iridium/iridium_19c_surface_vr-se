@@ -22,3 +22,6 @@ You play a Quiz/Trivia game based on all of what you learned from the info point
 Settings allows you to adjust the brightness, audio, VR controller feedback, and graphic quality.
 ## Credits
 Gives credit to the Capstone team of ASU students who have worked on this project, and describes of the purpose of the project with ASU and NASA.
+
+## Video URL
+[Basic Instructions for VR Application](https://youtu.be/f506wsmuQr0)
