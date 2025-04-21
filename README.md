@@ -53,7 +53,7 @@ C# – Used for scripting game mechanics, UI, and VR interactions.
 
 
 ## Video
-......
+- [Basic Instructions for VR Application](https://youtu.be/f506wsmuQr0)
 
 ## Quiz
 The Psyche Quiz is an interactive trivia game designed to test users' knowledge about NASA’s Psyche mission. The quiz presents a series of multiple-choice questions, tracks user scores, and displays a final score screen based on performance. The application supports a retry option, allowing users to restart the quiz after completing it.
@@ -99,7 +99,7 @@ There are two ways to update questions:
 Go to Assets/Resources/Questions folder, locate the Question SO, and delete it.  
 
 ## Controller Layout
-###HTC Vive Controller
+### HTC Vive Controller
 <img src = "https://github.com/user-attachments/assets/59453352-afbd-410e-8469-208af728afc2">
 - 2 - Left Controller - Lightly tap the edge of the trackpad to turn your orientation.
 - 2 - Left Controller - Press center of the trackpad to open the Mars Options Menu while in the Mars Sites.
