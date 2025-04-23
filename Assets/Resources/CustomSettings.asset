@@ -15,4 +15,4 @@ MonoBehaviour:
   brightness: 0.7444553
   volume: 0.105285645
   interactionFeedback: 0.07697405
-  framesPerSecond: 0
+  framesPerSecond: 1
