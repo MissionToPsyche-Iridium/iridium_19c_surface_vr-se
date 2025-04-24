@@ -23,6 +23,9 @@ public class SettingsManager : MonoBehaviour
     [SerializeField]
     private GameObject InteractionFeedbackSlider;
     
+    [SerializeField]
+    private GameObject framesPerSecondToggle;
+    
     private const string QualityPrefKey = "GraphicsQuality";
     
     private void Start()
@@ -37,6 +40,7 @@ public class SettingsManager : MonoBehaviour
         BrightnessSlider.GetComponent<UnityEngine.UI.Slider>().value = configSettings.Brighntness;
         VolumeSlider.GetComponent<UnityEngine.UI.Slider>().value = configSettings.Volume;
         InteractionFeedbackSlider.GetComponent<UnityEngine.UI.Slider>().value = configSettings.InteractionFeedback;
+        framesPerSecondToggle.GetComponent<UnityEngine.UI.Toggle>().isOn = configSettings.FramesPerSecond;
 
     }
 
@@ -87,6 +91,20 @@ public class SettingsManager : MonoBehaviour
 
     }
 
+    public void ChangeFramesPerSecondToggle()
+    {
+        if (framesPerSecondToggle == null)
+        {
+            UnityEngine.Debug.LogError("Frames Per Second Toggle is not assigned");
+            return;
+        }
+        // Get the toggle's current value
+        bool selectedFramesPerSecond = framesPerSecondToggle.GetComponent<UnityEngine.UI.Toggle>().isOn;
+        CustomSettings temp = loadCustomSettings();
+        temp.FramesPerSecond = selectedFramesPerSecond;
+        
+    }
+    
     private CustomSettings loadCustomSettings()
     {
         return Resources.Load<CustomSettings>("CustomSettings");

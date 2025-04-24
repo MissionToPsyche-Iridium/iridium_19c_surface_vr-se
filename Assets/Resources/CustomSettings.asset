@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45c430609ea852540ae45b4540db4432, type: 3}
   m_Name: CustomSettings
   m_EditorClassIdentifier: 
-  brightness: 0.8236956
-  volume: 0.44928852
-  interactionFeedback: 0.42212787
+  brightness: 0.7444553
+  volume: 0.105285645
+  interactionFeedback: 0.07697405
+  framesPerSecond: 1

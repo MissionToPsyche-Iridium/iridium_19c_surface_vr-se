@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 // Class to handle scene changes in the application
 public class ChangeScenes : MonoBehaviour
 {
+
     // Load the "AboutScreen" scene
     public void goToAboutScreen()
     {
-        SceneManager.LoadScene("AboutScreen");
+            SceneManager.LoadScene("AboutScreen");
     }
 
     // Load the "SettingsScreen" scene
