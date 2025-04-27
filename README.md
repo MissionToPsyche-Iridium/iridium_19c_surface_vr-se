@@ -7,7 +7,7 @@
 4. [Guide how to build the project](#build)
 5. [Video of an application](#video)
 6. [Quiz Guide](#quiz)
-
+7. [Controller Layout](#controller-layout)
 
 ## Overview
 The NASA Psyche Mission: Surface Data VR application provides an interactive and educational Virtual Reality (VR) experience, allowing users to explore Mars using real NASA data. Users can stand on Mars' surface, navigate its terrain, and learn key facts about Mars and the Psyche asteroid. The application also features a quiz game to test users' knowledge of Psyche Mission.
@@ -53,7 +53,7 @@ C# – Used for scripting game mechanics, UI, and VR interactions.
 
 
 ## Video
-......
+- [Basic Instructions for VR Application](https://youtu.be/f506wsmuQr0)
 
 ## Quiz
 The Psyche Quiz is an interactive trivia game designed to test users' knowledge about NASA’s Psyche mission. The quiz presents a series of multiple-choice questions, tracks user scores, and displays a final score screen based on performance. The application supports a retry option, allowing users to restart the quiz after completing it.
@@ -97,3 +97,13 @@ There are two ways to update questions:
 
 ### How to Delete Questions   
 Go to Assets/Resources/Questions folder, locate the Question SO, and delete it.  
+
+## Controller Layout
+### HTC Vive Controller
+<img src = "https://github.com/user-attachments/assets/59453352-afbd-410e-8469-208af728afc2">
+- 2 - Left Controller - Lightly tap the edge of the trackpad to turn your orientation.
+- 2 - Left Controller - Press center of the trackpad to open the Mars Options Menu while in the Mars Sites.
+- 2 - Right Controller - Lightly tap the trackpad to move in any direction while in the Mars Sites.
+- 2 - Right Controller - Press center of the trackpad to jump while in the Mars Sites.
+- 7 - Interact with UI buttons and sliders.
+- 8 - Grab rocks or information points.
