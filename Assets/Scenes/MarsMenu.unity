@@ -1124,7 +1124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 579276722}
         m_TargetAssemblyTypeName: ChangeScenes, Assembly-CSharp
-        m_MethodName: goToMars2Screen
+        m_MethodName: GoToMars2Screen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1717,7 +1717,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 579276722}
         m_TargetAssemblyTypeName: ChangeScenes, Assembly-CSharp
-        m_MethodName: goToMainMenuScreen
+        m_MethodName: GoToMainMenuScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1984,7 +1984,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 579276722}
         m_TargetAssemblyTypeName: ChangeScenes, Assembly-CSharp
-        m_MethodName: goToMars3Screen
+        m_MethodName: GoToMars3Screen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

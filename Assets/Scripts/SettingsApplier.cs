@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.HighDefinition;
@@ -7,23 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class SettingsApplier : MonoBehaviour
 {
-    private AudioSource[] _audioSources; //List of all the audio sources in the scene
-    private float _prevVolume; //Records previous volume setting
-    private CustomSettings _customSettings; //Custom settings asset to read the settings from
-    private bool _errorMessageDisplayed; //Check to display an error message only once
-    private Volume[] _volume; //The light source of the scene
-    private Exposure _exposure; // The exposure of the volume
-    private float _lightIntensityBase; //The base intensity of the light in the scene
-    private float _lightIntensityRange; //The range of intensity of the light in the scene
-    private Scene _currentScene;
-    
-    public static SettingsApplier instance;
+    private static SettingsApplier _instance;
+    private AudioSource[] m_AudioSources; //List of all the audio sources in the scene
+    private Scene m_CurrentScene;
+    private CustomSettings m_CustomSettings; //Custom settings asset to read the settings from
+    private bool m_ErrorMessageDisplayed; //Check to display an error message only once
+    private Exposure m_Exposure; // The exposure of the volume
+    private float m_LightIntensityBase; //The base intensity of the light in the scene
+    private float m_LightIntensityRange; //The range of intensity of the light in the scene
+    private float m_PrevVolume; //Records previous volume setting
+    private Volume[] m_Volume; //The light source of the scene
 
     private void Awake()
     {
-        if (instance == null)
+        if (_instance == null)
         {
-            instance = this;
+            _instance = this;
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -31,174 +28,146 @@ public class SettingsApplier : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         // Assigns variables and finds AudioSource, LightSource
-        _errorMessageDisplayed = false;
-        _customSettings = LoadCustomSettings();
-        _prevVolume = _customSettings.Volume;
-        _audioSources = FindObjectsOfType<AudioSource>();
-        _volume = FindObjectsOfType<Volume>();
-        _lightIntensityRange = 6;
-        _currentScene = SceneManager.GetActiveScene();
-        
+        m_ErrorMessageDisplayed = false;
+        m_CustomSettings = LoadCustomSettings();
+        m_PrevVolume = m_CustomSettings.Volume;
+        m_AudioSources = FindObjectsOfType<AudioSource>();
+        m_Volume = FindObjectsOfType<Volume>();
+        m_LightIntensityRange = 6;
+        m_CurrentScene = SceneManager.GetActiveScene();
+
         // Apply audio
-        if (_audioSources != null)
+        if (m_AudioSources != null)
         {
-            if (_audioSources.Length == 0)
-            {
+            if (m_AudioSources.Length == 0)
                 Debug.Log("SettingsAppliers: No AudioSources found in this scene.");
-            }
             else
-            {
-                foreach (var VARIABLE in _audioSources)
+                foreach (AudioSource variable in m_AudioSources)
                 {
-                    VARIABLE.volume = _prevVolume;
-                    VARIABLE.Play();
+                    variable.volume = m_PrevVolume;
+                    variable.Play();
                 }
-            }
         }
-        
+
         // Apply brightness
-        for (int i = 0; i < _volume.Length; i++)
-        {
-            if (_volume[i].profile.TryGet(out _exposure))
-            {
-                _exposure.compensation.value = (_lightIntensityRange * _customSettings.Brighntness);
-            }
-        }
-        
-        
+        for (int i = 0; i < m_Volume.Length; i++)
+            if (m_Volume[i].profile.TryGet(out m_Exposure))
+                m_Exposure.compensation.value = m_LightIntensityRange * m_CustomSettings.Brightness;
+
+
         // Handles null error messaging
-        if (_errorMessageDisplayed == false)
+        if (m_ErrorMessageDisplayed == false)
         {
-            if (_audioSources == null && _volume == null)
+            if (m_AudioSources == null && m_Volume == null)
             {
                 Debug.Log("SettingsAppliers: AudioSources and LightSource not initialized.");
-                _errorMessageDisplayed = true;
+                m_ErrorMessageDisplayed = true;
             }
-            else if(_volume == null){
+            else if (m_Volume == null)
+            {
                 Debug.Log("SettingsAppliers: LightSource not initialized.");
-                _errorMessageDisplayed = true;
+                m_ErrorMessageDisplayed = true;
             }
-            else if(_audioSources == null){
+            else if (m_AudioSources == null)
+            {
                 Debug.Log("SettingsAppliers: AudioSources not initialized.");
-                _errorMessageDisplayed = true;
+                m_ErrorMessageDisplayed = true;
             }
-            
         }
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         //If the scene isn't the same scene and isn't on a menu scene find new audio sources
         AudioSource[] tempAudioSources = GetComponentsInChildren<AudioSource>();
 
-        if (tempAudioSources.Length > 0) 
+        if (tempAudioSources.Length > 0)
         {
             if (!isOnMenuScene())
-            {
-                foreach (var audioSource in tempAudioSources)
-                {
+                foreach (AudioSource audioSource in tempAudioSources)
                     audioSource.Stop();
-                }
-            }
             else
-            {
-                foreach (var audioSource in tempAudioSources)
-                {
+                foreach (AudioSource audioSource in tempAudioSources)
                     if (!audioSource.isPlaying)
-                    {
                         audioSource.Play();
-                    }
-                }
-            }
         }
 
-        _currentScene = SceneManager.GetActiveScene();
-        
+        m_CurrentScene = SceneManager.GetActiveScene();
+
         // Updates Volume
-        if (_audioSources != null)
+        if (m_AudioSources != null)
         {
-            
-            if (_audioSources.Length == 0 && _errorMessageDisplayed == false) // If there are no audioSources
+            if (m_AudioSources.Length == 0 && m_ErrorMessageDisplayed == false) // If there are no audioSources
             {
                 Debug.Log("SettingsAppliers: No AudioSources found in this scene.");
-                _errorMessageDisplayed = true;
+                m_ErrorMessageDisplayed = true;
             }
-            else if (!Mathf.Approximately(_prevVolume, _customSettings.Volume)) // If the volume has change by a noticeable amount that way it isn't re-writing every update)
+            else if
+                (!Mathf.Approximately(m_PrevVolume,
+                    m_CustomSettings
+                        .Volume)) // If the volume has change by a noticeable amount that way it isn't re-writing every update)
             {
-                _prevVolume = _customSettings.Volume;
-                foreach (var variable in _audioSources)
-                {
+                m_PrevVolume = m_CustomSettings.Volume;
+                foreach (AudioSource variable in m_AudioSources)
                     if (variable != null)
-                    {
-                        variable.volume = _prevVolume;
-                    }
-                }
+                        variable.volume = m_PrevVolume;
             }
-        }
-        
-        // Updates Brightness
-        for (int i = 0; i < _volume.Length; i++)
-        {
-            if (_volume[i].profile.TryGet(out _exposure))
-            {
-                _exposure.compensation.value = (_lightIntensityRange * _customSettings.Brighntness);
-            }
-        }
-        
-        // Handles null error messaging
-        if (_errorMessageDisplayed == false)
-        {
-            if (_audioSources == null && _volume == null)
-            {
-                Debug.Log("SettingsAppliers: AudioSources and LightSource not initialized.");
-                _errorMessageDisplayed = true;
-            }
-            else if(_volume == null){
-                Debug.Log("SettingsAppliers: LightSource not initialized.");
-                _errorMessageDisplayed = true;
-            }
-            else if(_audioSources == null){
-                Debug.Log("SettingsAppliers: AudioSources not initialized.");
-                _errorMessageDisplayed = true;
-            }
-            
         }
 
-        
-        
+        // Updates Brightness
+        for (int i = 0; i < m_Volume.Length; i++)
+            if (m_Volume[i].profile.TryGet(out m_Exposure))
+                m_Exposure.compensation.value = m_LightIntensityRange * m_CustomSettings.Brightness;
+
+        // Handles null error messaging
+        if (m_ErrorMessageDisplayed == false)
+        {
+            if (m_AudioSources == null && m_Volume == null)
+            {
+                Debug.Log("SettingsAppliers: AudioSources and LightSource not initialized.");
+                m_ErrorMessageDisplayed = true;
+            }
+            else if (m_Volume == null)
+            {
+                Debug.Log("SettingsAppliers: LightSource not initialized.");
+                m_ErrorMessageDisplayed = true;
+            }
+            else if (m_AudioSources == null)
+            {
+                Debug.Log("SettingsAppliers: AudioSources not initialized.");
+                m_ErrorMessageDisplayed = true;
+            }
+        }
     }
 
     public bool isOnMenuScene()
     {
-        var answer = false;
-        var tempScene = SceneManager.GetActiveScene();
+        bool answer = false;
+        Scene tempScene = SceneManager.GetActiveScene();
         if (tempScene.Equals(SceneManager.GetSceneByName("AboutScreen"))
             || tempScene.Equals(SceneManager.GetSceneByName("SettingsScreen"))
             || tempScene.Equals(SceneManager.GetSceneByName("MarsMenu"))
             || tempScene.Equals(SceneManager.GetSceneByName("MainMenuVR"))
             || tempScene.Equals(SceneManager.GetSceneByName("CreditsScreen"))
             || tempScene.Equals(SceneManager.GetSceneByName("Quiz")))
-        {
             answer = true;
-        }
-        
+
         return answer;
     }
-    
-    
+
+
     /// <summary>
-    /// This methods retrieves config project settings
+    ///     This methods retrieves config project settings
     /// </summary>
     /// <returns>CustomSettings</returns>
     private CustomSettings LoadCustomSettings()
     {
         return Resources.Load<CustomSettings>("CustomSettings");
     }
-    
 }

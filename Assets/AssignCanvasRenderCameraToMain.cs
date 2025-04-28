@@ -1,19 +1,23 @@
 using Unity.XR.CoreUtils;
 using UnityEngine;
+using UnityEngine.Serialization;
+
 public class AssignCanvasRenderCameraToMain : MonoBehaviour
 {
-    [SerializeField]
-    private Canvas m_Canvas;
+    [FormerlySerializedAs("m_Canvas")] [SerializeField]
+    private Canvas canvas;
 
-    [SerializeField] private Camera m_Camera;
-    
+    [FormerlySerializedAs("m_Camera")] [SerializeField]
+    private Camera camera;
+
     private XROrigin m_XROrigin;
-    void Update()
+
+    private void Update()
     {
-        if (m_Canvas == null)
+        if (canvas == null)
         {
-            m_Canvas = GetComponent<Canvas>();
-            if (m_Canvas == null)
+            canvas = GetComponent<Canvas>();
+            if (canvas == null)
             {
                 Debug.LogError("AssignCanvasRenderCameraToMain on " + name + ": No Canvas component found.");
                 return;
@@ -21,10 +25,6 @@ public class AssignCanvasRenderCameraToMain : MonoBehaviour
         }
 
         // Is important for when changing scene so that the UI attaches to the new scene's main camera
-        if (m_Canvas.worldCamera == null)
-        {
-            m_Canvas.worldCamera = Camera.main;
-        }
+        if (canvas.worldCamera == null) canvas.worldCamera = Camera.main;
     }
-
 }

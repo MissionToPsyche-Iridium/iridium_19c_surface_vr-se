@@ -19,8 +19,8 @@ public class WristUIPauseManage : MonoBehaviour
     public Transform vrUser;  // The Setting for assigning the XR Origin or Camera Rig prefab on the component setting.
     public Transform[] extraTeleportSpots; // Optional manually assigned locations.
                                            // Decided to implement Fast Travel function where it can be both manually and automatically assigned for scalability.
-    private Transform[] teleportSpots; // Stores all valid travel points
-    private int mostRecentIndex = -1; // Tracks the most recent fast travel spot teleported to.
+    private Transform[] m_TeleportSpots; // Stores all valid travel points
+    private int m_MostRecentIndex = -1; // Tracks the most recent fast travel spot teleported to.
 
 
     // Start is called before the first frame update
@@ -105,6 +105,7 @@ public class WristUIPauseManage : MonoBehaviour
     /// 
     /// Contribution: jlgrijal(Jose)
     /// Date: 02/15/2025
+    /// </summary>
     public void GoToMarsSite2()
     {
         SceneManager.LoadScene("Mars Site 2");
@@ -115,6 +116,7 @@ public class WristUIPauseManage : MonoBehaviour
     /// 
     /// Contribution: jlgrijal(Jose)
     /// Date: 02/15/2025
+    /// </summary>
     public void GoToMarsSite1()
     {
         SceneManager.LoadScene("Mars Site 1");
@@ -180,24 +182,24 @@ public class WristUIPauseManage : MonoBehaviour
 
         // Concatenate the auto-detected spots with the manually assigned spots, if any.
         int overallSpotCount = extraTeleportSpots.Length + autoTravelSpots.Length;
-        teleportSpots = new Transform[overallSpotCount];
+        m_TeleportSpots = new Transform[overallSpotCount];
 
         // Loop through the extra teleport spots and
         // auto travel spots to assign them to the teleportSpots array.
         for (int i = 0; i < extraTeleportSpots.Length; i++)
         {
-            teleportSpots[i] = extraTeleportSpots[i];
+            m_TeleportSpots[i] = extraTeleportSpots[i];
         }
 
         // Loop through the auto travel spots to assign them to the teleportSpots array.
         for (int i = 0; i < autoTravelSpots.Length; i++)
         {
-            teleportSpots[extraTeleportSpots.Length + i] = autoTravelSpots[i];
+            m_TeleportSpots[extraTeleportSpots.Length + i] = autoTravelSpots[i];
         }
 
 
         // Debug log to check if fast travel spots are initialized.
-        Debug.Log($"Fast Travel Started: {teleportSpots.Length}");
+        Debug.Log($"Fast Travel Started: {m_TeleportSpots.Length}");
     }
 
     /// <summary>
@@ -222,17 +224,17 @@ public class WristUIPauseManage : MonoBehaviour
 
 
         // Making sure that there exists any travel spots.
-        if (teleportSpots == null || teleportSpots.Length == 0)
+        if (m_TeleportSpots == null || m_TeleportSpots.Length == 0)
         {
             Debug.LogWarning("No teleport spots found.");
             return;
         }
 
         // Incrementing the most recent index to cycle back to 0 if needed to.
-        mostRecentIndex = (mostRecentIndex + 1) % teleportSpots.Length;
+        m_MostRecentIndex = (m_MostRecentIndex + 1) % m_TeleportSpots.Length;
 
         // Defining the intended position to teleport to.
-        Vector3 intendedPosition = teleportSpots[mostRecentIndex].position;
+        Vector3 intendedPosition = m_TeleportSpots[m_MostRecentIndex].position;
 
         // Checking if the XR Origin has a Character Controller component and then to temporarily disable it before teleporting
         // so the character controller does not block the teleportation.

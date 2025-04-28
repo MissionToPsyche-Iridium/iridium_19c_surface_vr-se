@@ -23,7 +23,7 @@ public class HandAnimationInput : MonoBehaviour
     /// being read from the input system and then being set to the animator in Unity.
     /// 
     /// Modification: Added a null check for the animator to prevent errors if no animator is assigned,
-    /// and restructed the float value-reading implementation to be more readable and cleaner.
+    /// and restructured the float value-reading implementation to be more readable and cleaner.
     /// </summary>
     // Update is called once per frame
     void Update()

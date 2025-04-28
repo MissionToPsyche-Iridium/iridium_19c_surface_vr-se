@@ -1,111 +1,99 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
-using UnityEngine;
 using TMPro;
-using UnityEditor;
-using UnityEngine.UIElements;
+using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
-
 
 public class SettingsManager : MonoBehaviour
 {
-    
-    [SerializeField]
-    private GameObject BrightnessSlider;
-    
-    [SerializeField]
-    private GameObject VolumeSlider;
-    
-    public TMP_Dropdown GraphicsDropdown;
-    
-    [SerializeField]
-    private GameObject InteractionFeedbackSlider;
-    
-    [SerializeField]
-    private GameObject framesPerSecondToggle;
-    
     private const string QualityPrefKey = "GraphicsQuality";
-    
+
+    [FormerlySerializedAs("BrightnessSlider")] [SerializeField] private GameObject brightnessSlider;
+
+    [FormerlySerializedAs("VolumeSlider")] [SerializeField] private GameObject volumeSlider;
+
+    [FormerlySerializedAs("GraphicsDropdown")] public TMP_Dropdown graphicsDropdown;
+
+    [FormerlySerializedAs("InteractionFeedbackSlider")] [SerializeField] private GameObject interactionFeedbackSlider;
+
+    [SerializeField] private GameObject framesPerSecondToggle;
+
     private void Start()
     {
         int savedQualityLevel = PlayerPrefs.GetInt(QualityPrefKey, QualitySettings.GetQualityLevel());
         QualitySettings.SetQualityLevel(savedQualityLevel);
-        GraphicsDropdown.value = savedQualityLevel;
-        GraphicsDropdown.RefreshShownValue(); 
-        
-        //Set Settings from the config project settings
-        CustomSettings configSettings = loadCustomSettings();
-        BrightnessSlider.GetComponent<UnityEngine.UI.Slider>().value = configSettings.Brighntness;
-        VolumeSlider.GetComponent<UnityEngine.UI.Slider>().value = configSettings.Volume;
-        InteractionFeedbackSlider.GetComponent<UnityEngine.UI.Slider>().value = configSettings.InteractionFeedback;
-        framesPerSecondToggle.GetComponent<UnityEngine.UI.Toggle>().isOn = configSettings.FramesPerSecond;
+        graphicsDropdown.value = savedQualityLevel;
+        graphicsDropdown.RefreshShownValue();
 
+        //Set Settings from the config project settings
+        CustomSettings configSettings = LoadCustomSettings();
+        brightnessSlider.GetComponent<Slider>().value = configSettings.Brightness;
+        volumeSlider.GetComponent<Slider>().value = configSettings.Volume;
+        interactionFeedbackSlider.GetComponent<Slider>().value = configSettings.InteractionFeedback;
+        framesPerSecondToggle.GetComponent<Toggle>().isOn = configSettings.FramesPerSecond;
     }
 
     public void ChangeGraphicsQuality()
     {
-        int selectedQualityLevel = GraphicsDropdown.value;
+        int selectedQualityLevel = graphicsDropdown.value;
         QualitySettings.SetQualityLevel(selectedQualityLevel);
-        PlayerPrefs.SetInt(QualityPrefKey, selectedQualityLevel); 
+        PlayerPrefs.SetInt(QualityPrefKey, selectedQualityLevel);
         PlayerPrefs.Save();
-        UnityEngine.Debug.Log("Current Quality Level: " + QualitySettings.GetQualityLevel());
+        Debug.Log("Current Quality Level: " + QualitySettings.GetQualityLevel());
     }
-    
+
     public void ChangeBrightnessLevel()
     {
-        if (BrightnessSlider == null)
+        if (brightnessSlider == null)
         {
-            UnityEngine.Debug.LogError("Brightness Slider is not assigned!");
+            Debug.LogError("Brightness Slider is not assigned!");
             return;
         }
-        // Get the slider's current value
-        loadCustomSettings().Brighntness = BrightnessSlider.GetComponent<UnityEngine.UI.Slider>().value;
 
+        // Get the slider's current value
+        LoadCustomSettings().Brightness = brightnessSlider.GetComponent<Slider>().value;
     }
-    
+
     public void ChangeVolumeLevel()
     {
-        if (VolumeSlider == null)
+        if (volumeSlider == null)
         {
-            UnityEngine.Debug.LogError("VolumeSlider is not assigned!");
+            Debug.LogError("VolumeSlider is not assigned!");
             return;
         }
+
         // Get the slider's current value
-        float selectedVolumeLevel = VolumeSlider.GetComponent<UnityEngine.UI.Slider>().value;
-        CustomSettings temp = loadCustomSettings();
+        float selectedVolumeLevel = volumeSlider.GetComponent<Slider>().value;
+        CustomSettings temp = LoadCustomSettings();
         temp.Volume = selectedVolumeLevel;
-        
     }
-    
+
     public void ChangeInteractionFeedbackLevel()
     {
-        if (InteractionFeedbackSlider == null)
+        if (interactionFeedbackSlider == null)
         {
-            UnityEngine.Debug.LogError("Interaction Feedback Slider is not assigned!");
+            Debug.LogError("Interaction Feedback Slider is not assigned!");
             return;
         }
-        // Get the slider's current value
-        loadCustomSettings().InteractionFeedback = InteractionFeedbackSlider.GetComponent<UnityEngine.UI.Slider>().value;
 
+        // Get the slider's current value
+        LoadCustomSettings().InteractionFeedback = interactionFeedbackSlider.GetComponent<Slider>().value;
     }
 
     public void ChangeFramesPerSecondToggle()
     {
         if (framesPerSecondToggle == null)
         {
-            UnityEngine.Debug.LogError("Frames Per Second Toggle is not assigned");
+            Debug.LogError("Frames Per Second Toggle is not assigned");
             return;
         }
+
         // Get the toggle's current value
-        bool selectedFramesPerSecond = framesPerSecondToggle.GetComponent<UnityEngine.UI.Toggle>().isOn;
-        CustomSettings temp = loadCustomSettings();
+        bool selectedFramesPerSecond = framesPerSecondToggle.GetComponent<Toggle>().isOn;
+        CustomSettings temp = LoadCustomSettings();
         temp.FramesPerSecond = selectedFramesPerSecond;
-        
     }
-    
-    private CustomSettings loadCustomSettings()
+
+    private static CustomSettings LoadCustomSettings()
     {
         return Resources.Load<CustomSettings>("CustomSettings");
     }

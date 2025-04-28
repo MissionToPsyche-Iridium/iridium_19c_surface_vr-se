@@ -1,23 +1,22 @@
-using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
 
 /// <summary>
-/// This class is meant to display the current FPS on the frames Per Second User Interface's attached TMP_Text component.
+///     This class is meant to display the current FPS on the frames Per Second User Interface's attached TMP_Text
+///     component.
 /// </summary>
 public class FPSDisplayer : MonoBehaviour
 {
     // Game object that has a TMP_Text component on to be updated
-    [SerializeField] 
-    private GameObject framesPerSecondUserInterface;
+    [SerializeField] private GameObject framesPerSecondUserInterface;
+
+    // If FPS is enabled.
+    private bool m_IsFPSEnabled;
 
     // The UI TMP_Text object.
     private TMP_Text m_Text;
-    
-    // If FPS is enabled.
-    private bool m_IsFPSEnabled;
-    
+
     private void Start()
     {
         CustomSettings settings = LoadCustomSettings();
@@ -26,16 +25,7 @@ public class FPSDisplayer : MonoBehaviour
         m_IsFPSEnabled = settings.FramesPerSecond;
         framesPerSecondUserInterface.SetActive(true);
         m_Text = framesPerSecondUserInterface.GetComponent<TMP_Text>();
-        StartCoroutine(checkForUpdate());
-    }
-
-    IEnumerator checkForUpdate()
-    {
-        while (true)
-        {
-            m_IsFPSEnabled = LoadCustomSettings().FramesPerSecond;
-            yield return new WaitForSecondsRealtime(1f);
-        }
+        StartCoroutine(CheckForUpdate());
     }
 
 
@@ -46,6 +36,7 @@ public class FPSDisplayer : MonoBehaviour
             framesPerSecondUserInterface.SetActive(false);
             return;
         }
+
         framesPerSecondUserInterface.SetActive(true);
         if (m_Text != null)
         {
@@ -53,11 +44,11 @@ public class FPSDisplayer : MonoBehaviour
             const float refresh = 0;
             float avgFramerate = 0;
             const string display = "{0} FPS";
-            var timelapse = Time.smoothDeltaTime;
+            float timelapse = Time.smoothDeltaTime;
             timer = timer <= 0 ? refresh : timer -= timelapse;
 
-            if(timer <= 0) avgFramerate = (int) (1f / timelapse);
-            m_Text.text = string.Format(display,avgFramerate.ToString());
+            if (timer <= 0) avgFramerate = (int)(1f / timelapse);
+            m_Text.text = string.Format(display, avgFramerate.ToString());
         }
         else
         {
@@ -65,8 +56,17 @@ public class FPSDisplayer : MonoBehaviour
         }
     }
 
+    private IEnumerator CheckForUpdate()
+    {
+        while (true)
+        {
+            m_IsFPSEnabled = LoadCustomSettings().FramesPerSecond;
+            yield return new WaitForSecondsRealtime(1f);
+        }
+    }
+
     /// <summary>
-    /// This methods retrieves config project settings.
+    ///     This methods retrieves config project settings.
     /// </summary>
     /// <returns>CustomSettings</returns>
     private static CustomSettings LoadCustomSettings()

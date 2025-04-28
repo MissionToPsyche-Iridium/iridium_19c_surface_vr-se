@@ -1040,7 +1040,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 579276723}
         m_TargetAssemblyTypeName: ChangeScenes, Assembly-CSharp
-        m_MethodName: goToCreditsScreen
+        m_MethodName: GoToCreditsScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1950,7 +1950,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 579276723}
         m_TargetAssemblyTypeName: ChangeScenes, Assembly-CSharp
-        m_MethodName: goToAboutScreen
+        m_MethodName: GoToAboutScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2481,7 +2481,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 579276723}
         m_TargetAssemblyTypeName: ChangeScenes, Assembly-CSharp
-        m_MethodName: goToSettingsScreen
+        m_MethodName: GoToSettingsScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2968,7 +2968,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 579276723}
         m_TargetAssemblyTypeName: ChangeScenes, Assembly-CSharp
-        m_MethodName: goToQuizScreen
+        m_MethodName: GoToQuizScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

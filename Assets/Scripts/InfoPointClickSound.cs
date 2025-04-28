@@ -28,7 +28,7 @@ public class InfoPointClickSound : MonoBehaviour
     /// <summary>
     /// This method is called to play the click sound when the info point sphere object is clicked.
     /// </summary>
-    public void PlayClickSound()
+    private void PlayClickSound()
     {
         UnityEngine.Debug.Log("Sphere clicked!");
         if (infoClickSound != null && infoAudioSource != null)

@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class environmentController : MonoBehaviour
+public class EnvironmentController : MonoBehaviour
 {
     public bool cameraRotationOn = true;
     public bool skyBoxRotateOn = true;
@@ -14,19 +12,16 @@ public class environmentController : MonoBehaviour
     public float cameraRotateSpeed = 1f;
 
     // Sun rotate speed
-    public float sunRotateSpeed = 0f;
+    public float sunRotateSpeed;
 
     // Light gameObject
     public Light sunLight;
-  
+
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if(cameraRotationOn)
+        if (cameraRotationOn)
             focusCamera.transform.Rotate(new Vector3(0, -cameraRotateSpeed * Time.deltaTime, 0));
-        if (skyBoxRotateOn)
-        {
-            sunLight.transform.Rotate(new Vector3(-sunRotateSpeed * Time.deltaTime, 0, 0));
-        }
+        if (skyBoxRotateOn) sunLight.transform.Rotate(new Vector3(-sunRotateSpeed * Time.deltaTime, 0, 0));
     }
 }

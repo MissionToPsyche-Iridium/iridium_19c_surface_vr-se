@@ -1,13 +1,13 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 /// <summary>
 /// Script for creating a play area of length and width 2 x _areaSize that is surrounded by colliders to keep the player in one area.
 /// </summary>
 public class BorderAdjuster : MonoBehaviour
 {
-    [SerializeField] private GameObject _gameObject; //The object the play area is being made around.
-    [SerializeField] private BoxCollider[] _colliders; //The 4 colliders that are meant to encapsulate the play area.
-    [SerializeField] private float _areaSize; //This is the distance between the center of the area and the borders. AKA this is half the size of the length and width of the area.
+    [FormerlySerializedAs("_colliders")] [SerializeField] private BoxCollider[] colliders; //The 4 colliders that are meant to encapsulate the play area.
+    [FormerlySerializedAs("_areaSize")] [SerializeField] private float areaSize; //This is the distance between the center of the area and the borders. AKA this is half the size of the length and width of the area.
     
     void Start()
     {
@@ -20,10 +20,10 @@ public class BorderAdjuster : MonoBehaviour
     /// </summary>
     private void setCenters()
     {
-        _colliders[0].center = new Vector3(0, 0, _areaSize);
-        _colliders[1].center = new Vector3(0, 0, -_areaSize);
-        _colliders[2].center = new Vector3(_areaSize, 0, 0);
-        _colliders[3].center = new Vector3(-_areaSize, 0, 0);
+        colliders[0].center = new Vector3(0, 0, areaSize);
+        colliders[1].center = new Vector3(0, 0, -areaSize);
+        colliders[2].center = new Vector3(areaSize, 0, 0);
+        colliders[3].center = new Vector3(-areaSize, 0, 0);
     }
 
     /// <summary>
@@ -31,9 +31,9 @@ public class BorderAdjuster : MonoBehaviour
     /// </summary>
     private void setSize()
     {
-        _colliders[0].size = new Vector3(2*_areaSize, 2*_areaSize, 1);
-        _colliders[1].size = new Vector3(2*_areaSize, 2*_areaSize, 1);
-        _colliders[2].size = new Vector3(1, 2*_areaSize, 2*_areaSize);
-        _colliders[3].size = new Vector3(1, 2*_areaSize, 2*_areaSize);
+        colliders[0].size = new Vector3(2*areaSize, 2*areaSize, 1);
+        colliders[1].size = new Vector3(2*areaSize, 2*areaSize, 1);
+        colliders[2].size = new Vector3(1, 2*areaSize, 2*areaSize);
+        colliders[3].size = new Vector3(1, 2*areaSize, 2*areaSize);
     }
 }

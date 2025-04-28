@@ -9,9 +9,9 @@ public class Sound
     public string name;
     public AudioClip clip;
     [Range(0, 1)]
-    public float volume = 1;
+    public float volume;
     [Range(-3, 3)]
-    public float pitch = 1;
+    public float pitch;
     public bool loop = false;
     public bool playOnAwake = false;
     public AudioSource source;
@@ -28,12 +28,12 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
 
-    public static AudioManager instance;
+    public static AudioManager Instance;
     //AudioManager
 
     void Awake()
     {
-        instance = this;
+        Instance = this;
 
         foreach (Sound s in sounds)
         {
@@ -51,21 +51,21 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void Play(string name)
+    public void Play(string newName)
     {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
+        Sound s = Array.Find(sounds, sound => sound.name == newName);
         if (s == null)
         {
-            Debug.LogWarning("Sound: " + name + " not found");
+            Debug.LogWarning("Sound: " + newName + " not found");
             return;
         }
 
         s.source.Play();
     }
 
-    public void Stop(string name)
+    public void Stop(string newName)
     {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
+        Sound s = Array.Find(sounds, sound => sound.name == newName);
 
         s.source.Stop();
     }

@@ -12,8 +12,8 @@ using UnityEngine.UI;
 public class ButtonClickSoundEffect : MonoBehaviour
 {
     [SerializeField] private AudioClip soundEffectForButton;
-    private AudioSource sourceForAudio;
-    private Button button;
+    private AudioSource m_SourceForAudio;
+    private Button m_Button;
 
     /// <summary>
     /// Awake function for when the script instance is being loaded.
@@ -22,14 +22,14 @@ public class ButtonClickSoundEffect : MonoBehaviour
     void Awake()
     {
         // Attempt to get an AudioSource from the main camera
-        sourceForAudio = Camera.main.GetComponent<AudioSource>();
-        if (sourceForAudio == null)
+        if (Camera.main != null) m_SourceForAudio = Camera.main.GetComponent<AudioSource>();
+        if (m_SourceForAudio == null)
         {
             UnityEngine.Debug.LogWarning("AudioSource component for Camera GameObject is missing.");
         }
 
-        button = GetComponent<Button>();
-        button.onClick.AddListener(PlayForSoundEffect);
+        m_Button = GetComponent<Button>();
+        m_Button.onClick.AddListener(PlayForSoundEffect);
 
     }
 
@@ -40,9 +40,9 @@ public class ButtonClickSoundEffect : MonoBehaviour
     void PlayForSoundEffect()
     {
         // Play sound effect here
-        if (sourceForAudio != null && soundEffectForButton != null)
+        if (m_SourceForAudio != null && soundEffectForButton != null)
         {
-            sourceForAudio.PlayOneShot(soundEffectForButton);
+            m_SourceForAudio.PlayOneShot(soundEffectForButton);
         }
     }
 }

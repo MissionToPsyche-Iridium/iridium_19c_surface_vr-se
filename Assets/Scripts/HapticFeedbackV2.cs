@@ -3,10 +3,10 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class HapticFeedbackV2 : MonoBehaviour
 {
-    private float _hapticIntensity = 0.5f; // Default intensity (0 to 1)
-    private float _hapticDuration = 0.5f; // Default duration in seconds
+    private float m_HapticIntensity = 0.5f; // Default intensity (0 to 1)
+    private const float HapticDuration = 0.5f; // Default duration in seconds
 
-    private XRRayInteractor[] _rayInteractors;
+    private XRRayInteractor[] m_RayInteractors;
 
     void Start()
     {
@@ -14,7 +14,7 @@ public class HapticFeedbackV2 : MonoBehaviour
         CustomSettings settings = LoadCustomSettings();
         if (settings != null)
         {
-            _hapticIntensity = settings.InteractionFeedback;
+            m_HapticIntensity = settings.InteractionFeedback;
         }
         else
         {
@@ -22,13 +22,13 @@ public class HapticFeedbackV2 : MonoBehaviour
         }
 
         //Find CameraOffSet in player
-        GameObject CameraOffSet = GameObject.FindGameObjectWithTag("CameraOffSet");
-        if (CameraOffSet != null)
+        GameObject cameraOffSet = GameObject.FindGameObjectWithTag("CameraOffSet");
+        if (cameraOffSet != null)
         {
-            _rayInteractors = CameraOffSet.GetComponentsInChildren<XRRayInteractor>();
-            if (_rayInteractors != null && _rayInteractors.Length > 0)
+            m_RayInteractors = cameraOffSet.GetComponentsInChildren<XRRayInteractor>();
+            if (m_RayInteractors != null && m_RayInteractors.Length > 0)
             {
-                foreach (var interactor in _rayInteractors)
+                foreach (var interactor in m_RayInteractors)
                 {
                     interactor.hoverEntered.AddListener(OnHoverEnter);
                 }
@@ -57,7 +57,7 @@ public class HapticFeedbackV2 : MonoBehaviour
             XRBaseInteractor interactor = args.interactorObject as XRBaseInteractor;
             if (interactor is XRRayInteractor rayInteractor)
             {
-                rayInteractor.SendHapticImpulse(_hapticIntensity, _hapticDuration);
+                rayInteractor.SendHapticImpulse(m_HapticIntensity, HapticDuration);
             }
         }
         

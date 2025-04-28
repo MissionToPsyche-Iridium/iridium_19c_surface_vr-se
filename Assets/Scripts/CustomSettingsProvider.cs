@@ -5,13 +5,14 @@ using UnityEngine.UIElements;
 
 internal class CustomSettingsProvider : SettingsProvider
 {
-    private SerializedObject m_CustomSettings;
-
     // Path to save the custom config settings
     private const string CustomSettingsPath = "Assets/Resources/CustomSettings.asset";
+    private SerializedObject m_CustomSettings;
 
     private CustomSettingsProvider(string path, SettingsScope scope = SettingsScope.Project)
-        : base(path, scope) {}
+        : base(path, scope)
+    {
+    }
 
     public static bool IsSettingsAvailable()
     {
@@ -38,7 +39,7 @@ internal class CustomSettingsProvider : SettingsProvider
     [SettingsProvider]
     public static SettingsProvider CreateMyCustomSettingsProvider()
     {
-        return new CustomSettingsProvider("Project/Config", SettingsScope.Project);
+        return new CustomSettingsProvider("Project/Config");
     }
 }
 

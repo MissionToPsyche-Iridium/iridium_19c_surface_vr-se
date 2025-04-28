@@ -30,7 +30,7 @@ public class ShowInfoClick : MonoBehaviour
         TogglePanels();
     }
 
-    // togle infp and point canvas
+    // toggle info and point canvas
     private void TogglePanels()
     {
         if (infoPanel != null) infoPanel.SetActive(!infoPanel.activeSelf);

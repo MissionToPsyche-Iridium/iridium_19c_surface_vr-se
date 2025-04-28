@@ -5,23 +5,23 @@ using UnityEngine;
 public class AudioSystemModule : MonoBehaviour
 {
 
-    private AudioSource ambientSoundPlayer;
+    private AudioSource m_AmbientSoundPlayer;
 
-    private AudioClip[] ambientSounds;
-    private int currentSound = 0;
+    private AudioClip[] m_AmbientSounds;
+    private int m_CurrentSound = 0;
     // Start is called before the first frame update
     void Start()
     {
-        ambientSounds = Resources.LoadAll<AudioClip>("Audio/Ambient Sounds"); // Loads all audio clips to an array
+        m_AmbientSounds = Resources.LoadAll<AudioClip>("Audio/Ambient Sounds"); // Loads all audio clips to an array
 
         // Gets the audioSource 
-        ambientSoundPlayer = GetComponent<AudioSource>();
-        if(ambientSoundPlayer != null) // Makes sure the audio source exists
+        m_AmbientSoundPlayer = GetComponent<AudioSource>();
+        if(m_AmbientSoundPlayer != null) // Makes sure the audio source exists
         {
-            if(ambientSounds != null)
+            if(m_AmbientSounds != null)
             {
-                ambientSoundPlayer.clip = ambientSounds[currentSound]; // Sets the first audio clip
-                ambientSoundPlayer.Play(); // Plays the audio
+                m_AmbientSoundPlayer.clip = m_AmbientSounds[m_CurrentSound]; // Sets the first audio clip
+                m_AmbientSoundPlayer.Play(); // Plays the audio
             }
         }
     }
@@ -29,10 +29,10 @@ public class AudioSystemModule : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!ambientSoundPlayer.isPlaying) // Switches to next sound after the current sound has stopped
+        if (!m_AmbientSoundPlayer.isPlaying) // Switches to next sound after the current sound has stopped
         {
-            ambientSoundPlayer.clip = ambientSounds[(++currentSound) % ambientSounds.Length]; // Switches to next sound in the lists of Ambient Sounds
-            ambientSoundPlayer.Play(); // Plays the audio
+            m_AmbientSoundPlayer.clip = m_AmbientSounds[(++m_CurrentSound) % m_AmbientSounds.Length]; // Switches to next sound in the lists of Ambient Sounds
+            m_AmbientSoundPlayer.Play(); // Plays the audio
         }
     }
     
