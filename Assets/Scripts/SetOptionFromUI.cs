@@ -17,11 +17,19 @@ public class SetOptionFromUI : MonoBehaviour
             turnDropdown.SetValueWithoutNotify(PlayerPrefs.GetInt("turn"));
     }
 
+    /// <summary>
+    /// Changes value of the audio listener.
+    /// </summary>
+    /// <param name="value"> The new value of volume. </param>
     private static void SetGlobalVolume(float value)
     {
         AudioListener.volume = value;
     }
 
+    /// <summary>
+    /// Turns the Player Pref by given value.
+    /// </summary>
+    /// <param name="value"> The value to turn the Player Pref.</param>
     private void SetTurnPlayerPref(int value)
     {
         PlayerPrefs.SetInt("turn", value);

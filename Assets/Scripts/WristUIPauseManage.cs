@@ -65,7 +65,7 @@ public class WristUIPauseManage : MonoBehaviour
     ///     A method to fully handle the wrist pause UI. If the boolean is true, turn off the wrist pause UI and set the time
     ///     scale to 1.
     /// </summary>
-    public void ShowUIForWristPause()
+    private void ShowUIForWristPause()
     {
         // If the boolean is true, turn off the wrist pause UI and set the time scale to 1.
         if (turnOnWristPauseUI)
